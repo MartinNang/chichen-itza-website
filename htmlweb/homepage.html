@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="chichen.css">
 
     <!-- Scripts-->
@@ -11,12 +12,13 @@
 
 </head>
 <body>
-    <!-- Nav bar -->
+    <div class="header">
+        <!-- Nav bar -->
      <div class="navbar">
         <nav>
             <a href="error.html">History</a>
             <a href="error.html">Map</a>
-            <span class="spacer"></span>
+            <img src="Images/eng_icon.png" alt="ENG Icon" class="spacer">
             <a href="error.html">Gallery</a>
             <a href="error.html">About</a>
         </nav>
@@ -24,8 +26,10 @@
 
     <!-- Language button -->
      <div class="languageOption">
-        <button id="lngOption">ENG</button>
+        <button id="lngOption"><img src="Images/eng_icon.png" alt="ENG Button Image"></button>
      </div>
+    </div>
+    
      
 
      <!-- Content -->
@@ -34,7 +38,7 @@
             <h3>Hello explorer!</h3>
             <h1>Welcome to Chichén Itzá</h1>
             <p>Are you ready for an incredible adventure?
-              You're about to discover all the secrets of Chichen Itzá, one of the most amazing wonders of the world!</p>
+                You're about to discover all the secrets of Chichen Itzá, one of the most amazing wonders of the world!</p>
         </div>
     
         <div class="informations">
@@ -47,7 +51,7 @@
             <!-- 3D Model and Gallery images below map -->
             <div class="media-container">
                 <model-viewer src="jinx.glb" alt="A 3D model" auto-rotate camera-controls ar id="3D Model"></model-viewer>
-                <a href="error.html"><img src="placeholder.jpeg" alt="Gallery Image" id="Gallery"></a>
+                <a href="error.html"><img src="Images/Gallery_group.png" alt="Gallery Image" id="Gallery"></a>
             </div>
         </div>
     </div>
