@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(174, 213, 174);
+}
+
+.navbar {
+    padding: 20px;
+    border: 2px solid #6b6b6b;
+    border-radius: 30px;
+    background-color: #292929;
+    position: fixed; /* This keeps the navbar fixed */
+    top: 10px; /* Keeps it at the top */
+    left: 15%;
+    right: 15%;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px; /* Adjust the value as needed */
+}
+
+.navbar nav a {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 10px 15px; /* Reduce padding to make it smaller */
+    text-decoration: none;
+    color: #ffffff;
+    border: 5px solid #583b56;
+    border-radius: 20px;
+    background-color: #df8dd9;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
+    flex-grow: 0; /* Prevents links from expanding */
+    width: auto; /* Keeps width minimal */
+    min-width: 80px; /* Ensures a decent size */
+}
+
+.languageOption {
+    position: fixed; /* Fixes the button in place */
+    top: 40px; /* Adjusts vertical position */
+    right: 50px; /* Keeps it aligned to the right */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+.languageOption button {
+    font-family: sans-serif;
+    padding: 10px 20px;
+    border: 2px solid #6b6b6b;
+    border-radius: 10px;
+    background-color: #df8dd9;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Parent container to align both sections */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust as needed */
+    margin: 30px auto; /* Centers the container */
+    margin-top: 200px;
+}
+
+/* Greeting Section - Middle Left */
+.greeting {
+    width: 45%;
+    text-align: left; /* Align text to the left */
+    color: white; 
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    max-width: 600px;
+}
+
+.greeting h1{
+    font-size: 60px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.greeting p{
+    line-height: 2;
+}
+
+/* Informations Section - Middle Right */
+.informations {
+    width: 45%;
+    text-align: left; /* Centers images & 3D model */
+    font-size: 29px;
+}
+
+.informations h2 {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 10px;
+    margin-bottom: 30px;
+
+}
+
+.map-container img {
+    width: 110%; /* Make the map image 100% width */
+    height: 380px;
+
+    border: 10px solid #671e5e;
+    border-radius: 10px;
+}
+
+.media-container {
+    display: flex; /* Align 3D model and gallery image side by side */
+    gap: 20px; /* Optional: Add space between the 3D model and gallery image */
+    margin-top: 20px; /* Adds space between the map and the 3D model/gallery */
+}
+
+.media-container model-viewer {
+    width: 100%;  /* Make the 3D model take up full width of its container */
+    height: 200px; /* Set a fixed height, or adjust as needed */
+    max-width: 100%; /* Remove max-width to let it grow freely */
+
+    border: 10px solid #6b6b6b;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+.media-container img {
+    max-width: 100%; /* Adjust width of the gallery image */
+    height: auto;
+    margin-left: 80px;
+}
+
+@media (max-width: 1366px) {
+    .navbar nav {
+        gap: 0px; /* Adjust the value as needed */
+    }
+
+    .content-wrapper {
+        margin-top: 150px;
+    }
+    
+
+    .media-container model-viewer {
+        width: 150%;  /* Make the 3D model take up full width of its container */
+        height: 200px; /* Set a fixed height, or adjust as needed */
+        max-width: none; /* Remove max-width to let it grow freely */
+    }
+
+    .media-container img {
+        margin-left: 60px;
+    }
+}
+
+
+
