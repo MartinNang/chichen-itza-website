@@ -14,10 +14,15 @@ body {
     z-index: 999;
 }
 
-.spacer {
-    width: 30px; /* Adjust the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 15px; /* Add margin to space out elements */
+.logo {
+    display: block;
+    margin: 0 auto; /* Centers the logo */
+    width: 150px; /* Adjust size as needed */
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%); /* Ensures it's perfectly centered */
+    z-index: 1001; /* Ensures it stays above the navbar */
 }
 
 /* Navbar */
@@ -73,6 +78,14 @@ body {
     font-family: sans-serif;
     font-weight: bold;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.languageOption button:hover{
+    background-color: rgba(117, 117, 117, 0.5);
+    border-radius: 20px;
+    
 }
 
 /* Content Wrapper */
