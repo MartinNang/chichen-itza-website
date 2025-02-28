@@ -17,10 +17,10 @@ body {
 .logo {
     display: block;
     margin: 0 auto; /* Centers the logo */
-    width: 150px; /* Adjust size as needed */
+    width: 250px; /* Adjust size as needed */
     position: absolute;
     top: 10px; /* Adjust as needed */
-    left: 50%;
+    left: 50.5%;
     transform: translateX(-50%); /* Ensures it's perfectly centered */
     z-index: 1001; /* Ensures it stays above the navbar */
 }
@@ -141,7 +141,7 @@ body {
 
 /* Map Container */
 .map-container img {
-    width: 110%;
+    width: 115%;
     height: 330px;
     border: 15px solid #FFCF68;
     border-radius: 20px;
@@ -150,7 +150,7 @@ body {
 /* Media Container */
 .media-container {
     display: flex;
-    gap: 20px;
+    gap: 0px;
     margin-top: 20px;
 }
 
@@ -163,16 +163,37 @@ body {
 }
 
 .media-container img {
+    width: 190%;
     max-width: 200%;
     height: auto;
 }
 
+/* History Page */
+.quiz-button a{
+    display: inline-block;
+    padding: 10px 60px;
+    margin: 0 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #583b56;
+    border-radius: 20px;
+    background-color: #df8dd9;
+    min-width: 80px;
+}
 
 
 @media (max-width: 1366px) {
     .header {
         width: 90%;
         padding: 60px;
+    }
+
+    .logo{
+        width: 150px;
     }
     
     /* Navbar */
@@ -269,7 +290,7 @@ body {
     /* Map Container */
     .map-container img {
         width: 130%;
-        height: 150px;
+        height: 190px;
         border: 15px solid #FFCF68;
         border-radius: 20px;
     }
@@ -277,20 +298,22 @@ body {
     /* Media Container */
     .media-container {
         display: flex;
-        gap: 5px;
+        gap: 0px;
         margin-top: 20px;
     }
     
     .media-container model-viewer {
         width: 150%;
-        height: 200px;
+        height: 170px;
         border: 15px solid #FFCF68;
         border-radius: 20px;
         background-color: grey;
     }
     
     .media-container img {
-        max-width: 200%;
+        margin-left: -10px;
+        width: 200%;
+        max-width: 400%;
         padding-left: 30px;
         height: auto;
     }
