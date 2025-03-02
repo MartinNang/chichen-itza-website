@@ -3,6 +3,22 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.history-page{
+    background: rgb(174, 213, 174) url("Images/history-bg.png") no-repeat center/cover fixed;
+}
+
+.quiz-page{
+    background: rgb(174, 213, 174) url("Images/quiz_start.png") no-repeat center/cover fixed;
+}
+
+.map-page{
+    background: rgb(174, 213, 174) url("Images/map_bg.png") no-repeat center/cover fixed;
+}
+
+.about-page{
+    background: rgb(174, 213, 174) url("Images/about.bg.png") no-repeat center/cover fixed;
+}
+
 /* Header */
 .header {
     position: fixed;
@@ -20,7 +36,7 @@ body {
     width: 250px; /* Adjust size as needed */
     position: absolute;
     top: 10px; /* Adjust as needed */
-    left: 50.5%;
+    left: 53%;
     transform: translateX(-50%); /* Ensures it's perfectly centered */
     z-index: 1001; /* Ensures it stays above the navbar */
 }
@@ -29,7 +45,7 @@ body {
 .navbar {
     position: fixed;
     top: 10px;
-    left: 15%;
+    left: 20%;
     right: 15%;
     padding: 20px;
     border: 2px solid #6b6b6b;
@@ -168,6 +184,7 @@ body {
     height: auto;
 }
 
+
 /* History Page */
 .quiz-button a{
     display: inline-block;
@@ -184,6 +201,216 @@ body {
     background-color: #df8dd9;
     min-width: 80px;
 }
+
+.history-image{
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.greeting-history{
+    margin-top: 350px;
+}
+
+
+/* Quiz Page */
+
+.greeting-quiz{
+    width: 45%;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    max-width: 700px;
+    margin-top: -180px;
+}
+
+.greeting-quiz h1{
+    font-family: 'DynaPuff', cursive;
+    font-size: 80px;
+}
+
+.greeting-quiz h3{
+    margin-top: -40px;
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+}
+
+.greeting-quiz p{
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.greeting-quiz button {
+    display: inline-block;
+    padding: 10px 60px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #3579e0;
+    min-width: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow only at the bottom */
+}
+
+.quiz-image-container{
+    width: 80%;
+    height: 80%;
+}
+
+
+/* Map Page */
+
+.map-site-container {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; /* Adjust the width as needed */
+}
+
+.map-site-container h1 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.map-site-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-site-container img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* Gallery Page */
+
+.gallery-container {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: fit-content; /* Adjust the width as needed */
+}
+
+.gallery-container img{
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+}
+
+
+/* About Page */
+
+.about-us{
+    width: 60%;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.about-us h1{
+    font-size: 80px;
+    font-family: 'DynaPuff', cursive;
+    margin-bottom: -10px;
+}
+
+.about-us p{
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+}
+
+.about-image{
+    width: 110%;
+    height: 500px;
+    border: 15px solid #dc68ff;
+        border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1366px) {
