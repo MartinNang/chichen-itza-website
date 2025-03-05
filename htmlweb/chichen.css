@@ -48,9 +48,8 @@ body {
     left: 20%;
     right: 15%;
     padding: 20px;
-    border: 2px solid #6b6b6b;
-    border-radius: 30px;
-    background-color: #292929;
+    border-radius: 20px;
+    background-color: #0C2E35;
     z-index: 1000;
 }
 
@@ -71,14 +70,15 @@ body {
     font-family: 'DynaPuff', cursive;
     font-size: 20px;
     font-weight: bold;
-    border: 5px solid #583b56;
-    border-radius: 20px;
-    background-color: #df8dd9;
+    border-radius: 10px;
+    background-color: #E00096;
+    box-shadow: 0 4px 0px #FF8ED9;
     min-width: 80px;
 }
 
 .navbar nav a:hover {
-    background-color: #9e619a;
+    background-color: #FF8ED9;
+    box-shadow: 0 4px 0px #E00096;
 }
 
 /* Language Option */
@@ -196,9 +196,9 @@ body {
     font-family: 'DynaPuff', cursive;
     font-size: 20px;
     font-weight: bold;
-    border: 5px solid #583b56;
-    border-radius: 20px;
-    background-color: #df8dd9;
+    border-radius: 10px;
+    background-color: #FF8ED9;
+    box-shadow: 0 4px 0px #fe5fc9;  
     min-width: 80px;
 }
 
@@ -252,9 +252,9 @@ body {
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    background-color: #3579e0;
     min-width: 80px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow only at the bottom */
+    background-color: #3579e0;
+    box-shadow: 0 4px 0px #1f54a4;  
 }
 
 .quiz-image-container{
