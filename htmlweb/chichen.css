@@ -19,6 +19,10 @@ body {
     background: rgb(174, 213, 174) url("Images/about.bg.png") no-repeat center/cover fixed;
 }
 
+.gallery-page{
+    background: rgb(174, 213, 174) url("Images/gallery_bg.png") no-repeat center/cover fixed;
+}
+
 /* Header */
 .header {
     position: fixed;
