@@ -294,22 +294,177 @@ body {
 }
 
 
-/* Gallery Page */
+/* Gallery Page - Fixed */
 
-.gallery-container {
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: fit-content; /* Adjust the width as needed */
-}
-
-.gallery-container img{
-    margin-top: 100px;
-    width: 100%;
+#carousel {
+    position: relative;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: 250px auto 0; /* Pushes carousel below navbar */
+    overflow: hidden;
+    z-index: 1000;
 }
+
+#carousel div {
+    position: absolute;
+    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+    opacity: 1;
+}
+
+#carousel div img {
+    width: 400px;
+    transition: width 400ms;
+     -webkit-user-drag: none;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     border-radius: 10px;
+}
+
+/* Positioning Items */
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 200px;
+}
+
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 200px;
+}
+
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel img:hover {
+    cursor: pointer;
+}
+
+#carousel div.prev img {
+width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+
+#carousel div.selected {
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 300px;
+}
+
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+
+/* Buttons Styling */
+
+.buttons {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+}
+
+.button-82-pushable {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-82-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: #E00096;
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-pushable:hover .button-82-front {
+    transform: translateY(-6px);
+}
+
+.button-82-pushable:active .button-82-front {
+    transform: translateY(-2px);
+}
+
+.button-82-pushable:hover .button-82-shadow {
+    transform: translateY(4px);
+}
+
+.button-82-pushable:active .button-82-shadow {
+    transform: translateY(1px);
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+    outline: none;
+}
+
 
 
 /* About Page */
@@ -380,77 +535,6 @@ body {
     
     background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1366px) {
     .header {
@@ -584,6 +668,3 @@ body {
         height: auto;
     }
 }
-
-
-
