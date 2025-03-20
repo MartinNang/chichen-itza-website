@@ -6,14 +6,13 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="chichen.css">
 
     <!-- Scripts-->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 </head>
-<body class="about-page">
+<body class="map-page">
 
     <div class="header">
         <a href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
@@ -40,18 +39,31 @@
      
 
      <!-- Content -->
-     <div class="content-wrapper">
-        <div class="about-us">
-            <h1>About us:</h1>
-            <p>We are a diverse group of international students from the Interactive Digital Media (IDM) master's program at Trinity College Dublin, with backgrounds in UX/UI design, programming, game design, and illustration, hailing from Korea, Vienna, Mexico, Ireland, and Japan.</p>
-            <p>Our program focuses on Human-Computer Interaction (HCI), equipping us with the skills to create engaging digital experiences. We have come together to develop an interactive learning platform that makes Chichén Itzá's history, astronomy, and architecture accessible and engaging for young students through digital multimedia. By leveraging our diverse skill sets and cultural backgrounds, we aim to create an immersive online experience that sparks curiosity, encourages exploration, and facilitates understanding of this ancient Mayan city's wonders, ultimately fostering a love for learning about world heritage sites and ancient civilizations.</p>
-        </div>
-    
-        <div class="informations">
+     <div class="content-wrapper-3D">
 
-            <img src="placeholder.jpeg" alt="" class="about-image">
- 
+        <div class="map-site-container-3D">
+            <h1>“El castillo”</h1>    
+            <p>Here's your chance to get a super close look at El Castillo, the amazing pyramid at Chichén Itzá! </p>
         </div>
+
+        <div class="instructions-image-container">
+            <div class="instructions">
+                <h2>Instructions</h2>
+                <p>1. Spin the castle around: Just click and drag your mouse on the model to spin it around.<br>
+                   2. Zoom in and out: Use your mouse wheel to zoom in and out. <br>
+                   3. Move the castle: Click and hold the right mouse button to grab the castle and move it around. <br>
+                   4. Explore different views: See those little squares with arrows on the sides of the model? Click on them to quickly move the castle and see it from different angles. <br>
+                   5. Reset the view: If you want to start over and see the castle from the beginning, just click the "Reset" button. It's like a magic undo button!</p>
+            </div>
+    
+            <!-- Image placed to the right of instructions -->
+            <model-viewer src="jinx.glb" alt="A 3D model" auto-rotate camera-controls ar id="3D Model"></model-viewer>
+        </div>
+        
+        
+
+        
+
     </div>
     
 

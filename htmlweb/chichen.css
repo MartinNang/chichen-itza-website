@@ -174,17 +174,18 @@ body {
     margin-top: 20px;
 }
 
-.media-container model-viewer {
-    width: 100%;
-    height: 280px;
-    border: 15px solid #FFCF68;
-    border-radius: 20px;
-    background-color: grey;
-}
-
 .media-container img {
     width: 190%;
-    max-width: 200%;
+    max-width: 150%;
+    height: auto;
+}
+
+.Image-Model img{
+    margin-left: -10px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400%;
+    padding-left: 30px;
     height: auto;
 }
 
@@ -649,6 +650,86 @@ width: 300px;
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* 3D model page */
+
+/* Ensure the container has a vertical layout */
+.content-wrapper-3D {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Space between sections */
+}
+
+/* Map site container remains as is */
+.map-site-container-3D {
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.map-site-container-3D h1 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.map-site-container-3D p {
+    margin-top: -20px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 10000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Flex container for instructions and image */
+.instructions-image-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    gap: 30px; /* Space between instructions and image */
+}
+
+/* Instructions section */
+.instructions {
+    margin-top: -40px;
+    color: white;
+    max-width: 500px;
+    margin-right: 100px;
+}
+
+.instructions h2 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 40px;
+    margin-bottom: -40px;
+}
+
+.instructions p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    background-color: #0C2E35;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Styling for image */
+.instructions-image-container model-viewer {
+    width: 800px; /* Adjust the width */
+    border: 15px solid #FFCF68;
+    height: 550px; /* Adjust the height */
+    border-radius: 20px; /* Optional: Rounded corners */
+    margin-top: -20px; /* Add space above the model */
+    background-color: white; /* Background color when model is not loaded */
+}
+
+
 
 
 
