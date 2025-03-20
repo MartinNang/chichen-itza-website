@@ -6,7 +6,10 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="chichen.css">
-
+    <link rel="stylesheet" type="text/css" href="css/history.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Scripts-->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
@@ -38,11 +41,11 @@
      
 
      <!-- Content -->
+     <div class="container">
      <div class="content-wrapper">
         <div class="greeting">
-            
             <div class="greeting-history">
-                <h1>The History of Chichén Itzá</h1>
+                <h1>The History of<br/> Chichén Itzá</h1>
                 <div class="quiz-button">
                     <a href="quiz.html">Play Quiz</a>
                 </div>
@@ -50,14 +53,49 @@
         </div>
     
         <div class="informations">
-            <div class="image-container">
-                <img src="placeholder.jpeg" alt="" class="history-image">
-            </div>
+            <!--<div class="image-container">
+            </div>-->
+            <img src="Images/history-timeline.png" alt="" class="history-image" width=4700 height="200">
+
+            <section class="history-text-container">
+                <article>
+                    <h2>2000 BC – 250 AC</h2>
+                    <p>Around this time founders of Chichen Itza began to regularly utilize the Sacred Cenote as a pilgrimage site.</p>
+                    <button class="question-button">What is the "Sacred Cenote"?</button>
+                </article>
+                <article>
+                    <h2>495 AC</h2>
+                    <p>First Maya settlers built a village and later created settlements with traditional thatched houses.</p>
+                    <button class="question-button">Traditional Maya Houses</button>
+
+                </article>
+                <article>
+                    <h2>600 - 1100 AC</h2>
+                    <p>Maya and Toltec people built amazing Puuc style temples, the famous pyramid, and played Pok-a-Tok ball game. Chichen Itza became very powerful!</p>
+                    <button class="question-button">What is the “Toltec Puuc Style”?</button>
+                </article>
+                <article>
+                    <h2>1250 AC</h2>
+                    <p>
+                        Most families moved away, but some people still came to pray at the magic water hole. 
+                    </p>
+                    <button class="question-button">What happened to Chichen Itza?</button>
+                </article>
+                <article>
+                    <h2>1579 AC</h2>
+                    <p>A man from Spain wrote down the name "Chichen Itza" in a book for the first time.</p>
+                    <button class="question-button">Who is the Spanish man?</button>
+
+                </article>
+
+                <article>
+                    <h2>Today</h2>
+                    <p>Now Chichen Itza is one of the most famous old places in the world! Lots of people visit every year to see the amazing buildings!</p>
+                </article>
+            </section>
         </div>
-    </div>
-    
+        </div>
 
-
-      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>      
 </body>
 </html>
