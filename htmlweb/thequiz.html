@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="chichen.css">
+
+    <!-- Scripts-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+
+</head>
+<body class="quiz-page">
+
+    <div class="header">
+        <a href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
+        
+        <!-- Nav bar -->
+     <div class="navbar">
+        <nav>
+            <a href="history.html">History</a>
+            <a href="map.html">Map</a>
+            <span></span>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+        </nav>
+     </div>
+
+     
+
+    <!-- Language button -->
+     <div class="languageOption">
+        <button id="lngOption"><img src="Images/Language_ENG.png" alt="ENG Button Image"></button>
+     </div>
+    </div>
+    
+     
+
+     <!-- Content -->
+     
+     <div class="quiz-container">
+        <h2>History Quiz</h2>
+        <div id="question-container">
+            <div class="question-box" id="q1">
+                <div class="question">1. Placeholder</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q1', 'A', this)">A) Placeholder</button>
+                    <button onclick="checkAnswer('q1', 'B', this)">B) Placeholder</button>
+                    <button onclick="checkAnswer('q1', 'C', this)">C) Placeholder</button>
+                    <button onclick="checkAnswer('q1', 'D', this)">D) Placeholder</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q2">
+                <div class="question">2. Placeholder</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q2', 'A', this)">A) Placeholder</button>
+                    <button onclick="checkAnswer('q2', 'B', this)">B) Placeholder</button>
+                    <button onclick="checkAnswer('q2', 'C', this)">C) Placeholder</button>
+                    <button onclick="checkAnswer('q2', 'D', this)">D) Placeholder</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q3">
+                <div class="question">3. Placeholder</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q3', 'A', this)">A) Placeholder</button>
+                    <button onclick="checkAnswer('q3', 'B', this)">B) Placeholder</button>
+                    <button onclick="checkAnswer('q3', 'C', this)">C) Placeholder</button>
+                    <button onclick="checkAnswer('q3', 'D', this)">D) Placeholder</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q4">
+                <div class="question">4. Placeholder</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q4', 'A', this)">A) Placeholder</button>
+                    <button onclick="checkAnswer('q4', 'B', this)">B) Placeholder</button>
+                    <button onclick="checkAnswer('q4', 'C', this)">C) Placeholder</button>
+                    <button onclick="checkAnswer('q4', 'D', this)">D) Placeholder</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q5">
+                <div class="question">5. Placeholder</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q5', 'A', this)">A) Placeholder</button>
+                    <button onclick="checkAnswer('q5', 'B', this)">B) Placeholder</button>
+                    <button onclick="checkAnswer('q5', 'C', this)">C) Placeholder</button>
+                    <button onclick="checkAnswer('q5', 'D', this)">D) Placeholder</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-container" class="hidden">
+            <h3 id="result-text"></h3>
+            <button id="retry-btn" onclick="restartQuiz()">Try Again</button>
+            <button id="download-btn" onclick="downloadCertificate()">Download Certificate</button>
+        </div>
+    </div>
+
+    <div class="popup" id="congrats-popup">
+        <img src="Images/History_Quiz_Certification.png" alt="Celebration">
+        <br>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    
+    <script src="quiz.js"></script>
+
+      
+</body>
+</html>

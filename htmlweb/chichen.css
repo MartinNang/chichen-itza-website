@@ -40,7 +40,7 @@ body {
     width: 250px; /* Adjust size as needed */
     position: absolute;
     top: 10px; /* Adjust as needed */
-    left: 53%;
+    left: 55.5%;
     transform: translateX(-50%); /* Ensures it's perfectly centered */
     z-index: 1001; /* Ensures it stays above the navbar */
 }
@@ -49,7 +49,7 @@ body {
 .navbar {
     position: fixed;
     top: 10px;
-    left: 20%;
+    left: 25%;
     right: 15%;
     padding: 20px;
     border-radius: 20px;
@@ -245,7 +245,7 @@ body {
     letter-spacing: 1.5px;
 }
 
-.greeting-quiz button {
+.greeting-quiz a {
     display: inline-block;
     padding: 10px 60px;
     text-decoration: none;
@@ -539,6 +539,257 @@ width: 300px;
     
     background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
   }
+
+
+  /* The Quiz Page */
+.quiz-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+
+    margin-top: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    border: 10px solid #68aeff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.quiz-container h2{
+    font-family: 'DynaPuff', cursive;
+}
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.options button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 100%;
+}
+.options button:hover {
+    background: #ddd;
+}
+.correct {
+    background: #28a745 !important;
+    color: white !important;
+}
+.wrong {
+    background: #dc3545 !important;
+    color: white !important;
+    animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.hidden {
+    display: none;
+}
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1002;
+}
+.popup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.popup button {
+    margin-top: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#retry-btn {
+    display: none;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#download-btn {
+    display: none;
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1366px) {
     .header {
