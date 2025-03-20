@@ -720,7 +720,7 @@ width: 300px;
 }
 
 /* Styling for image */
-.instructions-image-container model-viewer {
+.sketchfab-embed-wrapper iframe{
     width: 800px; /* Adjust the width */
     border: 15px solid #FFCF68;
     height: 550px; /* Adjust the height */
