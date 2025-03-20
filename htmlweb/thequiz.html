@@ -43,7 +43,7 @@
      <!-- Content -->
      
      <div class="quiz-container">
-        <h2>History Quiz</h2>
+        <h2 id="question-title">Question 1/<span class="small-number">5</span></h2>
         <div id="question-container">
             <div class="question-box" id="q1">
                 <div class="question">1. Placeholder</div>
@@ -95,19 +95,45 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="result-container" class="hidden">
-            <h3 id="result-text"></h3>
-            <button id="retry-btn" onclick="restartQuiz()">Try Again</button>
-            <button id="download-btn" onclick="downloadCertificate()">Download Certificate</button>
+    <div class="winner">
+        <div class="content-wrapper">
+            <div class="Congratulations">
+                <h1>Congratulations!</h1>
+                <h2>You scored 5/5</h2>
+                <p>Great job! You finished the test and answered all questions correctly. Download your certificate of participation below to celebrate!</p>
+                <button onclick="downloadCertificate()">Get Your Certificate <img src="Images/download.png" style="float:right;width: 7%;margin-left: -30px;"></button>
+                <a href="history.html">Back to History Page</a>
+                
+            </div>
+        
+            <div class="Congratulations-image">
+    
+                <img src="placeholder.jpeg" alt="" class="winner-image">
+     
+            </div>
         </div>
-    </div>
+      </div>
 
-    <div class="popup" id="congrats-popup">
-        <img src="Images/History_Quiz_Certification.png" alt="Celebration">
-        <br>
-        <button onclick="closePopup()">Close</button>
-    </div>
+    <div class="loser">
+        <div class="content-wrapper">
+            <div class="Congratulations">
+                <h1>You’re getting there!</h1>
+                <h2 id="result-text">You scored ?/5</h2>
+                <p>You still have a way to go on your journey to becoming an expert on Chichén Itzá. Check out our History page to learn more!</p>
+                <a href="history.html">Back to History Page</a>
+                
+            </div>
+        
+            <div class="Congratulations-image">
+    
+                <img src="placeholder.jpeg" alt="" class="winner-image">
+     
+            </div>
+        </div>
+      </div>
+    
     
     <script src="quiz.js"></script>
 

@@ -1,81 +1,80 @@
 let currentQuestion = 1;
-        const totalQuestions = 5;
-        const answers = {};
-        const correctAnswers = { q1: "C", q2: "B", q3: "B", q4: "B", q5: "B" };  // Updated correct answers
-        let correctCount = 0;
+const totalQuestions = 5;
+let correctCount = 0;
 
-        function checkAnswer(question, selectedAnswer, btn) {
-            let isCorrect = correctAnswers[question] === selectedAnswer;
+const correctAnswers = {
+    q1: "C",
+    q2: "B",
+    q3: "B",
+    q4: "B",
+    q5: "B"
+};
 
-            let buttons = btn.parentElement.querySelectorAll("button");
-            buttons.forEach(b => b.disabled = true);
+// Hide all questions initially except the first one
+document.addEventListener("DOMContentLoaded", () => {
+    for (let i = 1; i <= totalQuestions; i++) {
+        document.getElementById("q" + i).classList.add("hidden");
+    }
+    document.getElementById("q1").classList.remove("hidden");
+});
 
-            if (isCorrect) {
-                btn.classList.add("correct");
-                confettiEffect(btn);
-                correctCount++;
-                setTimeout(nextQuestion, 1000);
-            } else {
-                btn.classList.add("wrong");
-                setTimeout(() => {
-                    btn.classList.remove("wrong");
-                    nextQuestion();
-                }, 1000);
-            }
-        }
+function checkAnswer(question, selectedAnswer, btn) {
+    let isCorrect = correctAnswers[question] === selectedAnswer;
 
-        function nextQuestion() {
-            if (currentQuestion < totalQuestions) {
-                document.getElementById("q" + currentQuestion).classList.add("hidden");
-                currentQuestion++;
-                document.getElementById("q" + currentQuestion).classList.remove("hidden");
-            } else {
-                showFinalResult();
-            }
-        }
+    let buttons = btn.parentElement.querySelectorAll("button");
+    buttons.forEach(b => b.disabled = true);
 
-        function confettiEffect(btn) {
-            let rect = btn.getBoundingClientRect();
-            let x = rect.left + rect.width / 2;
-            let y = rect.top + rect.height / 2;
+    if (isCorrect) {
+        btn.classList.add("correct");
+        confettiEffect(btn);
+        correctCount++;
+    } else {
+        btn.classList.add("wrong");
+    }
 
-            confetti({
-                particleCount: 100,
-                spread: 70,
-                origin: { x: x / window.innerWidth, y: y / window.innerHeight }
-            });
-        }
+    setTimeout(nextQuestion, 1000);
+}
 
-        function showFinalResult() {
-            document.getElementById("question-container").classList.add("hidden");
-            document.getElementById("result-container").classList.remove("hidden");
+function nextQuestion() {
+    if (currentQuestion <= totalQuestions) {
+        document.getElementById("q" + currentQuestion).classList.add("hidden");
+    }
+    currentQuestion++;
 
-            let resultText = `Nearly there! You got ${correctCount}/${totalQuestions} questions correct!`;
-            document.getElementById("result-text").innerText = resultText;
+    if (currentQuestion <= totalQuestions) {
+        document.getElementById("q" + currentQuestion).classList.remove("hidden");
+        document.getElementById("question-title").innerHTML = `Question ${currentQuestion}/<span class='small-number'>${totalQuestions}</span>`;
+    } else {
+        showResults();
+    }
+}
 
-            // If all answers are correct, show the congrats popup
-            if (correctCount === totalQuestions) {
-                document.getElementById("congrats-popup").style.display = "block";
-                let resultText = `Congratulations! 🎉 You got all of them correct!`;
-                document.getElementById("result-text").innerText = resultText;
-                document.getElementById("download-btn").style.display = "inline-block";
-            } else {
-                // If not all answers are correct, show the "Try Again" button
-                document.getElementById("retry-btn").style.display = "inline-block";
-            }
-        }
+function showResults() {
+    document.querySelector(".quiz-container").style.display = "none";
 
-        function restartQuiz() {
-            location.reload();
-        }
+    if (correctCount === totalQuestions) {
+        document.querySelector(".winner").style.display = "block";
+    } else {
+        document.querySelector(".loser").style.display = "block";
+        document.getElementById("result-text").textContent = `You scored ${correctCount}/5`;
+    }
+}
 
-        function closePopup() {
-            document.getElementById("congrats-popup").style.display = "none";
-        }
+function confettiEffect(btn) {
+    let rect = btn.getBoundingClientRect();
+    let x = rect.left + rect.width / 2;
+    let y = rect.top + rect.height / 2;
 
-        function downloadCertificate() {
-            const link = document.createElement('a');
-            link.href = 'Images/History_Quiz_Certification.png';
-            link.download = 'History_Quiz_Certification.png';
-            link.click();
-        }
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x: x / window.innerWidth, y: y / window.innerHeight }
+    });
+}
+
+function downloadCertificate() {
+    const link = document.createElement('a');
+    link.href = 'Images/History_Quiz_Certification.png';
+    link.download = 'History_Quiz_Certification.png';
+    link.click();
+}

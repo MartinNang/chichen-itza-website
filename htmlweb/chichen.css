@@ -39,7 +39,7 @@ body {
     margin: 0 auto; /* Centers the logo */
     width: 250px; /* Adjust size as needed */
     position: absolute;
-    top: 10px; /* Adjust as needed */
+    top: 0px; /* Adjust as needed */
     left: 55.5%;
     transform: translateX(-50%); /* Ensures it's perfectly centered */
     z-index: 1001; /* Ensures it stays above the navbar */
@@ -49,9 +49,9 @@ body {
 .navbar {
     position: fixed;
     top: 10px;
-    left: 25%;
-    right: 15%;
-    padding: 20px;
+    left: 12%;
+    right: 0%;
+    padding: 25px;
     border-radius: 20px;
     background-color: #0C2E35;
     z-index: 1000;
@@ -66,7 +66,7 @@ body {
 
 .navbar nav a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 0 30px;
     text-decoration: none;
     text-align: center;
@@ -77,7 +77,7 @@ body {
     border-radius: 10px;
     background-color: #E00096;
     box-shadow: 0 4px 0px #FF8ED9;
-    min-width: 80px;
+    min-width: 120px;
 }
 
 .navbar nav a:hover {
@@ -88,8 +88,8 @@ body {
 /* Language Option */
 .languageOption {
     position: fixed;
-    top: 40px;
-    right: 50px;
+    top: 45px;
+    right: -150px;
     z-index: 1000;
 }
 
@@ -499,7 +499,7 @@ width: 300px;
     width: 110%;
     height: 500px;
     border: 15px solid #dc68ff;
-        border-radius: 20px;
+    border-radius: 20px;
 }
 
 /* Card CSS */
@@ -545,40 +545,57 @@ width: 300px;
   /* The Quiz Page */
 .quiz-container {
     font-family: 'Poppins', sans-serif;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #f4f4f4;
     text-align: center;
-
-    margin-top: 400px;
-    background: white;
+    color: white;
+    margin-top: 200px;
     padding: 20px;
-    border-radius: 30px;
-    border: 10px solid #68aeff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .quiz-container h2{
+    text-align: left;
     font-family: 'DynaPuff', cursive;
+    font-size: 70px;
+    margin-bottom: 30px;
 }
+
+.small-number {
+    font-size: 0.5em; 
+}
+
 .question {
     font-size: 18px;
+    padding: 120px;
     font-weight: bold;
     margin-bottom: 50px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    border: 10px solid #FFCF68;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px;
+    margin-top: 120px;
     margin-bottom: 20px;
 }
+
 .options button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    font-family: 'DynaPuff', cursive;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #000000;
+    border-radius: 60px;
     background: #f9f9f9;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 40px;
+    box-shadow: 0 4px 0px #424242;
     transition: 0.3s;
     width: 100%;
 }
@@ -601,55 +618,107 @@ width: 300px;
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
 }
+
+.Congratulations{
+    width: 60%;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.Congratulations h1{
+    font-family: 'DynaPuff', cursive;
+    font-size: 60px;
+    margin-bottom: -15px;
+}
+
+.Congratulations h2{
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+}
+
+.Congratulations p{
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 600px;
+}
+
+.Congratulations button{
+    font-family: 'DynaPuff', cursive;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #000000;
+    border-radius: 60px;
+    background: #f9f9f9;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 4px 0px #424242;
+    transition: 0.3s;
+    max-width: 400px;
+}
+
+.Congratulations button:hover{
+    background: #ddd;
+}
+
+.Congratulations a{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 60px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    min-width: 80px;
+    background-color: #3579e0;
+    box-shadow: 0 4px 0px #1f54a4; 
+    width: 400px;
+
+}
+
+.Congratulations-image{
+    width: 45%;
+    font-size: 16px;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.winner-image{
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    border: 15px solid #FFCF68;
+    border-radius: 40px;
+}
+
 .hidden {
     display: none;
 }
-/* Popup styles */
-.popup {
+
+.winner{
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: center;
-    z-index: 1002;
+    margin-top: 250px;
 }
-.popup img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-.popup button {
-    margin-top: 10px;
-    background: #dc3545;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-#retry-btn {
+
+.loser{
     display: none;
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-top: 250px;
 }
-#download-btn {
-    display: none;
-    background: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
+
+
+
+
+
+
 
 /* 3D model page */
 
