@@ -39,7 +39,7 @@ body {
     margin: 0 auto; /* Centers the logo */
     width: 250px; /* Adjust size as needed */
     position: absolute;
-    top: 10px; /* Adjust as needed */
+    top: 0px; /* Adjust as needed */
     left: 55.5%;
     transform: translateX(-50%); /* Ensures it's perfectly centered */
     z-index: 1001; /* Ensures it stays above the navbar */
@@ -49,9 +49,9 @@ body {
 .navbar {
     position: fixed;
     top: 10px;
-    left: 25%;
-    right: 15%;
-    padding: 20px;
+    left: 12%;
+    right: 0%;
+    padding: 25px;
     border-radius: 20px;
     background-color: #0C2E35;
     z-index: 1000;
@@ -66,7 +66,7 @@ body {
 
 .navbar nav a {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 0 30px;
     text-decoration: none;
     text-align: center;
@@ -77,7 +77,7 @@ body {
     border-radius: 10px;
     background-color: #E00096;
     box-shadow: 0 4px 0px #FF8ED9;
-    min-width: 80px;
+    min-width: 120px;
 }
 
 .navbar nav a:hover {
@@ -88,8 +88,8 @@ body {
 /* Language Option */
 .languageOption {
     position: fixed;
-    top: 40px;
-    right: 50px;
+    top: 45px;
+    right: -150px;
     z-index: 1000;
 }
 
@@ -174,17 +174,18 @@ body {
     margin-top: 20px;
 }
 
-.media-container model-viewer {
-    width: 100%;
-    height: 280px;
-    border: 15px solid #FFCF68;
-    border-radius: 20px;
-    background-color: grey;
-}
-
 .media-container img {
     width: 190%;
-    max-width: 200%;
+    max-width: 150%;
+    height: auto;
+}
+
+.Image-Model img{
+    margin-left: -10px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400%;
+    padding-left: 30px;
     height: auto;
 }
 
@@ -499,7 +500,7 @@ width: 300px;
     width: 110%;
     height: 500px;
     border: 15px solid #dc68ff;
-        border-radius: 20px;
+    border-radius: 20px;
 }
 
 /* Card CSS */
@@ -545,40 +546,57 @@ width: 300px;
   /* The Quiz Page */
 .quiz-container {
     font-family: 'Poppins', sans-serif;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #f4f4f4;
     text-align: center;
-
-    margin-top: 400px;
-    background: white;
+    color: white;
+    margin-top: 200px;
     padding: 20px;
-    border-radius: 30px;
-    border: 10px solid #68aeff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .quiz-container h2{
+    text-align: left;
     font-family: 'DynaPuff', cursive;
+    font-size: 70px;
+    margin-bottom: 30px;
 }
+
+.small-number {
+    font-size: 0.5em; 
+}
+
 .question {
     font-size: 18px;
+    padding: 120px;
     font-weight: bold;
     margin-bottom: 50px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    border: 10px solid #FFCF68;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .options {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px;
+    margin-top: 120px;
     margin-bottom: 20px;
 }
+
 .options button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    font-family: 'DynaPuff', cursive;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #000000;
+    border-radius: 60px;
     background: #f9f9f9;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 40px;
+    box-shadow: 0 4px 0px #424242;
     transition: 0.3s;
     width: 100%;
 }
@@ -601,55 +619,187 @@ width: 300px;
     75% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
 }
+
+.Congratulations{
+    width: 60%;
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    max-width: 700px;
+    margin-top: 30px;
+}
+
+.Congratulations h1{
+    font-family: 'DynaPuff', cursive;
+    font-size: 60px;
+    margin-bottom: -15px;
+}
+
+.Congratulations h2{
+    font-family: 'DynaPuff', cursive;
+    font-size: 30px;
+}
+
+.Congratulations p{
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 600px;
+}
+
+.Congratulations button{
+    font-family: 'DynaPuff', cursive;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #000000;
+    border-radius: 60px;
+    background: #f9f9f9;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 4px 0px #424242;
+    transition: 0.3s;
+    max-width: 400px;
+}
+
+.Congratulations button:hover{
+    background: #ddd;
+}
+
+.Congratulations a{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 60px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: 'DynaPuff', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    min-width: 80px;
+    background-color: #3579e0;
+    box-shadow: 0 4px 0px #1f54a4; 
+    width: 400px;
+
+}
+
+.Congratulations-image{
+    width: 45%;
+    font-size: 16px;
+    text-align: right;
+    padding-top: 30px;
+}
+
+.winner-image{
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    border: 15px solid #FFCF68;
+    border-radius: 40px;
+}
+
 .hidden {
     display: none;
 }
-/* Popup styles */
-.popup {
+
+.winner{
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 250px;
+}
+
+.loser{
+    display: none;
+    margin-top: 250px;
+}
+
+
+
+
+
+
+
+
+/* 3D model page */
+
+/* Ensure the container has a vertical layout */
+.content-wrapper-3D {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Space between sections */
+}
+
+/* Map site container remains as is */
+.map-site-container-3D {
+    padding-top: 200px;
+    color: white;
     text-align: center;
-    z-index: 1002;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
-.popup img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+
+.map-site-container-3D h1 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 50px;
+    margin-top: 50px;
 }
-.popup button {
-    margin-top: 10px;
-    background: #dc3545;
+
+.map-site-container-3D p {
+    margin-top: -20px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    max-width: 10000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Flex container for instructions and image */
+.instructions-image-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    gap: 30px; /* Space between instructions and image */
+}
+
+/* Instructions section */
+.instructions {
+    margin-top: -40px;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    max-width: 500px;
+    margin-right: 100px;
 }
-#retry-btn {
-    display: none;
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.instructions h2 {
+    font-family: 'DynaPuff', cursive;
+    font-size: 40px;
+    margin-bottom: -40px;
 }
-#download-btn {
-    display: none;
-    background: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.instructions p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    background-color: #0C2E35;
+    padding: 30px;
+    border-radius: 20px;
 }
+
+/* Styling for image */
+.sketchfab-embed-wrapper iframe{
+    width: 800px; /* Adjust the width */
+    border: 15px solid #FFCF68;
+    height: 550px; /* Adjust the height */
+    border-radius: 20px; /* Optional: Rounded corners */
+    margin-top: -20px; /* Add space above the model */
+    background-color: white; /* Background color when model is not loaded */
+}
+
+
 
 
 

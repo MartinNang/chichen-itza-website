@@ -11,9 +11,10 @@
 
     <!-- Scripts-->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
 
 </head>
-<body class="about-page">
+<body class="quiz-page">
 
     <div class="header">
         <a href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
@@ -32,6 +33,7 @@
      
 
     <!-- Language button -->
+     <!-- Language button -->
      <div class="languageOption">
         <button id="lngOption"><img src="Images/Language_ENG.png" alt="ENG Button Image"></button>
      </div>
@@ -40,21 +42,24 @@
      
 
      <!-- Content -->
-     <div class="content-wrapper">
-        <div class="about-us">
-            <h1>About us:</h1>
-            <p>We are a diverse group of international students from the Interactive Digital Media (IDM) master's program at Trinity College Dublin, with backgrounds in UX/UI design, programming, game design, and illustration, hailing from Korea, Vienna, Mexico, Ireland, and Japan.</p>
-            <p>Our program focuses on Human-Computer Interaction (HCI), equipping us with the skills to create engaging digital experiences. We have come together to develop an interactive learning platform that makes Chichén Itzá's history, astronomy, and architecture accessible and engaging for young students through digital multimedia. By leveraging our diverse skill sets and cultural backgrounds, we aim to create an immersive online experience that sparks curiosity, encourages exploration, and facilitates understanding of this ancient Mayan city's wonders, ultimately fostering a love for learning about world heritage sites and ancient civilizations.</p>
-        </div>
+      <div class="loser">
+        <div class="content-wrapper">
+            <div class="Congratulations">
+                <h1>You’re getting there!</h1>
+                <h2 id="result-text">You scored ?/5</h2>
+                <p>You still have a way to go on your journey to becoming an expert on Chichén Itzá. Check out our History page to learn more!</p>
+                <a href="history.html">Back to History Page</a>
+                
+            </div>
+        
+            <div class="Congratulations-image">
     
-        <div class="informations">
-
-            <img src="placeholder.jpeg" alt="" class="about-image">
- 
+                <img src="placeholder.jpeg" alt="" class="winner-image">
+     
+            </div>
         </div>
-    </div>
-    
-
+      </div>
+     
 
       
 </body>
