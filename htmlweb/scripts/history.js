@@ -41,13 +41,6 @@ function scrollTo() {
   historyElement.scrollIntoView({ block: "nearest", behavior: "smooth" });
 }
 
-const history1 = document.querySelector(".history-1");
-const history2 = document.querySelector(".history-2");
-const history3 = document.querySelector(".history-3");
-const history4 = document.querySelector(".history-4");
-const history5 = document.querySelector(".history-5");
-const history6 = document.querySelector(".history-6");
-
 function showPopup(button) {
   const popUp = button.parentNode.getElementsByClassName("info-popup")[0];
   if (popUp) {
