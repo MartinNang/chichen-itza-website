@@ -1,1079 +1,954 @@
 body {
-    background: rgb(174, 213, 174) url("Images/Background_home.png") no-repeat center/cover fixed;
-    font-family: 'Poppins', sans-serif;
+  background: rgb(174, 213, 174) url("Images/Background_home.png") no-repeat
+    center/cover fixed;
+  font-family: "Poppins", sans-serif !important;
 }
 
-.history-page{
-    background: rgb(174, 213, 174) url("Images/history-bg.png") no-repeat center/cover fixed;
+.history-page {
+  background: rgb(14, 112, 238);
+  margin: 0;
 }
 
-.quiz-page{
-    background: rgb(174, 213, 174) url("Images/quiz_start.png") no-repeat center/cover fixed;
+.quiz-page {
+  background: rgb(174, 213, 174) url("Images/quiz_start.png") no-repeat
+    center/cover fixed;
 }
 
-.map-page{
-    background: rgb(174, 213, 174) url("Images/map_bg.png") no-repeat center/cover fixed;
+.map-page {
+  background: rgb(174, 213, 174) url("Images/map_bg.png") no-repeat center/cover
+    fixed;
 }
 
-.about-page{
-    background: rgb(174, 213, 174) url("Images/about.bg.png") no-repeat center/cover fixed;
+.about-page {
+  background: rgb(174, 213, 174) url("Images/about.bg.png") no-repeat
+    center/cover fixed;
 }
 
-.gallery-page{
-    background: rgb(174, 213, 174) url("Images/gallery_bg.png") no-repeat center/cover fixed;
+.gallery-page {
+  background: rgb(174, 213, 174) url("Images/gallery_bg.png") no-repeat
+    center/cover fixed;
 }
 
 /* Header */
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 90%;
-    padding: 55px;
-    backdrop-filter: blur(5px);
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 55px;
+  backdrop-filter: blur(5px);
+  z-index: 999;
 }
 
 .logo {
-    display: block;
-    margin: 0 auto; /* Centers the logo */
-    width: 250px; /* Adjust size as needed */
-    position: absolute;
-    top: 0px; /* Adjust as needed */
-    left: 55.5%;
-    transform: translateX(-50%); /* Ensures it's perfectly centered */
-    z-index: 1001; /* Ensures it stays above the navbar */
+  display: block;
+  margin: 0 auto; /* Centers the logo */
+  width: 250px; /* Adjust size as needed */
+  position: absolute;
+  top: 0px; /* Adjust as needed */
+  left: 55.5%;
+  transform: translateX(-50%); /* Ensures it's perfectly centered */
+  z-index: 1001; /* Ensures it stays above the navbar */
 }
 
 /* Navbar */
 .navbar {
-    position: fixed;
-    top: 10px;
-    left: 12%;
-    right: 0%;
-    padding: 25px;
-    border-radius: 20px;
-    background-color: #0C2E35;
-    z-index: 1000;
+  position: fixed;
+  top: 10px;
+  left: 12%;
+  right: 0%;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: #0c2e35;
+  z-index: 1000;
 }
 
 .navbar nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
 }
 
 .navbar nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 30px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-family: 'DynaPuff', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: #E00096;
-    box-shadow: 0 4px 0px #FF8ED9;
-    min-width: 120px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 30px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "DynaPuff", cursive !important;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #e00096;
+  box-shadow: 0 4px 0px #ff8ed9;
+  min-width: 120px;
 }
 
 .navbar nav a:hover {
-    background-color: #FF8ED9;
-    box-shadow: 0 4px 0px #E00096;
+  background-color: #ff8ed9;
+  box-shadow: 0 4px 0px #e00096;
 }
 
 /* Language Option */
 .languageOption {
-    position: fixed;
-    top: 45px;
-    right: -150px;
-    z-index: 1000;
+  position: fixed;
+  top: 45px;
+  right: -150px;
+  z-index: 1000;
 }
 
 .languageOption button {
-    margin: -10px 0 0 -100px;
-    font-family: sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+  margin: -10px 0 0 -100px;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
-.languageOption button:hover{
-    background-color: rgba(117, 117, 117, 0.5);
-    border-radius: 20px;
-    
+.languageOption button:hover {
+  background-color: rgba(117, 117, 117, 0.5);
+  border-radius: 20px;
 }
 
 /* Content Wrapper */
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 200px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 200px auto 30px;
 }
 
 /* Greeting Section */
 .greeting {
-    width: 45%;
-    color: white;
-    font-size: 30px;
-    text-align: left;
-    max-width: 700px;
-    margin-top: -80px;
+  width: 45%;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  max-width: 700px;
+  margin-top: -80px;
 }
 
 .greeting h1 {
-    font-size: 80px;
-    font-family: 'DynaPuff', cursive;
+  font-size: 80px;
+  font-family: "DynaPuff", cursive !important;
 }
 
 .greeting h3 {
-    margin-bottom: -40px;
+  margin-bottom: -40px;
 }
 
 .greeting p {
-    margin-top: -40px;
-    font-size: 30px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
+  margin-top: -40px;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 
 /* Informations Section */
 .informations {
-    width: 45%;
-    font-size: 29px;
-    text-align: right;
-    padding-top: 30px;
+  width: 45%;
+  font-size: 29px;
+  text-align: right;
+  padding-top: 30px;
 }
 
 .informations h2 {
-    color: white;
-    font-weight: bold;
-    font-family: 'DynaPuff', cursive;
-    margin: 10px -80px 10px 10px;
-    text-align: right;
+  color: white;
+  font-weight: bold;
+  font-family: "DynaPuff", cursive !important;
+  margin: 10px -80px 10px 10px;
+  text-align: right;
 }
 
 /* Map Container */
 .map-container img {
-    width: 115%;
-    height: 330px;
-    border: 15px solid #FFCF68;
-    border-radius: 20px;
+  width: 115%;
+  height: 330px;
+  border: 15px solid #ffcf68;
+  border-radius: 20px;
 }
 
 /* Media Container */
 .media-container {
-    display: flex;
-    gap: 0px;
-    margin-top: 20px;
+  display: flex;
+  gap: 0px;
+  margin-top: 20px;
 }
 
 .media-container img {
-    width: 190%;
-    max-width: 150%;
-    height: auto;
+  width: 190%;
+  max-width: 150%;
+  height: auto;
 }
 
-.Image-Model img{
-    margin-left: -10px;
-    margin-top: 30px;
-    width: 100%;
-    max-width: 400%;
-    padding-left: 30px;
-    height: auto;
+.Image-Model img {
+  margin-left: -10px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 400%;
+  padding-left: 30px;
+  height: auto;
 }
-
 
 /* History Page */
-.quiz-button a{
-    display: inline-block;
-    padding: 10px 60px;
-    margin: 0 30px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-family: 'DynaPuff', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 10px;
-    background-color: #FF8ED9;
-    box-shadow: 0 4px 0px #fe5fc9;  
-    min-width: 80px;
+.quiz-button a {
+  display: inline-block;
+  padding: 10px 60px;
+  margin: 0 30px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #e00096;
+  box-shadow: 0 4px 0px #fe5fc9;
+  min-width: 80px;
 }
 
-.history-image{
-    height: 250px;
-    width: 3000px;
-    border-radius: 33px;
+.quiz-button a:hover {
+  background-color: #fe5fc9;
+  box-shadow: 0 4px 0px #e00096;
 }
 
-.greeting-history{
-    margin-top: 350px;
-    margin-left: 100px;
+.history-image {
+  height: 250px;
+  width: 3000px;
+  border-radius: 33px;
 }
 
+.greeting-history {
+  margin-top: 350px;
+  margin-left: 100px;
+}
 
 /* Quiz Page */
 
-.greeting-quiz{
-    width: 45%;
-    color: white;
-    font-size: 15px;
-    text-align: left;
-    max-width: 700px;
-    margin-top: -180px;
+.greeting-quiz {
+  width: 45%;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  max-width: 700px;
+  margin-top: -180px;
 }
 
-.greeting-quiz h1{
-    font-family: 'DynaPuff', cursive;
-    font-size: 80px;
+.greeting-quiz h1 {
+  font-family: "DynaPuff", cursive;
+  font-size: 80px;
 }
 
-.greeting-quiz h3{
-    margin-top: -40px;
-    font-family: 'DynaPuff', cursive;
-    font-size: 30px;
+.greeting-quiz h3 {
+  margin-top: -40px;
+  font-family: "DynaPuff", cursive;
+  font-size: 30px;
 }
 
-.greeting-quiz p{
-    font-size: 30px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
+.greeting-quiz p {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 
 .greeting-quiz a {
-    display: inline-block;
-    padding: 10px 60px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-family: 'DynaPuff', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    min-width: 80px;
-    background-color: #3579e0;
-    box-shadow: 0 4px 0px #1f54a4;  
+  display: inline-block;
+  padding: 10px 60px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  min-width: 80px;
+  background-color: #3579e0;
+  box-shadow: 0 4px 0px #1f54a4;
 }
 
-.quiz-image-container{
-    width: 80%;
-    height: 80%;
+.quiz-image-container {
+  width: 80%;
+  height: 80%;
 }
-
 
 /* Map Page */
 
 .map-site-container {
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content; /* Adjust the width as needed */
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; /* Adjust the width as needed */
 }
 
 .map-site-container h1 {
-    font-family: 'DynaPuff', cursive;
-    font-size: 50px;
-    margin-top: 50px;
+  font-family: "DynaPuff", cursive;
+  font-size: 50px;
+  margin-top: 50px;
 }
 
 .map-site-container p {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.map-site-container img{
-    margin-top: 20px;
-    width: 100%;
+.map-site-container img {
+  margin-top: 20px;
+  width: 100%;
 }
-
 
 /* Gallery Page - Fixed */
 
 #carousel {
-    position: relative;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-    margin: 250px auto 0; /* Pushes carousel below navbar */
-    overflow: hidden;
-    z-index: 1000;
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: 250px auto 0; /* Pushes carousel below navbar */
+  overflow: hidden;
+  z-index: 1000;
 }
 
 #carousel div {
-    position: absolute;
-    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
-    opacity: 1;
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 1;
 }
 
 #carousel div img {
-    width: 400px;
-    transition: width 400ms;
-     -webkit-user-drag: none;
-     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-     border-radius: 10px;
+  width: 400px;
+  transition: width 400ms;
+  -webkit-user-drag: none;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
 }
 
 /* Positioning Items */
 #carousel div.hideLeft {
-    left: 0%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
 }
 
 #carousel div.hideLeft img {
-    width: 200px;
+  width: 200px;
 }
 
 #carousel div.hideRight {
-    left: 100%;
-    opacity: 0;
-    transform: translateY(50%) translateX(-50%);
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
 }
 
 #carousel div.hideRight img {
-    width: 200px;
+  width: 200px;
 }
 
 #carousel div.prev {
-    z-index: 5;
-    left: 30%;
-    transform: translateY(50px) translateX(-50%);
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
 }
 
 #carousel img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #carousel div.prev img {
-width: 300px;
+  width: 300px;
 }
 
 #carousel div.prevLeftSecond {
-    z-index: 4;
-    left: 15%;
-    transform: translateY(50%) translateX(-50%);
-    opacity: 0.7;
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
 }
 
 #carousel div.prevLeftSecond img {
-    width: 200px;
+  width: 200px;
 }
 
 #carousel div.selected {
-    z-index: 10;
-    left: 50%;
-    transform: translateY(0px) translateX(-50%);
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
 }
 
 #carousel div.next {
-    z-index: 5;
-    left: 70%;
-    transform: translateY(50px) translateX(-50%);
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
 }
 
 #carousel div.next img {
-    width: 300px;
+  width: 300px;
 }
 
 #carousel div.nextRightSecond {
-    z-index: 4;
-    left: 85%;
-    transform: translateY(50%) translateX(-50%);
-    opacity: 0.7;
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
 }
 
 #carousel div.nextRightSecond img {
-    width: 200px;
+  width: 200px;
 }
 
 /* Buttons Styling */
 
 .buttons {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 100px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
 }
 
 .button-82-pushable {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
-    transition: filter 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
 .button-82-shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    transform: translateY(2px);
-    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
 .button-82-front {
-    display: block;
-    position: relative;
-    padding: 12px 27px;
-    border-radius: 12px;
-    font-family: 'DynaPuff', cursive;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
-    background: #E00096;
-    will-change: transform;
-    transform: translateY(-4px);
-    transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-family: "DynaPuff", cursive;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: #e00096;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
 .button-82-pushable:hover .button-82-front {
-    transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .button-82-pushable:active .button-82-front {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .button-82-pushable:hover .button-82-shadow {
-    transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .button-82-pushable:active .button-82-shadow {
-    transform: translateY(1px);
+  transform: translateY(1px);
 }
 
 .button-82-pushable:focus:not(:focus-visible) {
-    outline: none;
+  outline: none;
 }
-
-
 
 /* About Page */
 
-.about-us{
-    width: 60%;
-    color: white;
-    font-size: 30px;
-    text-align: left;
-    max-width: 700px;
-    margin-top: 30px;
+.about-us {
+  width: 60%;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  max-width: 700px;
+  margin-top: 30px;
 }
 
-.about-us h1{
-    font-size: 80px;
-    font-family: 'DynaPuff', cursive;
-    margin-bottom: -10px;
+.about-us h1 {
+  font-size: 80px;
+  font-family: "DynaPuff", cursive;
+  margin-bottom: -10px;
 }
 
-.about-us p{
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
+.about-us p {
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
 
-.about-image{
-    width: 110%;
-    height: 500px;
-    border: 15px solid #dc68ff;
-    border-radius: 20px;
+.about-image {
+  width: 110%;
+  height: 500px;
+  border: 15px solid #dc68ff;
+  border-radius: 20px;
 }
 
 /* Card CSS */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  .card img{
-    font-weight: bold;
-    padding: 1em;
-    text-align: right;
-    color: #181a1a;
-    
-
-    
-    border-radius: 10px;
-    
-    
-    position: relative;
-    
-    transition-duration: 300ms;
-    transition-property: transform, box-shadow;
-    transition-timing-function: ease-out;
-    transform: rotate3d(0);
-  }
-  
-  .card img:hover {
-    transition-duration: 150ms;
-  }
-  
-  .card img .glow {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    
-    background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
-  }
-
-
-  /* The Quiz Page */
-.quiz-container {
-    font-family: 'Poppins', sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    margin-top: 200px;
-    padding: 20px;
+  box-sizing: border-box;
 }
 
-.quiz-container h2{
-    text-align: left;
-    font-family: 'DynaPuff', cursive;
-    font-size: 70px;
-    margin-bottom: 30px;
+.card img {
+  font-weight: bold;
+  padding: 1em;
+  text-align: right;
+  color: #181a1a;
+
+  border-radius: 10px;
+
+  position: relative;
+
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card img:hover {
+  transition-duration: 150ms;
+}
+
+.card img .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+
+/* The Quiz Page */
+.quiz-container {
+  font-family: "Poppins", sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.quiz-container h2 {
+  text-align: left;
+  font-family: "DynaPuff", cursive;
+  font-size: 70px;
+  margin-bottom: 30px;
 }
 
 .small-number {
-    font-size: 0.5em; 
+  font-size: 0.5em;
 }
 
 .question {
-    font-size: 18px;
-    padding: 120px;
-    font-weight: bold;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    background: white;
-    color: black;
-    border: 10px solid #FFCF68;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 18px;
+  padding: 120px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  background: white;
+  color: black;
+  border: 10px solid #ffcf68;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .options {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 120px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 120px;
+  margin-bottom: 20px;
 }
 
 .options button {
-    font-family: 'DynaPuff', cursive;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    border: 5px solid #000000;
-    border-radius: 60px;
-    background: #f9f9f9;
-    cursor: pointer;
-    border-radius: 40px;
-    box-shadow: 0 4px 0px #424242;
-    transition: 0.3s;
-    width: 100%;
+  font-family: "DynaPuff", cursive;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid #000000;
+  border-radius: 60px;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 4px 0px #424242;
+  transition: 0.3s;
+  width: 100%;
 }
 .options button:hover {
-    background: #ddd;
+  background: #ddd;
 }
+
+.question-button {
+  font-family: "DynaPuff", cursive;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid #000000;
+  border-radius: 60px;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 4px 0px #424242;
+  transition: 0.3s;
+  width: 100%;
+}
+.question-button:hover {
+  background: #ddd;
+}
+
 .correct {
-    background: #28a745 !important;
-    color: white !important;
+  background: #28a745 !important;
+  color: white !important;
 }
 .wrong {
-    background: #dc3545 !important;
-    color: white !important;
-    animation: shake 0.3s ease-in-out;
+  background: #dc3545 !important;
+  color: white !important;
+  animation: shake 0.3s ease-in-out;
 }
 @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.Congratulations{
-    width: 60%;
-    color: white;
-    font-size: 30px;
-    text-align: left;
-    max-width: 700px;
-    margin-top: 30px;
+.Congratulations {
+  width: 60%;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  max-width: 700px;
+  margin-top: 30px;
 }
 
-.Congratulations h1{
-    font-family: 'DynaPuff', cursive;
-    font-size: 60px;
-    margin-bottom: -15px;
+.Congratulations h1 {
+  font-family: "DynaPuff", cursive;
+  font-size: 60px;
+  margin-bottom: -15px;
 }
 
-.Congratulations h2{
-    font-family: 'DynaPuff', cursive;
-    font-size: 30px;
+.Congratulations h2 {
+  font-family: "DynaPuff", cursive;
+  font-size: 30px;
 }
 
-.Congratulations p{
-    font-size: 25px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
-    max-width: 600px;
+.Congratulations p {
+  font-size: 25px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  max-width: 600px;
 }
 
-.Congratulations button{
-    font-family: 'DynaPuff', cursive;
-    padding: 15px;
-    font-size: 20px;
-    font-weight: bold;
-    border: 5px solid #000000;
-    border-radius: 60px;
-    background: #f9f9f9;
-    cursor: pointer;
-    border-radius: 40px;
-    box-shadow: 0 4px 0px #424242;
-    transition: 0.3s;
-    max-width: 400px;
+.Congratulations button {
+  font-family: "DynaPuff", cursive;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 5px solid #000000;
+  border-radius: 60px;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 40px;
+  box-shadow: 0 4px 0px #424242;
+  transition: 0.3s;
+  max-width: 400px;
 }
 
-.Congratulations button:hover{
-    background: #ddd;
+.Congratulations button:hover {
+  background: #ddd;
 }
 
-.Congratulations a{
-    margin-top: 30px;
-    display: inline-block;
-    padding: 10px 60px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-family: 'DynaPuff', cursive;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    min-width: 80px;
-    background-color: #3579e0;
-    box-shadow: 0 4px 0px #1f54a4; 
-    width: 400px;
-
+.Congratulations a {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 60px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "DynaPuff", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  min-width: 80px;
+  background-color: #3579e0;
+  box-shadow: 0 4px 0px #1f54a4;
+  width: 400px;
 }
 
-.Congratulations-image{
-    width: 45%;
-    font-size: 16px;
-    text-align: right;
-    padding-top: 30px;
+.Congratulations-image {
+  width: 45%;
+  font-size: 16px;
+  text-align: right;
+  padding-top: 30px;
 }
 
-.winner-image{
-    margin-top: 70px;
-    width: 100%;
-    height: auto;
-    border: 15px solid #FFCF68;
-    border-radius: 40px;
+.winner-image {
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+  border: 15px solid #ffcf68;
+  border-radius: 40px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
-.winner{
-    display: none;
-    margin-top: 250px;
+.winner {
+  display: none;
+  margin-top: 250px;
 }
 
-.loser{
-    display: none;
-    margin-top: 250px;
+.loser {
+  display: none;
+  margin-top: 250px;
 }
-
-
-
-
-
-
-
 
 /* 3D model page */
 
 /* Ensure the container has a vertical layout */
 .content-wrapper-3D {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px; /* Space between sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px; /* Space between sections */
 }
 
 /* Map site container remains as is */
 .map-site-container-3D {
-    padding-top: 200px;
-    color: white;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
+  padding-top: 200px;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 .map-site-container-3D h1 {
-    font-family: 'DynaPuff', cursive;
-    font-size: 50px;
-    margin-top: 50px;
+  font-family: "DynaPuff", cursive;
+  font-size: 50px;
+  margin-top: 50px;
 }
 
 .map-site-container-3D p {
-    margin-top: -20px;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
-    max-width: 10000px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: -20px;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  max-width: 10000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Flex container for instructions and image */
 .instructions-image-container {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    justify-content: center;
-    gap: 30px; /* Space between instructions and image */
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center;
+  gap: 30px; /* Space between instructions and image */
 }
 
 /* Instructions section */
 .instructions {
-    margin-top: -40px;
-    color: white;
-    max-width: 500px;
-    margin-right: 100px;
+  margin-top: -40px;
+  color: white;
+  max-width: 500px;
+  margin-right: 100px;
 }
 
 .instructions h2 {
-    font-family: 'DynaPuff', cursive;
-    font-size: 40px;
-    margin-bottom: -40px;
+  font-family: "DynaPuff", cursive;
+  font-size: 40px;
+  margin-bottom: -40px;
 }
 
 .instructions p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 1.5px;
-    background-color: #0C2E35;
-    padding: 30px;
-    border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  background-color: #0c2e35;
+  padding: 30px;
+  border-radius: 20px;
 }
 
 /* Styling for image */
-.sketchfab-embed-wrapper iframe{
-    width: 800px; /* Adjust the width */
-    border: 15px solid #FFCF68;
-    height: 550px; /* Adjust the height */
-    border-radius: 20px; /* Optional: Rounded corners */
-    margin-top: -20px; /* Add space above the model */
-    background-color: white; /* Background color when model is not loaded */
+.sketchfab-embed-wrapper iframe {
+  width: 800px; /* Adjust the width */
+  border: 15px solid #ffcf68;
+  height: 550px; /* Adjust the height */
+  border-radius: 20px; /* Optional: Rounded corners */
+  margin-top: -20px; /* Add space above the model */
+  background-color: white; /* Background color when model is not loaded */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1366px) {
-    .header {
-        width: 90%;
-        padding: 60px;
-    }
+  .header {
+    width: 90%;
+    padding: 60px;
+  }
 
-    .logo{
-        width: 150px;
-    }
-    
-    /* Navbar */
-    .navbar {
-        position: fixed;
-        top: 10px;
-        left: 15%;
-        right: 15%;
-        padding: 20px;
-        border: 2px solid #6b6b6b;
-        border-radius: 30px;
-        background-color: #292929;
-    }
-    
-    .navbar nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0;
-    }
+  .logo {
+    width: 150px;
+  }
 
-    .navbar nav a {
-        display: inline-block;
-        padding: 10px 5px;
-        margin: 0 30px;
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        font-family: 'DynaPuff', cursive;
-        font-size: 15px;
-        font-weight: bold;
-        border: 5px solid #583b56;
-        border-radius: 20px;
-        background-color: #df8dd9;
-        min-width: 80px;
-    }
-    
-    .languageOption button {
-        margin: -10px 0 0 -80px;
-    }
-    
-    /* Content Wrapper */
-    .content-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 70%;
-        margin: 200px auto 0px;
-        padding-right: 30px;
-    }
-    
-    /* Greeting Section */
-    .greeting {
-        width: 45%;
-        color: white;
-        font-size: 15px;
-        text-align: left;
-        max-width: 700px;
-        margin-top: -80px;
-    }
-    
-    .greeting h1 {
-        font-size: 50px;
-        font-family: 'DynaPuff', cursive;
-    }
-    
-    .greeting h3 {
-        margin-bottom: -20px;
-    }
-    
-    .greeting p {
-        margin-top: -20px;
-        font-size: 15px;
-        line-height: 1.5;
-        letter-spacing: 1.5px;
-    }
-    
-    /* Informations Section */
-    .informations {
-        width: 45%;
-        font-size: 16px;
-        text-align: right;
-        padding-top: 30px;
-    }
-    
-    .informations h2 {
-        color: white;
-        font-weight: bold;
-        font-family: 'DynaPuff', cursive;
-        margin: 0px -130px 20px 10px;
-        text-align: right;
-    }
-    
-    /* Map Container */
-    .map-container img {
-        width: 130%;
-        height: 190px;
-        border: 15px solid #FFCF68;
-        border-radius: 20px;
-    }
-    
-    /* Media Container */
-    .media-container {
-        display: flex;
-        gap: 0px;
-        margin-top: 20px;
-    }
-    
-    .media-container model-viewer {
-        width: 150%;
-        height: 170px;
-        border: 15px solid #FFCF68;
-        border-radius: 20px;
-        background-color: grey;
-    }
-    
-    .media-container img {
-        margin-left: -10px;
-        width: 200%;
-        max-width: 400%;
-        padding-left: 30px;
-        height: auto;
-    }
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 10px;
+    left: 15%;
+    right: 15%;
+    padding: 20px;
+    border: 2px solid #6b6b6b;
+    border-radius: 30px;
+    background-color: #292929;
+  }
 
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
 
+  .navbar nav a {
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 0 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-family: "DynaPuff", cursive;
+    font-size: 15px;
+    font-weight: bold;
+    border: 5px solid #583b56;
+    border-radius: 20px;
+    background-color: #df8dd9;
+    min-width: 80px;
+  }
+
+  .languageOption button {
+    margin: -10px 0 0 -80px;
+  }
+
+  /* Content Wrapper */
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 200px auto 0px;
+    padding-right: 30px;
+  }
+
+  /* Greeting Section */
+  .greeting {
+    width: 45%;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    max-width: 700px;
+    margin-top: -80px;
+  }
+
+  .greeting h1 {
+    font-size: 50px;
+    font-family: "DynaPuff", cursive;
+  }
+
+  .greeting h3 {
+    margin-bottom: -20px;
+  }
+
+  .greeting p {
+    margin-top: -20px;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+
+  /* Informations Section */
+  .informations {
+    width: 45%;
+    font-size: 16px;
+    text-align: right;
+    padding-top: 30px;
+  }
+
+  .informations h2 {
+    color: white;
+    font-weight: bold;
+    font-family: "DynaPuff", cursive;
+    margin: 0px -130px 20px 10px;
+    text-align: right;
+  }
+
+  /* Map Container */
+  .map-container img {
+    width: 130%;
+    height: 190px;
+    border: 15px solid #ffcf68;
+    border-radius: 20px;
+  }
+
+  /* Media Container */
+  .media-container {
+    display: flex;
+    gap: 0px;
+    margin-top: 20px;
+  }
+
+  .media-container model-viewer {
+    width: 150%;
+    height: 170px;
+    border: 15px solid #ffcf68;
+    border-radius: 20px;
+    background-color: grey;
+  }
+
+  .media-container img {
+    margin-left: -10px;
+    width: 200%;
+    max-width: 400%;
+    padding-left: 30px;
+    height: auto;
+  }
 }
-
