@@ -1023,7 +1023,7 @@ body {
   left: 860px;
 }
 
-#castillo-button button {
+#castillo-button .popup-button {
   position: absolute;
   top: 50%;
   left: -80px;
@@ -1035,7 +1035,7 @@ body {
   left: 560px;
 }
 
-#jaguars-button button {
+#jaguars-button .popup-button {
   position: absolute;
   top: 25%;
   left: -155px;
@@ -1053,7 +1053,7 @@ body {
   left: 975px;
 }
 
-#el-caracol-button button {
+#el-caracol-button .popup-button {
   position: absolute;
   top: -20px;
   left: 80px;
@@ -1066,7 +1066,7 @@ body {
   left: 1110px;
 }
 
-#cenote-button button {
+#cenote-button .popup-button {
   position: absolute;
   top: -10px;
   left: -70px;
@@ -1085,7 +1085,7 @@ body {
   left: 1080px;
 }
 
-#venus-button button {
+#venus-button .popup-button {
   position: absolute;
   top: 55px;
   left: 40px;
