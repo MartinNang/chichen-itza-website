@@ -60,7 +60,7 @@ body {
 .informations {
   width: 100%;
   margin-left: 150px;
-  margin-top: 3.5em;
+  margin-top: 5em;
 }
 
 .image-container {
@@ -114,13 +114,11 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 1rem 0;
 }
 
 .question-button:hover {
   padding: 1rem;
-  margin-bottom: 0;
-  transition: padding 0.5 ease;
+  transition: padding 0.25s ease;
 }
 
 .history-text-container {
@@ -154,7 +152,7 @@ nav {
   position: fixed;
   width: 80%;
   border-radius: 26px;
-  min-height: 75px;
+  min-height: 95px;
   margin: 10px 0px !important;
   align-items: center !important;
   justify-content: center;
@@ -173,7 +171,7 @@ nav {
 .logo {
   left: 50%;
   top: -15px;
-  width: 13rem;
+  width: 15rem;
 }
 
 .navbar-brand {
@@ -187,77 +185,8 @@ nav {
   box-shadow: 0 0 0 #e00096 !important;
 }
 
-.info-popup {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 30px;
-  gap: 10px;
-  z-index: 1000;
-
-  background: #0c2e35;
-  border-radius: 30px;
-  font-weight: 500;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-  min-width: 345px;
-
-  filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.info-popup b {
-  font-weight: 700;
-}
-
 .languageOption {
   right: 35px;
-}
-
-.popup-paragraph {
-  font-size: 0.2em !important;
-  color: white;
-  margin: 0;
-}
-
-.popup-image {
-  width: 100%;
-}
-
-.popup-credits {
-  font-size: 0.17em !important;
-  color: #aeaeae;
-  font-style: italic;
-  margin: 0;
-}
-
-.popup-close {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #0c2e35;
-  border-radius: 90px;
-  position: absolute;
-  top: 0px;
-  right: -55px;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.popup-close:hover {
-  background: #ddd;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.fade-in {
-  animation: fadeIn 0.25s ease-in;
 }
 
 .bg-assets {
@@ -283,15 +212,4 @@ nav {
   position: inherit;
   top: -100px;
   left: -100px;
-}
-
-@keyframes fadeIn {
-  0% {
-    transform: translateY(-250px) translateX(-207px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(-300px) translateX(-207px);
-    opacity: 1;
-  }
 }

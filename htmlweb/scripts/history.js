@@ -2,14 +2,12 @@ const scrollContainer = document.querySelector(".history-page");
 console.log("scroll container", scrollContainer);
 const length = 500;
 let index = 0;
-const asset1 = document.querySelector("#asset-1");
-const asset2 = document.querySelector("#asset-2");
-const asset3 = document.querySelector("#asset-3");
 
 scrollContainer.addEventListener("wheel", (event) => {
   console.log("scroll delta y", event.deltaY);
   console.log("index", index);
   if (event.deltaY < 0) {
+    complexScroll();
     console.log("scroll up");
     if (index > 0) {
       index--;
@@ -36,23 +34,9 @@ scrollContainer.addEventListener("wheel", (event) => {
   event.preventDefault();
 });
 
+function complexScroll() {}
+
 function scrollTo() {
   var historyElement = document.querySelector("#history-" + index);
   historyElement.scrollIntoView({ block: "nearest", behavior: "smooth" });
-}
-
-function showPopup(button) {
-  const popUp = button.parentNode.getElementsByClassName("info-popup")[0];
-  if (popUp) {
-    popUp.classList.remove("hidden");
-    popUp.classList.add("fade-in");
-  }
-}
-
-function closePopup(button) {
-  const popUp = button.parentNode;
-  if (popUp) {
-    popUp.classList.add("hidden");
-    popUp.classList.remove("fade-in");
-  }
 }
