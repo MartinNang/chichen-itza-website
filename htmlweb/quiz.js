@@ -3,10 +3,10 @@ const totalQuestions = 5;
 let correctCount = 0;
 
 const correctAnswers = {
-    q1: "C",
-    q2: "B",
-    q3: "B",
-    q4: "B",
+    q1: "B",
+    q2: "C",
+    q3: "A",
+    q4: "C",
     q5: "B"
 };
 
