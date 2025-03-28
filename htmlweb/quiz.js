@@ -56,7 +56,7 @@ function showResults() {
         document.querySelector(".winner").style.display = "block";
     } else {
         document.querySelector(".loser").style.display = "block";
-        document.getElementById("result-text").textContent = `You scored ${correctCount}/5`;
+        document.getElementById("result-text").textContent = `${correctCount}/5`;
     }
 }
 

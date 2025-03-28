@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="chichen.css">
+
+    <!-- Scripts-->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+
+</head>
+<body class="quiz-page">
+
+    <div class="header">
+        <a href="homepageES.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
+        
+        <!-- Nav bar -->
+        <div class="navbar">
+            <nav>
+                <a href="historyES.html">Historia</a>
+                <a href="mapES.html">Mapa</a>
+                <span></span>
+                <a href="galleryES.html">Galería</a>
+                <a href="aboutES.html">Nosotros</a>
+            </nav>
+         </div>
+    
+          <!-- Language button -->
+          <div class="languageOption">
+            <button id="lngOption">
+                <button id="lngOption"><a href="thequiz.html"><img src="Images/Language_ENG.png" alt="ENG/ES Button Image"></a></button>
+            </button>
+          </div>
+        </div>
+     
+
+     <!-- Content -->
+     
+     <div class="quiz-container">
+        <h2 id="question-title">Pregunta 1/<span class="small-number">5</span></h2>
+        <div id="question-container">
+            <div class="question-box" id="q1">
+                <div class="question">1. ¿Qué usaban los mayas como sitio de peregrinación?</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q1', 'A', this)">A) Pirámide principal</button>
+                    <button onclick="checkAnswer('q1', 'B', this)">B) Cenote Sagrado</button>
+                    <button onclick="checkAnswer('q1', 'C', this)">C) Templo Puuc</button>
+                    <button onclick="checkAnswer('q1', 'D', this)">D) Juego de pelota</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q2">
+                <div class="question">2. ¿De qué material estaban hechas las casas tradicionales mayas?</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q2', 'A', this)">A) Piedra caliza</button>
+                    <button onclick="checkAnswer('q2', 'B', this)">B) Adobe</button>
+                    <button onclick="checkAnswer('q2', 'C', this)">C) Madera y paja</button>
+                    <button onclick="checkAnswer('q2', 'D', this)">D) Concreto prehispánico</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q3">
+                <div class="question">3. ¿Qué juego practicaban en Chichén Itzá?</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q3', 'A', this)">A) Pok-ta-Pok</button>
+                    <button onclick="checkAnswer('q3', 'B', this)">B) Tlachtli</button>
+                    <button onclick="checkAnswer('q3', 'C', this)">C) Ulama</button>
+                    <button onclick="checkAnswer('q3', 'D', this)">D) Pelota maya</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q4">
+                <div class="question">4. ¿Qué causó el abandono de Chichén Itzá?</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q4', 'A', this)">A) Guerra</button>
+                    <button onclick="checkAnswer('q4', 'B', this)">B) Enfermedad</button>
+                    <button onclick="checkAnswer('q4', 'C', this)">C) Sequía prolongada </button>
+                    <button onclick="checkAnswer('q4', 'D', this)">D) Invasión extranjera</button>
+                </div>
+            </div>
+
+            <div class="question-box hidden" id="q5">
+                <div class="question">5. ¿Quién registró primero el nombre "Chichén Itzá"?</div>
+                <div class="options">
+                    <button onclick="checkAnswer('q5', 'A', this)">A) Hernán Cortés</button>
+                    <button onclick="checkAnswer('q5', 'B', this)">B) Diego de Landa</button>
+                    <button onclick="checkAnswer('q5', 'C', this)">C) Francisco Montejo</button>
+                    <button onclick="checkAnswer('q5', 'D', this)">D) John Lloyd Stephens</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="winner">
+        <div class="content-wrapper">
+            <div class="Congratulations">
+                <h1>Felicidades!</h1>
+                <h2>Tu puntuación es 5/5</h2>
+                <p>¡Excelente trabajo! Has terminado el cuestionario y respondido todas las preguntas correctamente. ¡Descarga tu certificado!</p>
+                <button onclick="downloadCertificate()">Descargar Certificado <img src="Images/download.png" style="float:right;width: 7%;margin-left: -30px;"></button>
+                <a href="historyES.html">Regresar</a>
+                
+            </div>
+        
+            <div class="Congratulations-image">
+    
+                <img src="placeholder.jpeg" alt="" class="winner-image">
+     
+            </div>
+        </div>
+      </div>
+
+    <div class="loser">
+        <div class="content-wrapper">
+            <div class="Congratulations">
+                <h1>Por poco lo logras</h1>
+                <h2 id="s">Tu puntuación es <span id="result-text">?/5</span></h2>
+                <p>Todavía tienes camino por recorrer en tu viaje para convertirte en un experto sobre Chichén Itzá. ¡Visita la página de Historia para aprender más!</p>
+                <a href="historyES.html">Regresar</a>
+                
+            </div>
+        
+            <div class="Congratulations-image">
+    
+                <img src="placeholder.jpeg" alt="" class="winner-image">
+     
+            </div>
+        </div>
+      </div>
+    
+    
+    <script src="quiz.js"></script>
+
+    <script src="card.js"></script>
+</body>
+</html>
