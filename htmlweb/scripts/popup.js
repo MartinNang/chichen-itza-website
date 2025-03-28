@@ -1,5 +1,18 @@
 function showPopup(button, isOnHistoryPage) {
   const popUp = button.parentNode.getElementsByClassName("info-popup")[0];
+  if (!isOnHistoryPage) {
+    const popups = document.getElementsByClassName("info-popup");
+    for (let p of popups) {
+      console.log(p.classList);
+      if (p.classList) {
+        p.classList.remove("hidden");
+        p.classList.remove("fade-in");
+
+        p.classList.add("hidden");
+      }
+    }
+  }
+
   if (popUp) {
     popUp.classList.remove("hidden");
     if (isOnHistoryPage) {

@@ -44,10 +44,6 @@ body {
   transform: translateX(-60%) translateY(-60%);
 }
 
-.informations article p {
-  font-size: 1.3vw;
-}
-
 .informations article h2 {
   font-size: 2.5vw;
 }
