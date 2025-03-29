@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="chichen.css" />
+
+    <!-- Scripts-->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./scripts/popup.js"></script>
+  </head>
+  <body class="map-page">
+    <div class="header">
+      <a href="homepage.html"
+        ><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"
+      /></a>
+
+      <!-- Nav bar -->
+      <div class="navbar">
+        <nav>
+          <a href="historyES.html">History</a>
+          <a href="mapES.html">Map</a>
+          <span></span>
+          <a href="galleryES.html">Gallery</a>
+          <a href="aboutES.html">About</a>
+        </nav>
+      </div>
+
+      <!-- Language button -->
+      <div class="languageOption">
+        <div class="dropdown">
+          <div id="lngOption" class="dropbtn">
+            <img
+              src="Images/esp.png"
+              class="lang-icon"
+              alt="Spanish Language Button Image" /><span>ESP</span>
+          </div>
+          <div class="dropdown-content">
+            <a href="map.html">
+              <img
+                src="Images/eng.png"
+                class="lang-icon"
+                alt="Spanish Language Button Image" /><span>ENG</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content-wrapper">
+      <div class="map-site-container">
+        <h1>Mapa del Sitio</h1>
+        <p>
+          Explora las maravillas de este fascinante lugar y descubre sus
+          secretos ocultos. Haz clic en cualquiera de los nombres para aprender
+          más sobre los sitios.
+        </p>
+        <div id="map">
+          <div id="castillo-button" class="location-container">
+            <a href="El_castillo.html">
+              <img src="Images/el_castillo.png" />
+              <button class="popup-button">"El Castillo" in 3D</button>
+            </a>
+          </div>
+          <div id="jaguars-button" class="location-container">
+            <img src="Images/jaguars.png" width="350" />
+            <button class="popup-button" onclick="showPopup(this, false)">
+              Temple of Jaguars
+            </button>
+            <div class="info-popup map-popup hidden">
+              <img
+                class="popup-image"
+                src="Images/history1.jpg"
+                width="275"
+                height="215" />
+              <p class="popup-paragraph">
+                Roar like a mighty jaguar as you explore this temple. The Mayans
+                believed jaguars had special powers. Can you find the jaguar
+                carvings hiding in the stones?
+              </p>
+              <p class="popup-credits">
+                Image by Salhedine - Own work, CC BY-SA 4.0,
+                <a
+                  href="https://commons.wikimedia.org/w/index.php?curid=3112458"
+                  >Link</a
+                >
+              </p>
+              <button
+                onclick="closePopup(this)"
+                class="popup-close btn-close"
+                aria-label="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-x"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="el-caracol-button" class="location-container">
+            <img src="Images/el_caracol.png" width="205" />
+
+            <button class="popup-button" onclick="showPopup(this, false)">
+              "El Caracol"
+            </button>
+            <div class="info-popup map-popup hidden">
+              <img
+                class="popup-image"
+                src="Images/history1.jpg"
+                width="275"
+                height="215" />
+              <p class="popup-paragraph">
+                The <b>Sacred Cenote</b> is a big water hole where Maya people
+                threw gifts for their gods - it's why they built Chichen Itza
+                here.
+              </p>
+              <p class="popup-credits">
+                Image by Salhedine - Own work, CC BY-SA 4.0,
+                <a
+                  href="https://commons.wikimedia.org/w/index.php?curid=3112458"
+                  >Link</a
+                >
+              </p>
+              <button
+                onclick="closePopup(this)"
+                class="popup-close btn-close"
+                aria-label="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-x"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="cenote-button" class="location-container">
+            <img src="Images/Sacred cenote 1.png" width="108" />
+            <button class="popup-button" onclick="showPopup(this, false)">
+              Sacred Cenote
+            </button>
+            <div class="info-popup map-popup hidden">
+              <img
+                class="popup-image"
+                src="Images/history1.jpg"
+                width="275"
+                height="215" />
+              <p class="popup-paragraph">
+                The <b>Sacred Cenote</b> is a big water hole where Maya people
+                threw gifts for their gods - it's why they built Chichen Itza
+                here.
+              </p>
+              <p class="popup-credits">
+                Image by Salhedine - Own work, CC BY-SA 4.0,
+                <a
+                  href="https://commons.wikimedia.org/w/index.php?curid=3112458"
+                  >Link</a
+                >
+              </p>
+              <button
+                onclick="closePopup(this)"
+                class="popup-close btn-close"
+                aria-label="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-x"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="group-columns-button" class="location-container">
+            <img
+              src="Images/Group of the One throusand columns 1.png"
+              width="348" />
+
+            <div id="columns-button">
+              <button class="popup-button" onclick="showPopup(this, false)">
+                The thousand Columns
+              </button>
+              <div class="info-popup map-popup hidden">
+                <img
+                  class="popup-image"
+                  src="Images/history1.jpg"
+                  width="275"
+                  height="215" />
+                <p class="popup-paragraph">
+                  The <b>Sacred Cenote</b> is a big water hole where Maya people
+                  threw gifts for their gods - it's why they built Chichen Itza
+                  here.
+                </p>
+                <p class="popup-credits">
+                  Image by Salhedine - Own work, CC BY-SA 4.0,
+                  <a
+                    href="https://commons.wikimedia.org/w/index.php?curid=3112458"
+                    >Link</a
+                  >
+                </p>
+                <button
+                  onclick="closePopup(this)"
+                  class="popup-close btn-close"
+                  aria-label="close">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div id="warriors-button">
+              <button
+                id=""
+                class="popup-button"
+                onclick="showPopup(this, false)">
+                Temple of Warriors
+              </button>
+              <div class="info-popup map-popup hidden">
+                <img
+                  class="popup-image"
+                  src="Images/history1.jpg"
+                  width="275"
+                  height="215" />
+                <p class="popup-paragraph">
+                  The <b>Sacred Cenote</b> is a big water hole where Maya people
+                  threw gifts for their gods - it's why they built Chichen Itza
+                  here.
+                </p>
+                <p class="popup-credits">
+                  Image by Salhedine - Own work, CC BY-SA 4.0,
+                  <a
+                    href="https://commons.wikimedia.org/w/index.php?curid=3112458"
+                    >Link</a
+                  >
+                </p>
+                <button
+                  onclick="closePopup(this)"
+                  class="popup-close btn-close"
+                  aria-label="close">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="venus-button" class="location-container">
+            <img src="Images/entrance_exit.png" width="48" />
+            <button class="popup-button" onclick="showPopup(this, false)">
+              Platform of Venus
+            </button>
+            <div class="info-popup map-popup hidden">
+              <img
+                class="popup-image"
+                src="Images/history1.jpg"
+                width="275"
+                height="215" />
+              <p class="popup-paragraph">
+                The <b>Sacred Cenote</b> is a big water hole where Maya people
+                threw gifts for their gods - it's why they built Chichen Itza
+                here.
+              </p>
+              <p class="popup-credits">
+                Image by Salhedine - Own work, CC BY-SA 4.0,
+                <a
+                  href="https://commons.wikimedia.org/w/index.php?curid=3112458"
+                  >Link</a
+                >
+              </p>
+              <button
+                onclick="closePopup(this)"
+                class="popup-close btn-close"
+                aria-label="close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-x"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <img
+            id="map-image"
+            src="Images/empty_map.png"
+            alt="Map of Chichén Itzá" />
+        </div>
+      </div>
+    </div>
+
+    <script src="card.js"></script>
+  </body>
+</html>

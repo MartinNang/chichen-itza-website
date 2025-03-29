@@ -165,9 +165,9 @@ nav {
 }
 
 .logo {
-  left: 50%;
+  left: 43%;
   top: -15px;
-  width: 15rem;
+  /* width: 15rem; */
 }
 
 .navbar-brand {
@@ -182,7 +182,7 @@ nav {
 }
 
 .languageOption {
-  right: 35px;
+  right: 50px;
 }
 
 .bg-assets {

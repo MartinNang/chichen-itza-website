@@ -103,8 +103,8 @@ body {
 }
 
 .languageOption button {
-  font-family: sans-serif;
-  font-weight: bold;
+  /* font-family: sans-serif; */
+  font-weight: 800;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -235,6 +235,10 @@ body {
   margin-left: 100px;
 }
 
+.history-text-container article > p {
+  font-size: 20px;
+}
+
 /* Quiz Page */
 
 .greeting-quiz {
@@ -328,6 +332,12 @@ body {
 .map-site-container img {
   margin-top: 20px;
   /* width: 100%; */
+}
+
+#map {
+  position: absolute;
+  left: 30px;
+  top: 0;
 }
 
 /* Gallery Page - Fixed */
@@ -1248,4 +1258,94 @@ body {
   100% {
     transform: translateY(0px);
   }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 95px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #0c2e35;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.dropbtn {
+  color: #0c2e35;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+  font-weight: 800;
+  min-width: 95px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.dropdown-content {
+  border-radius: 20px;
+}
+
+.dropdown > button {
+  border-radius: 20px;
+}
+
+.lang-icon {
+  border-radius: 20px;
+  border: 2px solid #0c2e35;
+  margin: 2px;
+  color: #0c2e35;
+  margin-top: 8px;
+}
+
+.dropdown-content span {
+  position: absolute;
+  margin-left: 5px;
+  top: 30%;
+}
+
+.dropbtn span {
+  position: relative;
+  margin-left: 5px;
+  top: -10px;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
 }
