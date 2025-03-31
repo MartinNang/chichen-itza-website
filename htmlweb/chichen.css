@@ -420,6 +420,27 @@ body {
   transform: translateY(0px) translateX(-50%);
 }
 
+#carousel div.selected img {
+  border: 5px solid yellow;
+  box-shadow: 0 0 30px rgba(255, 255, 0, 0.7); /* optional glow */
+}
+
+/* image descriptions */
+
+.image-description {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  width: 500px;
+}
+
+#carousel div img {
+  display: block;
+  margin: 0 auto;
+}
+
 #carousel div.next {
   z-index: 5;
   left: 70%;
@@ -518,7 +539,7 @@ body {
   color: white;
   font-size: 30px;
   text-align: left;
-  max-width: 700px;
+  max-width: 600px;
   margin-top: 30px;
 }
 
