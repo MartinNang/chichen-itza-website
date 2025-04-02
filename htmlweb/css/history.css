@@ -23,6 +23,17 @@ body {
   margin-top: 50px;
 }
 
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 100%;
+  padding: 200px 80px 0;
+  height: 100%;
+}
+
 .informations article {
   max-width: 500px;
   display: inline-block;
@@ -55,8 +66,8 @@ body {
 
 .informations {
   width: 100%;
-  margin-left: 150px;
-  margin-top: 5em;
+  margin-left: 15rem;
+  margin-top: 2em;
 }
 
 .image-container {
@@ -164,12 +175,6 @@ nav {
   position: relative;
 }
 
-.logo {
-  left: 43%;
-  top: -15px;
-  /* width: 15rem; */
-}
-
 .navbar-brand {
   color: transparent !important;
   background-color: transparent !important;
@@ -208,4 +213,23 @@ nav {
   position: inherit;
   top: -100px;
   left: -100px;
+}
+
+.informations h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.informations {
+  padding: 0;
+}
+
+.btn-close svg {
+  margin-top: -115px;
+}
+
+.btn-close {
+  top: 0px;
+  right: -60px;
+  padding: 0px;
 }

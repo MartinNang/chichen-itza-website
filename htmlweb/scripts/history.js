@@ -23,12 +23,12 @@ scrollContainer.addEventListener("wheel", (event) => {
   asset1.style.bottom = Math.floor(asset1Pos / 2) + "px";
 
   if (event.deltaX > 0) {
-    if (asset2Pos <= 50) {
-      asset2Pos++;
+    if (asset2Pos >= -210) {
+      asset2Pos--;
     }
   } else {
-    if (asset2Pos >= 0) {
-      asset2Pos--;
+    if (asset2Pos <= -80) {
+      asset2Pos++;
     }
   }
   asset2.style.bottom = Math.floor(asset2Pos / 2) + "px";

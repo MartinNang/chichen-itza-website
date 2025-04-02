@@ -7,37 +7,65 @@
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="chichen.css">
-    <link rel="stylesheet" type="text/css" href="css/history.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="chichen.css">
+    <link rel="stylesheet" type="text/css" href="css/history.css">
     <!-- Scripts-->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 
 </head>
 <body class="history-page">
-    <div class="nav-container">
-        <nav class="nav nav-pills nav-justified">
-            <a class="nav-item nav-link active text-black" href="history.html">History</a>
-            <a class="nav-item nav-link" href="map.html">Map</a>
-            <a class="navbar-brand nav-item nav-link" href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
-            <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-            <a class="nav-item nav-link" href="about.html" tabindex="-1" aria-disabled="true">About</a>
-        </nav>
-        <div class="languageOption">
-            <div class="dropdown">
-                <div id="lngOption" class="dropbtn">
-                    <img src="Images/eng.png" class="lang-icon" alt="Spanish Language Button Image"><span>ENG</span>
-                </div>
-                <div class="dropdown-content">
-                  <a href="historyES.html"><img src="Images/esp.png" class="lang-icon" alt="Spanish Language Button Image"><span>ESP</span></a>
-                </div>
-              </div> 
-         </div>
-    </div>
+    <nav class="navbar navbar-dark navbar-expand-lg ">
+        <a class="navbar-brand " href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo mx-auto"></a>
+
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
+              <li id="placeholder-item">
+                <a class="navbar-brand " href="homepage.html">
+                <!-- <a class="navbar-brand " href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+      <!-- Language button -->
+    <div class="languageOption">
+        <div class="dropdown">
+          <div id="lngOption" class="dropbtn">
+            <img
+              src="Images/eng.png"
+              class="lang-icon"
+              alt="English Language Button Image" /><span>ENG</span>
+          </div>
+          <div class="dropdown-content">
+            <a href="galleryES.html"
+              ><img
+                src="Images/esp.png"
+                class="lang-icon"
+                alt="Spanish Language Button Image" /><span>ESP</span></a
+            >
+          </div>
+        </div>
+      </div>
 
     <!-- <div class="header">
         <a href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
@@ -64,128 +92,125 @@
      
 
      <!-- Content -->
-     <div class="container">
-     <div class="content-wrapper">
-        <div class="greeting" >
-            <div class="greeting-history" id="history-0">
-                <h1>The History of<br/> Chichén Itzá</h1>
-              <div class="quiz-button">
-                    <a href="quiz.html">Play Quiz</a>
+     <div class="container m-0 w-100">
+        <div class="content-wrapper w-100 p-0">
+            <div class="greeting ">
+                <div class="greeting-history" id="history-0">
+                    <h1>The History of<br/> Chichén Itzá</h1>
+                <div class="quiz-button">
+                        <a href="quiz.html">Play Quiz</a>
+                    </div>
                 </div>
             </div>
-        </div>
     
-        <div class="informations">
-            <!--<div class="image-container">
-            </div>-->
-            <img src="Images/history-timeline.png" alt="" class="history-image" width=4700 height="200">
+            <div class="informations ">
+                <!--<div class="image-container">
+                </div>-->
+                <img src="Images/history-timeline.png" alt="" class="history-image" width=4700 height="200">
 
-            <section class="history-text-container">
-                <article id="history-1">
-                    <h2>2000 BC – 250 AC</h2>
-                    <p>Around this time founders of Chichen Itza began to regularly utilize the Sacred Cenote as a pilgrimage site.</p>
-                    <button class="question-button" onclick="showPopup(this, true)">What is the "Sacred Cenote"?</button>
-                    <div class="info-popup hidden">
-                        <img class="popup-image" src="Images/history1.jpg" width="275" height="215"/>
-                        <p class="popup-paragraph">The <b>Sacred Cenote</b> is a big water hole where Maya people threw gifts for their gods - it's why they built Chichen Itza here.</p>
-                        <p class="popup-credits">Image by Salhedine - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=3112458">Link</a></p>
-                        <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg></button>
-                    </div>
-                </article>
-                <article id="history-2">
-                    <h2>495 AC</h2>
-                    <p>First Maya settlers built a village and later created settlements with traditional thatched houses.</p>
-                    <button class="question-button" onclick="showPopup(this, true)">Traditional Maya Houses</button>
-                    <div class="info-popup hidden">
-                        <img class="popup-image" src="Images/history2.jpg" width="275" height="215"/>
-                        <p class="popup-paragraph"><b>Mayan's traditional houses</b> were made of wood poles with straw roofs, sometimes with mud-covered walls for strength.</p>
-                        <p class="popup-credits">Image by BBC - News website, ichef.bbci.co.uk, <a href="https://ichef.bbci.co.uk/images/ic/976xn/p0b9p9t0.jpg">Link</a></p>
-                        <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg></button>
-                    </div>
-                </article>
-                <article id="history-3">
-                    <h2>600 - 1100 AC</h2>
-                    <p>Maya and Toltec people built amazing Puuc style temples, the famous pyramid, and played Pok-a-Tok ball game. Chichen Itza became very powerful!</p>
-                    <button class="question-button" onclick="showPopup(this, true)">What is the “Toltec Puuc Style”?</button>
-                    <div class="info-popup hidden">
-                        <img class="popup-image" src="Images/history3.jpg" width="275" height="215"/>
-                        <p class="popup-paragraph"><b>Toltec Style</b> has stone temples with warrior columns, wide stairs, and animal carvings. It came to Chich-en Itza when Toltec people arrived.</p>
-                        <p class="popup-credits">Image by Mexican History - Website, mexicanhistory.org, <a href="https://mexicanhistory.org/mayantoltec.jpg">Link</a></p>
-                        <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg></button>
-                    </div>
-                </article>
-                <article id="history-4">
-                    <h2>1250 AC</h2>
-                    <p>
-                        Most families moved away, but some people still came to pray at the magic water hole. 
-                    </p>
-                    <button class="question-button" onclick="showPopup(this, true)">What happened to Chichen Itza?</button>
-                    <div class="info-popup hidden">
-                        <img class="popup-image" src="Images/history4.webp" width="275" height="215"/>
-                        <p class="popup-paragraph">The Maya left because a long drought meant no food or water. Families moved to places where they could find water to survive.</p>
-                        <p class="popup-credits">Image by Bloomberg - News website, assets.bwbx.io, <a href="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ipIII4zLVOPc/v0/940x627.webp">Link</a></p>
-                        <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg></button>
-                    </div>
-                </article>
-                <article id="history-5">
-                    <h2>1579 AC</h2>
-                    <p>A man from Spain wrote down the name "Chichen Itza" in a book for the first time.</p>
-                    <button class="question-button" onclick="showPopup(this, true)">Who is the Spanish man?</button>
-                    <div class="info-popup hidden">
-                        <img class="popup-image" src="Images/history5.jpg" width="275" height="215"/>
-                        <p class="popup-paragraph"><b>Diego de Landa</b> was a Spanish priest who wrote down the name "Chichen Itza" in his book about Maya people and places.</p>
-                        <p class="popup-credits">Image by Wikimedia Commons - Wikipe
-                            dia website, upload.wikimedia.org, <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Diego_de_Landa.jpg/330px-Diego_de_Landa.jpg">Link</a></p>
-                        <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                          </svg></button>
-                    </div>
-                </article>
-                <article id="history-6">
-                    <h2>Today</h2>
-                    <p>Now Chichen Itza is one of the most famous old places in the world! Lots of people visit every year to see the amazing buildings!</p>
-                </article>
-            </section>
-        </div>
+                <section class="history-text-container">
+                    <article id="history-1">
+                        <h2>2000 BC – 250 AC</h2>
+                        <p>Around this time founders of Chichen Itza began to regularly utilize the Sacred Cenote as a pilgrimage site.</p>
+                        <button class="question-button" onclick="showPopup(this, true)">What is the "Sacred Cenote"?</button>
+                        <div class="info-popup hidden">
+                            <img class="popup-image" src="Images/history1.jpg" width="275" height="215"/>
+                            <p class="popup-paragraph">The <b>Sacred Cenote</b> is a big water hole where Maya people threw gifts for their gods - it's why they built Chichen Itza here.</p>
+                            <p class="popup-credits">Image by Salhedine - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=3112458">Link</a></p>
+                            <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
+                        </div>
+                    </article>
+                    <article id="history-2">
+                        <h2>495 AC</h2>
+                        <p>First Maya settlers built a village and later created settlements with traditional thatched houses.</p>
+                        <button class="question-button" onclick="showPopup(this, true)">Traditional Maya Houses</button>
+                        <div class="info-popup hidden">
+                            <img class="popup-image" src="Images/history2.jpg" width="275" height="215"/>
+                            <p class="popup-paragraph"><b>Mayan's traditional houses</b> were made of wood poles with straw roofs, sometimes with mud-covered walls for strength.</p>
+                            <p class="popup-credits">Image by BBC - News website, ichef.bbci.co.uk, <a href="https://ichef.bbci.co.uk/images/ic/976xn/p0b9p9t0.jpg">Link</a></p>
+                            <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
+                        </div>
+                    </article>
+                    <article id="history-3">
+                        <h2>600 - 1100 AC</h2>
+                        <p>Maya and Toltec people built amazing Puuc style temples, the famous pyramid, and played Pok-a-Tok ball game. Chichen Itza became very powerful!</p>
+                        <button class="question-button" onclick="showPopup(this, true)">What is the “Toltec Puuc Style”?</button>
+                        <div class="info-popup hidden">
+                            <img class="popup-image" src="Images/history3.jpg" width="275" height="215"/>
+                            <p class="popup-paragraph"><b>Toltec Style</b> has stone temples with warrior columns, wide stairs, and animal carvings. It came to Chich-en Itza when Toltec people arrived.</p>
+                            <p class="popup-credits">Image by Mexican History - Website, mexicanhistory.org, <a href="https://mexicanhistory.org/mayantoltec.jpg">Link</a></p>
+                            <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
+                        </div>
+                    </article>
+                    <article id="history-4">
+                        <h2>1250 AC</h2>
+                        <p>
+                            Most families moved away, but some people still came to pray at the magic water hole. 
+                        </p>
+                        <button class="question-button" onclick="showPopup(this, true)">What happened to Chichen Itza?</button>
+                        <div class="info-popup hidden">
+                            <img class="popup-image" src="Images/history4.webp" width="275" height="215"/>
+                            <p class="popup-paragraph">The Maya left because a long drought meant no food or water. Families moved to places where they could find water to survive.</p>
+                            <p class="popup-credits">Image by Bloomberg - News website, assets.bwbx.io, <a href="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ipIII4zLVOPc/v0/940x627.webp">Link</a></p>
+                            <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
+                        </div>
+                    </article>
+                    <article id="history-5">
+                        <h2>1579 AC</h2>
+                        <p>A man from Spain wrote down the name "Chichen Itza" in a book for the first time.</p>
+                        <button class="question-button" onclick="showPopup(this, true)">Who is the Spanish man?</button>
+                        <div class="info-popup hidden">
+                            <img class="popup-image" src="Images/history5.jpg" width="275" height="215"/>
+                            <p class="popup-paragraph"><b>Diego de Landa</b> was a Spanish priest who wrote down the name "Chichen Itza" in his book about Maya people and places.</p>
+                            <p class="popup-credits">Image by Wikimedia Commons - Wikipe
+                                dia website, upload.wikimedia.org, <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Diego_de_Landa.jpg/330px-Diego_de_Landa.jpg">Link</a></p>
+                            <button onclick="closePopup(this)" class="popup-close btn-close" aria-label="close" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                            </svg></button>
+                        </div>
+                    </article>
+                    <article id="history-6">
+                        <h2>Today</h2>
+                        <p>Now Chichen Itza is one of the most famous old places in the world! Lots of people visit every year to see the amazing buildings!</p>
+                    </article>
+                </section>
+            </div>
         </div>
         <div class="bg-assets">
             <svg id="asset-1" width="280" height="256" viewBox="0 0 280 256" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M39.0141 18.3336C45.5161 12.4479 52.2554 7.48312 60.1283 4.56885C79.7298 -2.68592 98.0583 0.0341258 114.683 13.3622C128.021 24.0546 136.166 38.2116 141.233 54.2031C149.551 80.4478 147.836 106.349 138.601 131.759C131.604 151.01 120.405 167.678 106.724 182.724C99.5764 190.584 91.9119 197.924 83.5457 204.452C70.3788 214.724 56.9194 224.615 41.5351 231.472C34.9803 234.393 28.1659 236.319 20.816 235.519C10.5161 234.396 2.41492 226.886 0.964684 217.118C0.554238 214.362 0.766307 211.64 1.43781 208.956C3.02121 202.626 5.98095 196.854 8.60313 190.95C15.8253 174.697 22.4725 158.236 25.0299 140.426C26.692 128.859 26.5932 117.266 24.1073 105.716C21.3597 92.9629 18.7978 80.1722 18.6582 67.0893C18.5208 54.1878 20.3963 41.7741 27.4151 30.6547C30.5686 25.6615 34.661 21.6125 39.0162 18.3318L39.0141 18.3336Z" fill="#35E0FF" fill-opacity="0.55"/>
                 <path d="M215.573 93.1391C222.979 91.4741 230.171 90.604 237.345 91.7618C255.204 94.6451 267.856 104.502 274.705 121.626C280.199 135.364 280.307 149.5 277.313 163.708C272.4 187.025 260.075 205.81 242.293 221.022C228.821 232.547 213.282 240.335 196.565 245.845C187.831 248.722 178.93 250.988 169.845 252.343C155.549 254.474 141.195 256.193 126.682 254.807C120.499 254.215 114.544 252.763 109.347 249.03C102.065 243.797 99.1597 234.687 102.228 226.709C103.093 224.458 104.412 222.498 106.061 220.761C109.951 216.666 114.639 213.578 119.13 210.246C131.495 201.077 143.515 191.505 153.029 179.175C159.208 171.168 164.072 162.391 167.119 152.629C170.481 141.85 173.999 131.121 179.467 121.204C184.859 111.425 191.56 102.87 201.585 97.4819C206.088 95.063 210.896 93.7554 215.575 93.1387L215.573 93.1391Z" fill="#35E0FF" fill-opacity="0.55"/>
-                </svg>
+            </svg>
                 
-                <svg id="asset-2" width="314" height="402" viewBox="0 0 314 402" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M245.138 365.1C239.844 366.013 234.926 364.086 230.187 361.697C222.465 357.809 214.852 353.632 207.224 349.502C205.907 348.792 205.315 348.85 204.754 350.441C202.703 356.224 200.595 361.977 198.355 367.667C194.959 376.3 185.406 380.149 178.346 375.747C175.729 374.117 173.525 371.793 171.236 369.652C166.239 364.971 161.297 360.204 156.409 355.376C155.288 354.273 154.69 354.396 153.644 355.387C143.373 365.119 133.933 375.873 123.626 385.559C121.772 387.302 119.85 388.986 117.853 390.519C114.905 392.783 111.727 392.499 108.69 390.447C105.887 388.563 104.341 385.738 104.476 382.026C104.544 380.172 105.349 378.69 106.33 377.303C111.363 370.207 116.991 363.719 122.746 357.372C128.261 351.291 133.357 344.793 138.679 338.523C139.338 337.743 139.179 337.265 138.549 336.585C133.176 330.764 127.999 324.729 122.931 318.58C122.298 317.817 121.741 317.054 120.859 318.31C116.123 325.098 110.136 330.591 105.137 337.112C102.135 341.027 99.3812 345.191 96.3178 349.051C93.2109 352.963 89.8773 356.654 85.305 358.555C83.368 359.362 81.4236 359.413 79.4391 358.579C76.4429 357.315 74.9302 354.588 75.3728 351.097C75.8543 347.347 77.3133 344.065 79.0511 340.9C81.2385 336.911 83.9597 333.398 86.7715 329.98C91.1556 324.651 95.1687 318.995 98.9571 313.13C101.629 308.991 104.406 304.939 107.902 301.603C108.702 300.84 108.51 300.302 107.906 299.502C103.191 293.282 98.5546 286.985 94.1975 280.449C93.2802 279.073 92.7609 279.254 91.7634 280.296C80.7909 291.68 70.9501 304.303 60.1732 315.895C59.7553 316.344 59.3507 316.804 58.9317 317.247C56.0119 320.321 52.9848 320.323 49.8495 317.246C46.9485 314.402 46.4853 310.173 48.7599 306.862C56.6402 295.398 65.0897 284.45 73.1394 273.141C75.6554 269.609 77.9401 265.863 80.6531 262.513C81.4429 261.544 81.0605 260.792 80.5061 259.906C78.3828 256.516 76.2696 253.117 74.1872 249.695C70.5261 243.672 69.3035 237.368 71.9573 230.673C72.4047 229.553 73.1167 228.604 73.471 227.408C73.8002 226.308 73.6276 225.566 72.6752 224.933C67.513 221.507 63.0085 217.083 58.2432 213.043C52.3775 208.064 46.0428 203.86 39.7179 199.68C36.5782 197.606 33.3955 195.622 30.2697 193.526C27.4549 191.638 25.0243 189.306 23.712 185.823C22.1666 181.724 23.4138 178.845 27.2266 177.85C31.5986 176.705 35.8826 177.539 40.0931 179.271C44.7443 181.19 49.1551 183.691 53.4626 186.48C60.7016 191.164 68.0065 195.721 75.2546 200.391C76.8032 201.386 78.2578 202.584 79.7138 203.756C80.4922 204.386 80.9472 204.59 81.3838 203.368C83.8948 196.399 86.4626 189.459 89.0426 182.524C89.3837 181.602 89.1625 181.095 88.4056 180.598C72.6022 170.185 57.0939 159.207 41.0276 149.309C36.4043 146.461 35.0904 142.862 36.7137 138.034C38.2884 133.37 42.8631 130.666 47.1979 131.99C49.0273 132.546 50.8102 133.348 52.5823 134.119C64.7566 139.416 76.7728 145.125 87.9709 152.836C90.6649 154.692 93.2801 156.703 95.8667 158.751C96.9737 159.625 97.5457 159.661 98.0529 158.163C99.9037 152.71 101.805 147.281 103.749 141.871C104.227 140.546 103.811 139.909 102.794 139.163C91.819 131.119 80.3412 124.139 68.5413 117.806C63.6295 115.173 58.9959 111.978 54.9443 107.816C53.196 106.019 52.91 104.262 53.7884 101.922C54.4265 100.234 55.5346 99.2328 57.1964 99.0075C59.2533 98.7244 61.3088 98.965 63.3689 99.2696C71.1666 100.431 78.3403 103.897 85.4878 107.452C93.4465 111.411 101.323 115.578 108.901 120.427C110.326 121.339 110.88 121.262 111.474 119.445C114.837 109.228 118.262 99.0337 121.83 88.906C124.11 82.4332 130.257 78.8858 136.114 80.2594C139.105 80.9617 141.339 83.1124 143.591 85.2019C148.15 89.4303 152.69 93.6812 157.188 97.997C158.243 99.0082 158.767 98.6125 159.428 97.6324C165.631 88.3944 172.198 79.4721 178.299 70.1408C182.688 63.4216 187.066 56.6719 192.433 50.8471C194.627 48.4604 196.842 46.0637 199.679 44.6066C204.408 42.1819 209.959 44.9756 211.601 50.5902C212.38 53.2491 211.828 55.7823 211.024 58.2595C209.091 64.2039 206.4 69.7096 203.265 74.906C198.88 82.1804 194.193 89.2326 189.867 96.5554C185.954 103.178 182.852 110.386 178.506 116.697C177.763 117.775 178.273 118.422 179.018 119.167C182.496 122.647 185.989 126.111 189.39 129.682C190.519 130.868 191.172 130.729 192.081 129.534C195.574 124.978 198.87 120.24 202.227 115.557C207.142 108.694 211.34 101.262 215.902 94.1205C218.173 90.5708 220.876 87.4807 224.267 85.2417C228.049 82.7451 233.588 85.1464 234.713 89.7914C235.277 92.1171 234.9 94.486 234.478 96.7911C233.355 102.953 230.723 108.326 227.885 113.61C221.868 124.808 215.308 135.578 207.979 145.743C206.89 147.251 207.028 148.134 208.334 149.447C210.863 151.995 213.29 154.696 215.625 157.47C216.807 158.875 217.502 158.994 218.652 157.501C226.271 147.632 234.152 138.017 242.265 128.656C248.35 121.635 254.794 115.085 262.834 110.777C266.176 108.986 269.753 109.806 272.34 112.959C274.523 115.616 274.859 118.386 273.403 121.473C269.894 128.915 265.225 135.402 260.146 141.503C252.263 150.963 244.871 160.847 238.291 171.497C237.312 173.079 236.195 174.625 234.91 175.887C233.499 177.267 233.849 178.141 235.065 179.469C241.279 186.233 247.237 193.304 253.65 199.835C257.494 203.753 259.235 208.376 258.652 213.991C258.352 216.903 257.054 219.396 255.989 221.974C253.855 227.143 251.728 232.318 249.506 237.443C248.834 238.994 249.056 239.791 250.481 240.703C259.975 246.779 269.895 251.931 279.281 258.231C282.614 260.467 285.951 262.684 289.101 265.248C291.951 267.57 292.826 270.388 291.746 273.867C290.774 276.985 288.254 278.682 284.959 278.313C276.615 277.383 268.491 275.138 260.573 271.928C253.8 269.178 247.039 266.369 240.619 262.598C239.743 262.082 239.344 262.36 238.995 263.231C236.302 269.9 233.615 276.569 230.877 283.207C230.363 284.454 230.96 284.996 231.776 285.575C236.181 288.678 240.812 291.324 245.356 294.145C250.89 297.582 256.338 301.239 262.002 304.376C267.856 307.618 268.525 315.168 266.07 320.138C263.737 324.867 260.183 326.525 255.294 325.24C244.844 322.481 235.206 317.399 225.835 311.543C224.53 310.728 223.207 309.948 221.947 309.054C221.105 308.461 220.707 308.681 220.355 309.604C218.467 314.546 216.56 319.478 214.622 324.395C214.14 325.618 214.904 326.056 215.605 326.562C219.586 329.405 223.594 332.197 227.548 335.089C232.008 338.351 236.747 341.057 241.298 344.136C244.85 346.544 248.145 349.324 250.142 353.568C253.075 359.807 251.184 364.122 245.106 365.118L245.138 365.1ZM228.386 213.255C228.117 212.84 227.902 212.442 227.632 212.098C224.713 208.469 221.838 204.794 218.854 201.227C208.84 189.251 198.258 177.911 187.69 166.549C172.507 150.218 156.92 134.392 140.904 119.089C139.316 117.57 139.335 117.58 138.582 119.628C135.492 128.01 132.447 136.418 129.268 144.75C123.913 158.807 118.515 172.846 113.045 186.838C108.081 199.533 103.06 212.204 97.1865 224.388C96.0936 226.654 96.0664 228.048 97.5017 230.335C108.339 247.541 119.641 264.336 131.942 280.316C146.041 298.639 161.131 315.884 177.131 332.153C178.737 333.786 178.779 333.798 179.584 331.747C187.154 312.417 194.736 293.091 202.596 273.907C210.74 254.018 219.048 234.218 227.834 214.69C228.038 214.237 228.201 213.751 228.397 213.247L228.386 213.255Z" fill="#35E0FF" fill-opacity="0.55"/>
-                    <path d="M173.694 262.104C163.114 263.62 153.207 261.173 143.958 254.754C135.028 248.555 131.22 239.253 130.273 228.18C129.658 221.035 130.266 214.052 131.857 207.213C133.315 200.945 135.821 195.327 140.256 191.025C140.605 190.683 140.924 190.263 141.329 190.055C147.334 186.944 152.827 182.54 159.868 182.105C163.775 181.863 167.583 182.4 171.144 184.187C183.086 190.186 192.231 199.375 196.35 213.571C198.441 220.774 197.994 228.138 196.442 235.319C195.689 238.79 194.717 242.187 193.597 245.53C190.443 254.937 184.211 260.095 175.426 261.809C174.849 261.922 174.266 261.998 173.687 262.092L173.694 262.104Z" fill="#35E0FF" fill-opacity="0.55"/>
-                    <path d="M98.6354 48.867C104.32 51.5875 106.924 58.2982 104.415 64.5589C102.161 70.1812 96.6919 72.7093 91.0519 70.128C85.4291 67.555 82.7873 60.5349 85.1763 54.394C87.2022 49.1802 92.8793 45.9687 98.6354 48.867Z" fill="#35E0FF" fill-opacity="0.55"/>
-                    <path d="M160.879 38.7344C166.564 41.455 169.168 48.1657 166.658 54.4264C164.405 60.0486 158.936 62.5767 153.296 59.9954C147.673 57.4224 145.031 50.4024 147.42 44.2615C149.446 39.0476 155.123 35.8361 160.879 38.7344Z" fill="#35E0FF" fill-opacity="0.55"/>
-                    <path d="M129.531 26.7117C135.216 29.4323 137.82 36.143 135.31 42.4037C133.057 48.0259 127.588 50.554 121.948 47.9727C116.325 45.3997 113.683 38.3796 116.072 32.2387C118.098 27.0249 123.775 23.8134 129.531 26.7117Z" fill="#35E0FF" fill-opacity="0.55"/>
-                    </svg>
-                    
-                    <svg id="asset-3" width="471" height="493" viewBox="0 0 471 493" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M158.973 175.884C171.732 154.076 189.063 137.281 212.026 127.117C240.348 114.578 268.825 114.151 296.999 125.38C313.55 131.975 327.504 142.611 340.199 155.017C356.227 170.683 369.167 188.61 378.081 209.45C384.672 224.859 388.574 240.974 388.131 258.082C387.785 271.557 384.809 284.553 379.998 297.217C377.034 305.026 373.612 312.642 369.363 319.807C362.707 331.032 354.927 341.486 346.129 351.126C321.945 377.626 293.234 397.075 259.738 408.73C227.22 420.046 194.137 422.993 160.614 417.075C158.521 416.705 156.395 416.445 154.351 415.891C147.459 414.021 143.268 409.466 142.252 402.268C141.334 395.758 143.089 389.773 147.421 384.695C152.295 378.982 158.466 377.12 165.509 378.838C178.738 382.077 192.211 383.347 205.878 382.807C228.32 381.915 249.78 376.411 270.274 366.558C291.452 356.376 309.921 342.463 325.142 324.244C336.214 310.989 345.399 296.553 350.531 279.888C355.654 263.25 355.049 246.755 349.583 230.654C341.716 207.47 328.231 188.125 309.953 172.425C297.252 161.513 282.803 153.802 265.831 151.673C245.826 149.167 227.658 154.222 211.473 167.029C200.828 175.448 193.106 186.193 187.242 198.417C177.296 219.153 174.209 240.799 177.692 263.128C180.734 282.649 188.664 299.702 203.703 312.487C214.615 321.767 227.677 325.264 241.85 323.359C269.569 319.631 290.187 304.734 302.922 279.286C315.586 253.985 305.505 223.427 281.036 210.977C277.036 208.939 272.764 207.556 268.232 207.132C254.669 205.856 244.295 211.967 239.094 225.09C234.342 237.079 232.771 249.46 236.352 261.938C238.848 270.642 243.862 277.13 252.776 279.625C260.193 281.701 266.69 278.95 270.795 272.187C275.459 264.508 277.048 256.33 274.938 247.629C274.844 247.239 274.732 246.859 274.598 246.485C273.053 241.981 270.367 241.23 266.491 244.184C265.899 244.636 265.831 245.242 265.68 245.871C264.399 251.317 261.232 254.062 256.228 254.088C251.079 254.115 246.875 250.74 245.893 245.78C243.503 233.731 250.864 223.049 263.293 220.516C278.297 217.465 291.559 224.883 296.232 239.456C302.392 258.655 298.921 276.698 286.455 292.723C277.766 303.896 265.661 308.64 251.954 307.571C228.702 305.75 213.41 292.968 206.624 270.814C198.987 245.867 202.692 221.657 217.25 199.442C226.238 185.726 239.59 178.444 255.516 176.699C274.16 174.653 291.113 179.532 305.678 190.714C333.03 211.718 342.273 240.521 335.635 274.739C330.25 302.508 314.041 323.273 290.58 338.405C274.191 348.978 256.323 354.639 237.136 355.23C218.403 355.806 200.958 351.41 185.334 341.197C173.801 333.654 164.618 323.676 157.812 311.542C145.589 289.752 140.335 266.039 140.945 240.757C141.408 221.609 145.725 203.28 153.759 185.749C154.533 184.061 155.315 182.371 156.18 180.722C157.049 179.076 158.029 177.487 158.959 175.876L158.973 175.884Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        <path d="M103.714 208.432C94.1448 202.44 91.3451 189.726 97.9863 179.895C104.159 170.761 115.575 168.022 124.981 173.63C133.286 178.577 138.076 190.986 130.486 202.206C124.281 211.373 113.466 213.808 103.714 208.432Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        <path d="M382.392 112.053C391.451 117.696 393.919 128.971 387.623 138.345C381.97 146.763 371.672 149.516 362.648 144.105C353.652 138.711 351.213 126.936 357.262 117.724C362.393 109.903 373.264 106.111 382.392 112.053Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        <path d="M198.791 71.2202C203.676 63.3644 215.535 60.5387 223.288 65.3803C232.103 70.8924 234.824 82.4679 228.694 91.5637C223.319 99.5431 213.298 102.599 204.252 97.3779C195.285 92.205 193.031 80.4916 198.791 71.2202Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        <path d="M280.248 99.4921C275.939 96.2359 272.105 91.112 272.73 83.721C273.366 76.2589 277.389 71.0224 284.174 67.896C289.991 65.2145 299.688 67.2 303.209 72.6357C304.787 75.0766 306.754 77.2391 307.598 80.1458C309.697 87.3953 307.436 94.7658 301.709 99.2171C295.648 103.921 287.935 104.326 280.255 99.4902L280.248 99.4921Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        <path d="M84.1259 242.084C89.081 234.095 99.4957 231.308 107.016 235.96C115.447 241.176 117.886 251.591 112.621 259.908C107.433 268.109 97.0121 270.648 89.0276 265.656C81.2872 260.816 79.0797 250.221 84.123 242.089L84.1259 242.084Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        <path d="M132.39 111.332C136.867 103.972 147.408 101.238 154.642 105.621C161.629 109.858 165.547 119.881 159.769 129.273C155.17 136.748 144.602 139.413 137.321 134.817C129.375 129.803 127.263 119.754 132.39 111.332Z" fill="#35E0FF" fill-opacity="0.55"/>
-                        </svg>
-                        
-                        
-                        
-                    
+            <svg id="asset-2" width="314" height="402" viewBox="0 0 314 402" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M245.138 365.1C239.844 366.013 234.926 364.086 230.187 361.697C222.465 357.809 214.852 353.632 207.224 349.502C205.907 348.792 205.315 348.85 204.754 350.441C202.703 356.224 200.595 361.977 198.355 367.667C194.959 376.3 185.406 380.149 178.346 375.747C175.729 374.117 173.525 371.793 171.236 369.652C166.239 364.971 161.297 360.204 156.409 355.376C155.288 354.273 154.69 354.396 153.644 355.387C143.373 365.119 133.933 375.873 123.626 385.559C121.772 387.302 119.85 388.986 117.853 390.519C114.905 392.783 111.727 392.499 108.69 390.447C105.887 388.563 104.341 385.738 104.476 382.026C104.544 380.172 105.349 378.69 106.33 377.303C111.363 370.207 116.991 363.719 122.746 357.372C128.261 351.291 133.357 344.793 138.679 338.523C139.338 337.743 139.179 337.265 138.549 336.585C133.176 330.764 127.999 324.729 122.931 318.58C122.298 317.817 121.741 317.054 120.859 318.31C116.123 325.098 110.136 330.591 105.137 337.112C102.135 341.027 99.3812 345.191 96.3178 349.051C93.2109 352.963 89.8773 356.654 85.305 358.555C83.368 359.362 81.4236 359.413 79.4391 358.579C76.4429 357.315 74.9302 354.588 75.3728 351.097C75.8543 347.347 77.3133 344.065 79.0511 340.9C81.2385 336.911 83.9597 333.398 86.7715 329.98C91.1556 324.651 95.1687 318.995 98.9571 313.13C101.629 308.991 104.406 304.939 107.902 301.603C108.702 300.84 108.51 300.302 107.906 299.502C103.191 293.282 98.5546 286.985 94.1975 280.449C93.2802 279.073 92.7609 279.254 91.7634 280.296C80.7909 291.68 70.9501 304.303 60.1732 315.895C59.7553 316.344 59.3507 316.804 58.9317 317.247C56.0119 320.321 52.9848 320.323 49.8495 317.246C46.9485 314.402 46.4853 310.173 48.7599 306.862C56.6402 295.398 65.0897 284.45 73.1394 273.141C75.6554 269.609 77.9401 265.863 80.6531 262.513C81.4429 261.544 81.0605 260.792 80.5061 259.906C78.3828 256.516 76.2696 253.117 74.1872 249.695C70.5261 243.672 69.3035 237.368 71.9573 230.673C72.4047 229.553 73.1167 228.604 73.471 227.408C73.8002 226.308 73.6276 225.566 72.6752 224.933C67.513 221.507 63.0085 217.083 58.2432 213.043C52.3775 208.064 46.0428 203.86 39.7179 199.68C36.5782 197.606 33.3955 195.622 30.2697 193.526C27.4549 191.638 25.0243 189.306 23.712 185.823C22.1666 181.724 23.4138 178.845 27.2266 177.85C31.5986 176.705 35.8826 177.539 40.0931 179.271C44.7443 181.19 49.1551 183.691 53.4626 186.48C60.7016 191.164 68.0065 195.721 75.2546 200.391C76.8032 201.386 78.2578 202.584 79.7138 203.756C80.4922 204.386 80.9472 204.59 81.3838 203.368C83.8948 196.399 86.4626 189.459 89.0426 182.524C89.3837 181.602 89.1625 181.095 88.4056 180.598C72.6022 170.185 57.0939 159.207 41.0276 149.309C36.4043 146.461 35.0904 142.862 36.7137 138.034C38.2884 133.37 42.8631 130.666 47.1979 131.99C49.0273 132.546 50.8102 133.348 52.5823 134.119C64.7566 139.416 76.7728 145.125 87.9709 152.836C90.6649 154.692 93.2801 156.703 95.8667 158.751C96.9737 159.625 97.5457 159.661 98.0529 158.163C99.9037 152.71 101.805 147.281 103.749 141.871C104.227 140.546 103.811 139.909 102.794 139.163C91.819 131.119 80.3412 124.139 68.5413 117.806C63.6295 115.173 58.9959 111.978 54.9443 107.816C53.196 106.019 52.91 104.262 53.7884 101.922C54.4265 100.234 55.5346 99.2328 57.1964 99.0075C59.2533 98.7244 61.3088 98.965 63.3689 99.2696C71.1666 100.431 78.3403 103.897 85.4878 107.452C93.4465 111.411 101.323 115.578 108.901 120.427C110.326 121.339 110.88 121.262 111.474 119.445C114.837 109.228 118.262 99.0337 121.83 88.906C124.11 82.4332 130.257 78.8858 136.114 80.2594C139.105 80.9617 141.339 83.1124 143.591 85.2019C148.15 89.4303 152.69 93.6812 157.188 97.997C158.243 99.0082 158.767 98.6125 159.428 97.6324C165.631 88.3944 172.198 79.4721 178.299 70.1408C182.688 63.4216 187.066 56.6719 192.433 50.8471C194.627 48.4604 196.842 46.0637 199.679 44.6066C204.408 42.1819 209.959 44.9756 211.601 50.5902C212.38 53.2491 211.828 55.7823 211.024 58.2595C209.091 64.2039 206.4 69.7096 203.265 74.906C198.88 82.1804 194.193 89.2326 189.867 96.5554C185.954 103.178 182.852 110.386 178.506 116.697C177.763 117.775 178.273 118.422 179.018 119.167C182.496 122.647 185.989 126.111 189.39 129.682C190.519 130.868 191.172 130.729 192.081 129.534C195.574 124.978 198.87 120.24 202.227 115.557C207.142 108.694 211.34 101.262 215.902 94.1205C218.173 90.5708 220.876 87.4807 224.267 85.2417C228.049 82.7451 233.588 85.1464 234.713 89.7914C235.277 92.1171 234.9 94.486 234.478 96.7911C233.355 102.953 230.723 108.326 227.885 113.61C221.868 124.808 215.308 135.578 207.979 145.743C206.89 147.251 207.028 148.134 208.334 149.447C210.863 151.995 213.29 154.696 215.625 157.47C216.807 158.875 217.502 158.994 218.652 157.501C226.271 147.632 234.152 138.017 242.265 128.656C248.35 121.635 254.794 115.085 262.834 110.777C266.176 108.986 269.753 109.806 272.34 112.959C274.523 115.616 274.859 118.386 273.403 121.473C269.894 128.915 265.225 135.402 260.146 141.503C252.263 150.963 244.871 160.847 238.291 171.497C237.312 173.079 236.195 174.625 234.91 175.887C233.499 177.267 233.849 178.141 235.065 179.469C241.279 186.233 247.237 193.304 253.65 199.835C257.494 203.753 259.235 208.376 258.652 213.991C258.352 216.903 257.054 219.396 255.989 221.974C253.855 227.143 251.728 232.318 249.506 237.443C248.834 238.994 249.056 239.791 250.481 240.703C259.975 246.779 269.895 251.931 279.281 258.231C282.614 260.467 285.951 262.684 289.101 265.248C291.951 267.57 292.826 270.388 291.746 273.867C290.774 276.985 288.254 278.682 284.959 278.313C276.615 277.383 268.491 275.138 260.573 271.928C253.8 269.178 247.039 266.369 240.619 262.598C239.743 262.082 239.344 262.36 238.995 263.231C236.302 269.9 233.615 276.569 230.877 283.207C230.363 284.454 230.96 284.996 231.776 285.575C236.181 288.678 240.812 291.324 245.356 294.145C250.89 297.582 256.338 301.239 262.002 304.376C267.856 307.618 268.525 315.168 266.07 320.138C263.737 324.867 260.183 326.525 255.294 325.24C244.844 322.481 235.206 317.399 225.835 311.543C224.53 310.728 223.207 309.948 221.947 309.054C221.105 308.461 220.707 308.681 220.355 309.604C218.467 314.546 216.56 319.478 214.622 324.395C214.14 325.618 214.904 326.056 215.605 326.562C219.586 329.405 223.594 332.197 227.548 335.089C232.008 338.351 236.747 341.057 241.298 344.136C244.85 346.544 248.145 349.324 250.142 353.568C253.075 359.807 251.184 364.122 245.106 365.118L245.138 365.1ZM228.386 213.255C228.117 212.84 227.902 212.442 227.632 212.098C224.713 208.469 221.838 204.794 218.854 201.227C208.84 189.251 198.258 177.911 187.69 166.549C172.507 150.218 156.92 134.392 140.904 119.089C139.316 117.57 139.335 117.58 138.582 119.628C135.492 128.01 132.447 136.418 129.268 144.75C123.913 158.807 118.515 172.846 113.045 186.838C108.081 199.533 103.06 212.204 97.1865 224.388C96.0936 226.654 96.0664 228.048 97.5017 230.335C108.339 247.541 119.641 264.336 131.942 280.316C146.041 298.639 161.131 315.884 177.131 332.153C178.737 333.786 178.779 333.798 179.584 331.747C187.154 312.417 194.736 293.091 202.596 273.907C210.74 254.018 219.048 234.218 227.834 214.69C228.038 214.237 228.201 213.751 228.397 213.247L228.386 213.255Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M173.694 262.104C163.114 263.62 153.207 261.173 143.958 254.754C135.028 248.555 131.22 239.253 130.273 228.18C129.658 221.035 130.266 214.052 131.857 207.213C133.315 200.945 135.821 195.327 140.256 191.025C140.605 190.683 140.924 190.263 141.329 190.055C147.334 186.944 152.827 182.54 159.868 182.105C163.775 181.863 167.583 182.4 171.144 184.187C183.086 190.186 192.231 199.375 196.35 213.571C198.441 220.774 197.994 228.138 196.442 235.319C195.689 238.79 194.717 242.187 193.597 245.53C190.443 254.937 184.211 260.095 175.426 261.809C174.849 261.922 174.266 261.998 173.687 262.092L173.694 262.104Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M98.6354 48.867C104.32 51.5875 106.924 58.2982 104.415 64.5589C102.161 70.1812 96.6919 72.7093 91.0519 70.128C85.4291 67.555 82.7873 60.5349 85.1763 54.394C87.2022 49.1802 92.8793 45.9687 98.6354 48.867Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M160.879 38.7344C166.564 41.455 169.168 48.1657 166.658 54.4264C164.405 60.0486 158.936 62.5767 153.296 59.9954C147.673 57.4224 145.031 50.4024 147.42 44.2615C149.446 39.0476 155.123 35.8361 160.879 38.7344Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M129.531 26.7117C135.216 29.4323 137.82 36.143 135.31 42.4037C133.057 48.0259 127.588 50.554 121.948 47.9727C116.325 45.3997 113.683 38.3796 116.072 32.2387C118.098 27.0249 123.775 23.8134 129.531 26.7117Z" fill="#35E0FF" fill-opacity="0.55"/>
+            </svg>
+                
+            <svg id="asset-3" width="471" height="493" viewBox="0 0 471 493" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M158.973 175.884C171.732 154.076 189.063 137.281 212.026 127.117C240.348 114.578 268.825 114.151 296.999 125.38C313.55 131.975 327.504 142.611 340.199 155.017C356.227 170.683 369.167 188.61 378.081 209.45C384.672 224.859 388.574 240.974 388.131 258.082C387.785 271.557 384.809 284.553 379.998 297.217C377.034 305.026 373.612 312.642 369.363 319.807C362.707 331.032 354.927 341.486 346.129 351.126C321.945 377.626 293.234 397.075 259.738 408.73C227.22 420.046 194.137 422.993 160.614 417.075C158.521 416.705 156.395 416.445 154.351 415.891C147.459 414.021 143.268 409.466 142.252 402.268C141.334 395.758 143.089 389.773 147.421 384.695C152.295 378.982 158.466 377.12 165.509 378.838C178.738 382.077 192.211 383.347 205.878 382.807C228.32 381.915 249.78 376.411 270.274 366.558C291.452 356.376 309.921 342.463 325.142 324.244C336.214 310.989 345.399 296.553 350.531 279.888C355.654 263.25 355.049 246.755 349.583 230.654C341.716 207.47 328.231 188.125 309.953 172.425C297.252 161.513 282.803 153.802 265.831 151.673C245.826 149.167 227.658 154.222 211.473 167.029C200.828 175.448 193.106 186.193 187.242 198.417C177.296 219.153 174.209 240.799 177.692 263.128C180.734 282.649 188.664 299.702 203.703 312.487C214.615 321.767 227.677 325.264 241.85 323.359C269.569 319.631 290.187 304.734 302.922 279.286C315.586 253.985 305.505 223.427 281.036 210.977C277.036 208.939 272.764 207.556 268.232 207.132C254.669 205.856 244.295 211.967 239.094 225.09C234.342 237.079 232.771 249.46 236.352 261.938C238.848 270.642 243.862 277.13 252.776 279.625C260.193 281.701 266.69 278.95 270.795 272.187C275.459 264.508 277.048 256.33 274.938 247.629C274.844 247.239 274.732 246.859 274.598 246.485C273.053 241.981 270.367 241.23 266.491 244.184C265.899 244.636 265.831 245.242 265.68 245.871C264.399 251.317 261.232 254.062 256.228 254.088C251.079 254.115 246.875 250.74 245.893 245.78C243.503 233.731 250.864 223.049 263.293 220.516C278.297 217.465 291.559 224.883 296.232 239.456C302.392 258.655 298.921 276.698 286.455 292.723C277.766 303.896 265.661 308.64 251.954 307.571C228.702 305.75 213.41 292.968 206.624 270.814C198.987 245.867 202.692 221.657 217.25 199.442C226.238 185.726 239.59 178.444 255.516 176.699C274.16 174.653 291.113 179.532 305.678 190.714C333.03 211.718 342.273 240.521 335.635 274.739C330.25 302.508 314.041 323.273 290.58 338.405C274.191 348.978 256.323 354.639 237.136 355.23C218.403 355.806 200.958 351.41 185.334 341.197C173.801 333.654 164.618 323.676 157.812 311.542C145.589 289.752 140.335 266.039 140.945 240.757C141.408 221.609 145.725 203.28 153.759 185.749C154.533 184.061 155.315 182.371 156.18 180.722C157.049 179.076 158.029 177.487 158.959 175.876L158.973 175.884Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M103.714 208.432C94.1448 202.44 91.3451 189.726 97.9863 179.895C104.159 170.761 115.575 168.022 124.981 173.63C133.286 178.577 138.076 190.986 130.486 202.206C124.281 211.373 113.466 213.808 103.714 208.432Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M382.392 112.053C391.451 117.696 393.919 128.971 387.623 138.345C381.97 146.763 371.672 149.516 362.648 144.105C353.652 138.711 351.213 126.936 357.262 117.724C362.393 109.903 373.264 106.111 382.392 112.053Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M198.791 71.2202C203.676 63.3644 215.535 60.5387 223.288 65.3803C232.103 70.8924 234.824 82.4679 228.694 91.5637C223.319 99.5431 213.298 102.599 204.252 97.3779C195.285 92.205 193.031 80.4916 198.791 71.2202Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M280.248 99.4921C275.939 96.2359 272.105 91.112 272.73 83.721C273.366 76.2589 277.389 71.0224 284.174 67.896C289.991 65.2145 299.688 67.2 303.209 72.6357C304.787 75.0766 306.754 77.2391 307.598 80.1458C309.697 87.3953 307.436 94.7658 301.709 99.2171C295.648 103.921 287.935 104.326 280.255 99.4902L280.248 99.4921Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M84.1259 242.084C89.081 234.095 99.4957 231.308 107.016 235.96C115.447 241.176 117.886 251.591 112.621 259.908C107.433 268.109 97.0121 270.648 89.0276 265.656C81.2872 260.816 79.0797 250.221 84.123 242.089L84.1259 242.084Z" fill="#35E0FF" fill-opacity="0.55"/>
+                <path d="M132.39 111.332C136.867 103.972 147.408 101.238 154.642 105.621C161.629 109.858 165.547 119.881 159.769 129.273C155.17 136.748 144.602 139.413 137.321 134.817C129.375 129.803 127.263 119.754 132.39 111.332Z" fill="#35E0FF" fill-opacity="0.55"/>
+            </svg>        
         </div>
         <script src="./scripts/history.js"></script>
         <script src="./scripts/popup.js"></script> 
         <script src="card.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html>
