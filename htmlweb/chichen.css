@@ -7,6 +7,7 @@ body {
 .history-page {
   background: rgb(14, 112, 238);
   margin: 0;
+  scroll-snap-type: x mandatory;
 }
 
 .quiz-page {
@@ -50,8 +51,9 @@ body {
   transform-origin: center;
   will-change: transform;
   transition: transform 0.2s ease-out;
-  top: 5px;
+  top: -15px;
   left: 50%;
+  margin-left: 15px;
 }
 
 /* Navbar */
@@ -933,6 +935,7 @@ body {
     text-align: left;
     max-width: 700px;
     /* margin-top: -80px; */
+    scroll-snap-align: start;
   }
 
   .greeting h1 {
@@ -1597,6 +1600,11 @@ nav {
     background-color: #3e8e41;
     border-radius: 20px;
   }
+}
+
+
+@media (max-width: 768px) {
+  
 }
 
 h2 {

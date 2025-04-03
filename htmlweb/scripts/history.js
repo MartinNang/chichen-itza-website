@@ -11,6 +11,8 @@ let asset2Pos = -80;
 let asset3Pos = 0;
 
 scrollContainer.addEventListener("wheel", (event) => {
+  event.preventDefault();
+
   if (event.deltaX > 0) {
     if (asset1Pos <= 40) {
       asset1Pos++;
@@ -43,46 +45,13 @@ scrollContainer.addEventListener("wheel", (event) => {
     }
   }
   asset3.style.top = Math.floor(asset3Pos / 2) + "px";
+
+  console.log("scroll delta y", event.deltaY);
+  console.log("index", index);
+
+  scrollContainer.scrollBy({
+    left: event.deltaY < 0 ? -length : length,
+    behavior: "smooth",
+    block: "nearest",
+  });
 });
-
-// scrollContainer.addEventListener("wheel", (event) => {
-//   console.log("scroll delta y", event.deltaY);
-//   console.log("index", index);
-//   // if (event.deltaY < 0) {
-//   //   complexScroll();
-//   //   console.log("scroll up");
-//   //   if (index > 0) {
-//   //     index--;
-//   //     scrollTo(index);
-//   //   } else {
-//   //     scrollContainer.scrollBy({
-//   //       left: event.deltaY < 0 ? -length : length,
-//   //       behavior: "smooth",
-//   //       block: "nearest",
-//   //     });
-//   //   }
-//   //   console.log("asset-1", asset1.style.top);
-//   //   asset1.style.top =
-//   //     parseFloat(asset1.style.top || 0) + event.deltaY < 0
-//   //       ? -length
-//   //       : length + "px";
-//   // } else {
-//   //   console.log("scroll down");
-//   //   if (index < 6) {
-//   //     index++;
-//   //     scrollTo(index);
-//   //   }
-//   // }
-
-//   event.preventDefault();
-// });
-
-function scrollTo() {
-  var historyElement = document.querySelector("#history-" + index);
-  historyElement.scrollIntoView({ block: "nearest", behavior: "smooth" });
-}
-
-function scrollTo(index) {
-  var historyElement = document.querySelector("#history-" + index);
-  historyElement.scrollIntoView({ block: "nearest", behavior: "smooth" });
-}

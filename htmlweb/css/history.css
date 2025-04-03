@@ -45,6 +45,7 @@ body {
   font-size: 1em;
   padding: 0 2em 0 2em;
   vertical-align: top;
+  scroll-snap-align: start;
 }
 .informations article div {
   font-size: 100px;
