@@ -957,7 +957,7 @@ body {
     width: 45%;
     font-size: 16px;
     text-align: right;
-    padding-top: 75px;
+    padding-top: 25px;
   }
 
   .informations h2 {
@@ -1597,4 +1597,8 @@ nav {
     background-color: #3e8e41;
     border-radius: 20px;
   }
+}
+
+h2 {
+  font-size: 2rem;
 }
