@@ -35,7 +35,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   padding: 55px;
   backdrop-filter: blur(5px);
   z-index: 999;
@@ -100,9 +100,10 @@ body {
 /* Language Option */
 .languageOption {
   position: fixed;
-  top: 40px;
-  right: -150px;
+  top: 30px;
+  left: 90%;
   z-index: 1000;
+  
 }
 
 .languageOption button {
@@ -321,7 +322,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: fit-content; /* Adjust the width as needed */
+  /* width: fit-content; Adjust the width as needed */
   font-size: 100px;
 }
 
@@ -329,6 +330,7 @@ body {
   font-family: "DynaPuff", cursive;
   font-size: 50px;
   margin-top: 50px;
+  font-weight: 600;
 }
 
 .map-site-container p {
@@ -341,14 +343,14 @@ body {
 }
 
 .map-site-container img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* width: 100%; */
 }
 
 #map {
-  position: absolute;
+  /* position: absolute;
   left: 30px;
-  top: 0;
+  top: 0; */
 }
 
 /* Gallery Page - Fixed */
@@ -546,11 +548,11 @@ body {
 /* About Page */
 
 .about-us {
-  width: 60%;
+  /* width: 60%; */
   color: white;
   font-size: 30px;
   text-align: left;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin-top: 30px;
 }
 
@@ -558,6 +560,7 @@ body {
   font-size: 80px;
   font-family: "DynaPuff", cursive;
   margin-bottom: -10px;
+  font-weight: 600;
 }
 
 .about-us p {
@@ -567,8 +570,8 @@ body {
 }
 
 .about-image {
-  width: 110%;
-  height: 500px;
+  width: 100%;
+  /* height: 500px; */
   border: 15px solid #dc68ff;
   border-radius: 20px;
 }
@@ -1065,85 +1068,82 @@ body {
 }
 
 #castillo-button {
-  position: absolute;
-  top: 530px;
-  left: 860px;
+  position: relative;
+  top: 70px;
+  left: 60px;
+
 }
 
 #castillo-button .popup-button {
-  position: absolute;
-  top: 50%;
-  left: -80px;
+  position: relative;
+  top: -100px;
+  left: 30%;
 }
 
 #jaguars-button {
-  position: absolute;
-  top: 475px;
-  left: 560px;
+  position: relative;
+  top: -250px;
+  left: -180px;
 }
 
 #jaguars-button .popup-button {
   position: absolute;
-  top: 25%;
-  left: -155px;
+  top: 30px;
+  left: 60px;
 }
 
 #el-caracol-button {
-  position: absolute;
-  top: 785px;
-  left: 615px;
+  position: relative;
+  left: -175px;
+  top: -90px;
 }
 
 #el-caracol-button .popup-button {
   position: absolute;
-  top: -20px;
-  left: 80px;
-  min-width: 75%;
+  top: -15px;
+  left: 420px;
 }
 
 #group-columns-button {
-  position: absolute;
-  top: 640px;
-  left: 975px;
+  position: relative;
+  top: -500px;
+  right: -240px;
 }
 
 #cenote-button {
-  position: absolute;
-  top: 435px;
-  left: 1110px;
+  position: relative;
+  top: -590px;
+  left: 270px;
 }
 
 #cenote-button .popup-button {
   position: absolute;
   top: -10px;
-  left: -70px;
-  min-width: 190%;
+  left: 300px;
 }
 
 #columns-button {
-  position: absolute;
-  top: 120px;
-  left: 20px;
+  position: relative;
+  top: -90px;
+  left: 320px;
 }
 
 #venus-button {
-  position: absolute;
-  top: 515px;
-  left: 1080px;
+  position: relative;
+  top: -1010px;
+  left: 200px;
 }
 
 #venus-button .popup-button {
-  position: absolute;
-  top: 55px;
-  left: 40px;
-  width: 250px;
+  position: relative;
+  top: -100px;
+  left: 480px;
 }
 
 #warriors-button {
-  position: absolute;
-  top: 15px;
-  left: 250px;
-  min-width: 100%;
+  position: relative;
+  top: -270px;
+  left: 550px;
 }
 
 .fade-in {
@@ -1234,6 +1234,7 @@ body {
 .popup-close {
   width: 50px;
   height: 50px;
+  padding: 0;
   border: 2px solid #0c2e35;
   border-radius: 90px;
   position: absolute;
@@ -1241,6 +1242,7 @@ body {
   right: -55px;
   background: #ffffff;
   cursor: pointer;
+  --bs-btn-close-opacity: 1;
 }
 
 .popup-close:hover {
@@ -1363,19 +1365,18 @@ body {
   border: 2px solid #0c2e35;
   margin: 2px;
   color: #0c2e35;
-  margin-top: 8px;
 }
 
 .dropdown-content span {
   position: absolute;
   margin-left: 5px;
-  top: 30%;
+  top: 22%;
 }
 
 .dropbtn span {
   position: relative;
   margin-left: 5px;
-  top: 4px;
+  top: 1px;
 }
 
 .dropbtn:hover {
@@ -1525,7 +1526,8 @@ nav {
 }
 
 .languageOption {
-  right: 50px;
+  margin-left: 5px;
+  /* right: 50px; */
 }
 
 .bg-assets {
@@ -1557,9 +1559,13 @@ nav {
   padding: 4px 10px;
 }
 
+.mobile-map {
+  visibility: hidden;
+}
+
 @media (max-width: 992px) {
   .navbar-nav {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .nav-item {
@@ -1579,7 +1585,7 @@ nav {
     left: 0;
     border-radius: 0;
     width: 100%;
-    padding: 70px 0;
+    padding: 20px 0;
     margin-top: 0px !important;
   }
 
@@ -1596,9 +1602,39 @@ nav {
   }
 
   .languageOption {
-    top: 65px;
+    top: 25px;
     background-color: #3e8e41;
     border-radius: 20px;
+    right: auto;
+    margin-left: -5rem;
+  }
+
+  .map-bg {
+    visibility: hidden;
+  }
+
+  .mobile-map {
+    visibility: visible;
+  }
+
+  .location-container {
+    margin-top: 5rem;
+  }
+
+  .prevLeftSecond {
+    visibility: hidden;
+  }
+
+  .prev {
+    visibility: hidden;
+  }
+
+  .next {
+    visibility: hidden;
+  }
+
+  .nextRightSecond {
+    visibility: hidden;
   }
 }
 
@@ -1609,4 +1645,44 @@ nav {
 
 h2 {
   font-size: 2rem;
+}
+
+.btn-close svg {
+  margin-top: -115px;
+}
+
+.map-bg {
+  background-image: url("Images/empty_map.png");
+  background-size: 950px;
+  position: absolute;
+  width: 43%;
+  left: 28%;
+  min-width: 950px;
+  background-repeat: no-repeat;
+  /* position: absolute;
+  left: 50%; */
+}
+
+.popup-button {
+  min-width: 250px;
+
+}
+
+#mobile-map-img {
+  width: 100%;
+}
+
+.accordion {
+  --bs-accordion-bg: transparent !important;
+  border: none;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  color: white !important;
+
+}
+
+.accordion-item {
+  background-color: transparent !important;
 }

@@ -1,21 +1,19 @@
 const scrollContainer = document.querySelector(".history-page");
 console.log("scroll container", scrollContainer);
 const length = 500;
-let index = 0;
 
 const asset1 = document.querySelector("#asset-1");
 const asset2 = document.querySelector("#asset-2");
 const asset3 = document.querySelector("#asset-3");
 let asset1Pos = 0;
-let asset2Pos = -160;
-let asset3Pos = -100;
+let asset2Pos = -80;
+let asset3Pos = 0;
 
 scrollContainer.addEventListener("wheel", (event) => {
-  console.log("asset3 top", asset3.style.top);
-  console.log("asset 3 pos", asset3Pos);
+  event.preventDefault();
 
   if (event.deltaX > 0) {
-    if (asset1Pos <= 50) {
+    if (asset1Pos <= 40) {
       asset1Pos++;
     }
   } else {
@@ -30,27 +28,28 @@ scrollContainer.addEventListener("wheel", (event) => {
       asset2Pos--;
     }
   } else {
-    if (asset2Pos <= -160) {
+    if (asset2Pos <= -80) {
       asset2Pos++;
     }
   }
-  asset2.style.bottom = Math.floor(asset2Pos / 2 + asset2Pos / 2) + "px";
+  asset2.style.bottom = Math.floor(asset2Pos / 2) + "px";
 
   if (event.deltaX > 0) {
-    if (asset3Pos <= -50) {
+    if (asset3Pos <= 30) {
       asset3Pos++;
     }
   } else {
-    if (asset3Pos >= -100) {
+    if (asset3Pos >= 0) {
       asset3Pos--;
     }
   }
-  asset3.style.top = Math.floor(asset3Pos / 2 + asset3Pos / 2) + "px";
+  asset3.style.top = Math.floor(asset3Pos / 2) + "px";
 
-  // scrollContainer.scrollBy({
-  //   left: event.deltaY < 0 ? -length : length,
-  //   behavior: "smooth",
-  //   block: "nearest",
-  // });
-  event.preventDefault();
+  console.log("scroll delta y", event.deltaY);
+
+  scrollContainer.scrollBy({
+    left: event.deltaY < 0 ? -length : length,
+    behavior: "smooth",
+    block: "nearest",
+  });
 });
