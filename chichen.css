@@ -905,7 +905,7 @@ button {
 
 @media (max-width: 1366px) {
   .content-wrapper {
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
   }
 }
 /* Navbar
