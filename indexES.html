@@ -1,116 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="chichen.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chichén Itzá - Página Inicial</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="chichen.css" />
 
     <!-- Scripts-->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-</head>
-<body>
-    <nav class="navbar navbar-dark navbar-expand-lg ">
-        <a class="navbar-brand " href="indexES.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
-
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="Images/Chichen_Itza_logo.png"
+            alt="Chichen Itza logo Icon"
+            class="logo"
+        /></a>
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
+          <div
+            class="collapse navbar-collapse align-items-center justify-content-center"
+            id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="historyES.html">Historia</a>
+                <a class="nav-link" aria-current="page" href="historyES.html"
+                  >Historia</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="mapES.html">Mapa</a>
               </li>
-              <li id="placeholder-item">
-                <a class="navbar-brand " href="index.html">
-                <!-- <a class="navbar-brand " href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a> -->
-              </li>
+              <li id="placeholder-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="galleryES.html">Galería</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="aboutES.html">Nosotros</a>
               </li>
-            </ul> 
+            </ul>
           </div>
         </div>
         <!-- Language button -->
         <div class="languageOption">
           <div class="dropdown">
             <div id="lngOption" class="dropbtn">
-                <img
+              <img
                 src="Images/esp.png"
                 class="lang-icon"
-                alt="Spanish Language Button Image" /><span>ESP</span>
+                alt="En español" /><span>ESP</span>
             </div>
             <div class="dropdown-content">
               <a href="index.html">
                 <img
                   src="Images/eng.png"
                   class="lang-icon"
-                  alt="Spanish Language Button Image" /><span>ENG</span>
-                </a>
+                  alt="En Inglés" /><span>ENG</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="content-wrapper container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-6 d-flex">
+          <div
+            class="greeting mx-auto justify-content-center align-self-center mt-5">
+            <h3>¡Hola explorador!</h3>
+            <h1>¡Bienvenido a Chichen Itzá!</h1>
+            <p>
+              ¿Estas listo para comenzar una nueva aventura? ¡Estas a punto de
+              descubrir los secretos de Chichen Itzá, una de las ocho maravillas
+              del mundo moderno!
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="informations container w-100">
+            <div class="row">
+              <h2 class="mb-2 pe-4">Entra aquí al mapa del sitio</h2>
+              <!-- Map image -->
+
+              <div class="map-container">
+                <div class="card bg-transparent border-0">
+                  <a href="mapES.html"
+                    ><img
+                      src="Images/map.sm.png"
+                      alt="Imagen del mapa"
+                      id="Map"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <!-- 3D Model and Gallery images below map -->
+              <div class="col-xs-12 col-md-6 col-lg-7">
+                <div id="model-card" class="card bg-transparent border-0">
+                  <div class="Image-Model">
+                    <a href="El_castilloES.html"
+                      ><img
+                        src="Images/pyramid_card_ES_without_borders.png"
+                        alt="Imagen de El Castillo"
+                        id="3Dmodel"
+                        class="w-100"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card bg-transparent border-0">
+                  <div class="gallery-image mx-auto mt-sm-3 mt-md-0">
+                    <a href="galleryES.html" class="w-100 h-100"
+                      ><img
+                        class="mw-100 mh-100 mx-auto"
+                        src="Images/galeria.png"
+                        alt="Imagen de la galería"
+                        id="Gallery"
+                    /></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </nav>    
-     
-     <!-- Content -->
-     <div class="content-wrapper container">
-        <div class="row">
-            <div class="col-xs-12 col-lg-6 d-flex">
-                <div class="greeting mx-auto justify-content-center align-self-center">
-                    <h3>¡Hola explorador!</h3>
-                    <h1>¡Bienvenido a Chichen Itzá!</h1>
-                    <p>¿Estas listo para comenzar una nueva aventura? Estas a punto de descubrir los secretos de Chichen Itzá, una de las ocho maravillas del mundo moderno.</p>
-                </div>
-            </div>
-            <div class="col">
-                    <div class="informations container w-100">
-                        <div class="row">
-                            <h2 class="mb-2 pe-4">Entra aquí al mapa del sitio</h2>
-                            <!-- Map image -->
-                            
-                            <div class="map-container">
-                                <div class="card bg-transparent border-0">
-                                    <a href="map.html"><img src="Images/map.sm.png" alt="Map Image" id="Map"></a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <!-- 3D Model and Gallery images below map -->
-                                <div class="col-xs-12 col-md-6 col-lg-7">
-                                    <div id="model-card" class="card bg-transparent border-0">
-                                        <div class="Image-Model">
-                                            <a href="El_castilloES.html"><img src="Images/pyramid_card_ES_without_borders.png" alt="El castillo Image" id="3Dmodel" class="w-100"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col">
-                                    <div class="card bg-transparent border-0">
-                                        <div class="gallery-image mx-auto mt-sm-3 mt-md-0">
-                                            <a href="galleryES.html" class="w-100 h-100"><img class="mw-100 mh-100 mx-auto" src="Images/galeria.png" alt="Gallery Image" id="Gallery"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-            </div>
-        </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
-    <script src="card.js"></script>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="card.js"></script>
+  </body>
 </html>

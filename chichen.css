@@ -1339,8 +1339,15 @@ button {
 .dropbtn {
   padding: 16px;
   /* font-size: 16px; */
-  font-size: 1.1rem;
   border: none;
+}
+
+.languageOption {
+  font-size: 1.1rem;
+}
+
+.languageOption a {
+  font-size: 1.1rem;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -1412,7 +1419,7 @@ button {
 .dropdown-content span {
   position: absolute;
   margin-left: 5px;
-  top: 22%;
+  top: 7px;
 }
 
 .dropbtn span {
@@ -1647,6 +1654,9 @@ nav {
 .accordion-button {
   background-color: transparent !important;
   color: white !important;
+  font-size: 2rem;
+  font-family: "DynaPuff";
+  font-weight: 700;
 }
 
 .accordion-item {
@@ -1658,6 +1668,23 @@ nav {
 }
 
 @media (max-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  a,
+  button {
+    font-size: 1.5rem;
+  }
+
   .navbar-nav {
     margin-top: 150px;
   }
