@@ -31,29 +31,42 @@
   </head>
   <body class="map-page">
     <div class="header">
-      <nav class="navbar navbar-dark navbar-expand-lg ">
-        <a class="navbar-brand " href="index.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <a class="navbar-brand" href="index.html"
+          ><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"
+        /></a>
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
+          <div
+            class="collapse navbar-collapse align-items-center justify-content-center"
+            id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="history.html">History</a>
+                <a class="nav-link" aria-current="page" href="history.html"
+                  >History</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="map.html">Map</a>
               </li>
-              <li id="placeholder-item">
-              </li>
+              <li id="placeholder-item"></li>
               <li class="nav-item">
                 <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
               </li>
-            </ul> 
+            </ul>
           </div>
         </div>
         <!-- Language button -->
@@ -61,24 +74,21 @@
           <div class="dropdown">
             <div id="lngOption" class="dropbtn">
               <img
-                  src="Images/eng.png"
-                  class="lang-icon"
-                  alt="Spanish Language Button Image" /><span>ENG</span>
-              
+                src="Images/eng.png"
+                class="lang-icon"
+                alt="Spanish Language Button Image" /><span>ENG</span>
             </div>
             <div class="dropdown-content">
               <a href="indexES.html">
                 <img
-                src="Images/esp.png"
-                class="lang-icon"
-                alt="Spanish Language Button Image" /><span>ESP</span>
-                </a
-              >
+                  src="Images/esp.png"
+                  class="lang-icon"
+                  alt="Spanish Language Button Image" /><span>ESP</span>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </nav>      
+      </nav>
     </div>
 
     <!-- Content -->
@@ -87,7 +97,7 @@
         <div class="row">
           <h1>Site Map</h1>
         </div>
-        <div class="row">
+        <div class="row px-5">
           <p>
             Explore the wonders of this fascinating place and discover its
             hidden secrets. Click on any of the names to learn more about the
@@ -95,18 +105,38 @@
           </p>
         </div>
         <div id="map" class="row mt-3">
-          <div class="map-bg container d-flex h-75">
+          <div class="map-bg container d-flex h-75 px-auto">
             <div id="castillo-button" class="location-container col-md-2">
               <a href="El_castillo.html">
-                <img src="Images/el_castillo.png" />
-                <button class="popup-button">"El Castillo" in 3D</button>
+                <img
+                  src="Images/el_castillo.png"
+                  width="325"
+                  alt="El Castillo" />
+                <div class="popup-button">"El Castillo" in 3D</div>
               </a>
             </div>
             <div id="jaguars-button" class="location-container col-md-2">
-              <img src="Images/jaguars.png" width="350" />
+              <img
+                src="Images/jaguars.png"
+                width="400"
+                alt="Temple of Jaguars" />
               <button class="popup-button" onclick="showPopup(this, false)">
                 "Temple of Jaguars"
               </button>
+              <div class="entrance">
+                <p>Entrance</p>
+                <svg
+                  width="140"
+                  height="62"
+                  viewBox="0 0 140 62"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.18335 1.53467C2.18335 1.53467 23 46.0694 59 55.5346C95 64.9998 139.183 55.5347 139.183 55.5347"
+                    stroke="white"
+                    stroke-width="4" />
+                </svg>
+              </div>
               <div class="info-popup map-popup hidden">
                 <p class="popup-paragraph">
                   Roar like a mighty jaguar as you explore this temple. The
@@ -131,7 +161,7 @@
               </div>
             </div>
             <div id="el-caracol-button" class="location-container col-md-2">
-              <img src="Images/el_caracol.png" width="205" />
+              <img src="Images/el_caracol.png" width="275" alt="El Caracol" />
 
               <button class="popup-button" onclick="showPopup(this, false)">
                 "El Caracol"
@@ -161,7 +191,10 @@
               </div>
             </div>
             <div id="cenote-button" class="location-container col-md-2">
-              <img src="Images/Sacred cenote 1.png" width="108" />
+              <img
+                src="Images/sacred_cenote.png"
+                width="150"
+                alt="The Sacred Cenote" />
               <button class="popup-button" onclick="showPopup(this, false)">
                 "Sacred Cenote"
               </button>
@@ -191,8 +224,9 @@
             </div>
             <div id="group-columns-button" class="location-container col-md-2">
               <img
-                src="Images/Group of the One throusand columns 1.png"
-                width="348" />
+                src="Images/las_mil_columnas.png"
+                width="500"
+                alt="Las Mil Columnas" />
 
               <div id="columns-button">
                 <button class="popup-button" onclick="showPopup(this, false)">
@@ -223,10 +257,7 @@
                 </div>
               </div>
               <div id="warriors-button">
-                <button
-                  id=""
-                  class="popup-button"
-                  onclick="showPopup(this, false)">
+                <button class="popup-button" onclick="showPopup(this, false)">
                   "Temple of Warriors"
                 </button>
                 <div class="info-popup map-popup hidden">
@@ -258,7 +289,10 @@
             </div>
 
             <div id="venus-button" class="location-container col-md-2">
-              <img src="Images/entrance_exit.png" width="48" />
+              <img
+                src="Images/entrance_exit.png"
+                width="65"
+                alt="Platform of Venus" />
               <button class="popup-button" onclick="showPopup(this, false)">
                 "Platform of Venus"
               </button>
@@ -296,134 +330,204 @@
 
           <!-- Map alternative for smaller devices -->
           <div class="mobile-map">
-            <img id="mobile-map-img" src="Images/map.png"/>
-            <div class="location-container ">
-              <img src="Images/jaguars.png" width="350" />
-              <div class="accordion" id="accordionExample">
+            <img
+              id="mobile-map-img"
+              src="Images/map.png"
+              alt="Map of Chichén Itzá" />
+            <div class="location-container">
+              <img
+                src="Images/jaguars.png"
+                width="350"
+                alt="Temple of Jaguars" />
+              <div class="accordion" id="accordionJaguar">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJaguar" aria-expanded="true" aria-controls="collapseOne">
-                      <h2>"Temple of Jaguars"</h2>
+                  <h2 class="accordion-header" id="headingJaguar">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseJaguar"
+                      aria-expanded="true"
+                      aria-controls="collapseJaguar">
+                      "Temple of Jaguars"
                     </button>
                   </h2>
-                  <div id="collapseJaguar" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseJaguar"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingJaguar"
+                    data-bs-parent="#accordionJaguar">
                     <div class="accordion-body popup-paragraph">
                       <p class="">
-                        Roar like a mighty jaguar as you explore this temple. The
-                        Mayans believed jaguars had special powers. Can you find the
-                        jaguar carvings hiding in the stones?
+                        Roar like a mighty jaguar as you explore this temple.
+                        The Mayans believed jaguars had special powers. Can you
+                        find the jaguar carvings hiding in the stones?
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>                
+              </div>
             </div>
-            <div class="location-container ">
-              <img src="Images/el_caracol.png" width="250" />
-              <div class="accordion" id="accordionExample">
+            <div class="location-container">
+              <img src="Images/el_caracol.png" width="250" alt="El Caracol" />
+              <div class="accordion" id="accordionElCaracol">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseElCaracol" aria-expanded="true" aria-controls="collapseOne">
-                      <h2>"El Caracol"</h2>
+                  <h2 class="accordion-header" id="headingElCaracol">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseElCaracol"
+                      aria-expanded="true"
+                      aria-controls="collapseElCaracol">
+                      "El Caracol"
                     </button>
                   </h2>
-                  <div id="collapseElCaracol" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseElCaracol"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingElCaracol"
+                    data-bs-parent="#accordionElCaracol">
                     <div class="accordion-body popup-paragraph">
                       <p class="">
-                        Roar like a mighty jaguar as you explore this temple. The
-                        Mayans believed jaguars had special powers. Can you find the
-                        jaguar carvings hiding in the stones?
+                        Roar like a mighty jaguar as you explore this temple.
+                        The Mayans believed jaguars had special powers. Can you
+                        find the jaguar carvings hiding in the stones?
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>                
+              </div>
             </div>
-            <div class="location-container ">
-              <img src="Images/Sacred cenote 1.png" width="150" />
+            <div class="location-container">
+              <img
+                src="Images/sacred_cenote.png"
+                width="150"
+                alt="The Sacred Cenote" />
 
-              <div class="accordion" id="accordionExample">
-
+              <div class="accordion" id="accordionSacredCenote">
                 <div class="accordion-item">
-
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSacredCenote" aria-expanded="true" aria-controls="collapseOne">
-                      <h2>"Sacred Cenote"</h2>
+                  <h2 class="accordion-header" id="headingSacredCenote">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSacredCenote"
+                      aria-expanded="true"
+                      aria-controls="collapseSacredCenote">
+                      "Sacred Cenote"
                     </button>
                   </h2>
-                  <div id="collapseSacredCenote" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseSacredCenote"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSacredCenote"
+                    data-bs-parent="#accordionSacredCenote">
                     <div class="accordion-body popup-paragraph">
                       <p class="">
-                        Roar like a mighty jaguar as you explore this temple. The
-                        Mayans believed jaguars had special powers. Can you find the
-                        jaguar carvings hiding in the stones?
+                        Roar like a mighty jaguar as you explore this temple.
+                        The Mayans believed jaguars had special powers. Can you
+                        find the jaguar carvings hiding in the stones?
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>                
+              </div>
             </div>
-            <div class="location-container ">
-              <img src="Images/Group of the One throusand columns 1.png" width="350" />
-              <div class="accordion" id="accordionExample">
+            <div class="location-container">
+              <img
+                src="Images/las_mil_columnas.png"
+                width="350"
+                alt="Las Mil Columnas" />
+              <div class="accordion" id="accordionLasMilColumnas">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLasMilColumnas" aria-expanded="true" aria-controls="collapseOne">
-                      <h2> “Las Mil Columnas”</h2>
+                  <h2 class="accordion-header" id="headingLasMilColumnas">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseLasMilColumnas"
+                      aria-expanded="true"
+                      aria-controls="collapseLasMilColumnas">
+                      "Las Mil Columnas”
                     </button>
                   </h2>
-                  <div id="collapseLasMilColumnas" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseLasMilColumnas"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingLasMilColumnas"
+                    data-bs-parent="#accordionLasMilColumnas">
                     <div class="accordion-body popup-paragraph">
                       <p class="">
-                        Roar like a mighty jaguar as you explore this temple. The
-                        Mayans believed jaguars had special powers. Can you find the
-                        jaguar carvings hiding in the stones?
+                        Roar like a mighty jaguar as you explore this temple.
+                        The Mayans believed jaguars had special powers. Can you
+                        find the jaguar carvings hiding in the stones?
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTempleOfWarriors" aria-expanded="true" aria-controls="collapseOne">
-                      <h2>"Temple of Warriors"</h2>
+                  <h2 class="accordion-header" id="headingTempleOfWarriors">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTempleOfWarriors"
+                      aria-expanded="true"
+                      aria-controls="collapseTempleOfWarriors">
+                      "Temple of Warriors"
                     </button>
                   </h2>
-                  <div id="collapseTempleOfWarriors" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapseTempleOfWarriors"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTempleOfWarriors"
+                    data-bs-parent="#accordionLasMilColumnas">
                     <div class="accordion-body popup-paragraph">
                       <p class="">
-                        Roar like a mighty jaguar as you explore this temple. The
-                        Mayans believed jaguars had special powers. Can you find the
-                        jaguar carvings hiding in the stones?
+                        Roar like a mighty jaguar as you explore this temple.
+                        The Mayans believed jaguars had special powers. Can you
+                        find the jaguar carvings hiding in the stones?
                       </p>
                     </div>
                   </div>
                 </div>
-              </div>                
+              </div>
             </div>
-            <div class="location-container " style="margin-bottom: 15rem">
-              <img src="Images/entrance_exit.png" width="100" />
-              <div class="accordion" id="accordionExample">
+            <div class="location-container" style="margin-bottom: 15rem">
+              <img
+                src="Images/entrance_exit.png"
+                width="100"
+                alt="Platform of Venus" />
+              <div class="accordion" id="accordionVenus">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlatformOfVenus" aria-expanded="true" aria-controls="collapseOne">
-                      <h2>"Platform of Venus"</h2>
+                  <h2 class="accordion-header" id="headingVenus">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsePlatformOfVenus"
+                      aria-expanded="true"
+                      aria-controls="collapsePlatformOfVenus">
+                      "Platform of Venus"
                     </button>
                   </h2>
-                  <div id="collapsePlatformOfVenus" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div
+                    id="collapsePlatformOfVenus"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingVenus"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body popup-paragraph">
                       <p class="">
-                        Roar like a mighty jaguar as you explore this temple. The
-                        Mayans believed jaguars had special powers. Can you find the
-                        jaguar carvings hiding in the stones?
+                        Roar like a mighty jaguar as you explore this temple.
+                        The Mayans believed jaguars had special powers. Can you
+                        find the jaguar carvings hiding in the stones?
                       </p>
                     </div>
                   </div>
-                </div>              
-              </div>                
+                </div>
+              </div>
             </div>
-  
-            
           </div>
         </div>
       </div>
