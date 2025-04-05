@@ -1,88 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="chichen.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="chichen.css" />
 
     <!-- Scripts-->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-</head>
-<body class="map-page">
-
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body class="map-page">
     <div class="header">
-        <a href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
-        
-        <!-- Nav bar -->
-     <div class="navbar">
-        <nav>
-            <a href="history.html">History</a>
-            <a href="map.html">Map</a>
-            <span></span>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-        </nav>
-     </div>
-
-     
-
-    <!-- Language button -->
-    <div class="languageOption">
-        <div class="dropdown">
-          <div id="lngOption" class="dropbtn">
-            <img
-              src="Images/eng.png"
-              class="lang-icon"
-              alt="English Language Button Image" /><span>ENG</span>
+      <nav class="navbar navbar-dark navbar-expand-lg ">
+        <a class="navbar-brand " href="index.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
+              <li id="placeholder-item">
+                <a class="navbar-brand " href="index.html">
+                <!-- <a class="navbar-brand " href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul> 
           </div>
-          <div class="dropdown-content">
-            <a href="El_castilloES.html"
-              ><img
+        </div>
+        <!-- Language button -->
+        <div class="languageOption">
+          <div class="dropdown">
+            <div id="lngOption" class="dropbtn">
+              <img
+                  src="Images/eng.png"
+                  class="lang-icon"
+                  alt="Spanish Language Button Image" /><span>ENG</span>
+              
+            </div>
+            <div class="dropdown-content">
+              <a href="indexES.html">
+                <img
                 src="Images/esp.png"
                 class="lang-icon"
-                alt="Spanish Language Button Image" /><span>ESP</span></a
-            >
+                alt="Spanish Language Button Image" /><span>ESP</span>
+                </a
+              >
+            </div>
           </div>
         </div>
       </div>
+    </nav> 
     </div>
-    
-     
 
-     <!-- Content -->
-     <div class="content-wrapper-3D">
+    <!-- Content -->
+    <div class="content-wrapper-3D container">
+      <div class="map-site-container-3D row pb-3">
+        <h1>“El castillo”</h1>
+        <p class="pt-3">
+          Here's your chance to get a super close look at El Castillo, the
+          amazing pyramid at Chichén Itzá! 
+        </p>
+      </div>
 
-        <div class="map-site-container-3D">
-            <h1>“El castillo”</h1>    
-            <p>Here's your chance to get a super close look at El Castillo, the amazing pyramid at Chichén Itzá! </p>
+      <div class="instructions-image-container row p-0 w-100">
+        <div class="instructions col-12 p-0 col-xs-12 col-sm-12 col-md-5 order-2">
+          <h2 class="p-3">Instructions</h2>
+          <p>
+            1. Spin the castle around: Just click and drag your mouse on the
+            model to spin it around.<br />
+            2. Zoom in and out: Use your mouse wheel to zoom in and out. <br />
+            3. Move the castle: Click and hold the right mouse button to grab
+            the castle and move it around. <br />
+            4. Explore different views: See those little squares with arrows on
+            the sides of the model? Click on them to quickly move the castle and
+            see it from different angles. <br />
+            5. Reset the view: If you want to start over and see the castle from
+            the beginning, just click the "Reset" button. It's like a magic undo
+            button!
+          </p>
         </div>
 
-        <div class="instructions-image-container">
-            <div class="instructions">
-                <h2>Instructions</h2>
-                <p>1. Spin the castle around: Just click and drag your mouse on the model to spin it around.<br>
-                   2. Zoom in and out: Use your mouse wheel to zoom in and out. <br>
-                   3. Move the castle: Click and hold the right mouse button to grab the castle and move it around. <br>
-                   4. Explore different views: See those little squares with arrows on the sides of the model? Click on them to quickly move the castle and see it from different angles. <br>
-                   5. Reset the view: If you want to start over and see the castle from the beginning, just click the "Reset" button. It's like a magic undo button!</p>
-            </div>
-    
-            <!-- Image placed to the right of instructions -->
-            <div class="sketchfab-embed-wrapper"> <iframe title="El Castillo at Chichén Itzá" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/1624b224a7514762baf9025e6fe7dc4f/embed?ui_watermark_link=0&ui_watermark=0"> </iframe> </div>
+        <!-- Image placed to the right of instructions -->
+        <div class="sketchfab-embed-wrapper col-12 pb-3 col-xs-12 col-sm-12 col-md-6 order-1 order-lg-3">
+          <iframe
+            title="El Castillo at Chichén Itzá"
+            frameborder="0"
+            allowfullscreen
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+            allow="autoplay; fullscreen; xr-spatial-tracking"
+            xr-spatial-tracking
+            execution-while-out-of-viewport
+            execution-while-not-rendered
+            web-share
+            src="https://sketchfab.com/models/1624b224a7514762baf9025e6fe7dc4f/embed?ui_watermark_link=0&ui_watermark=0">
+          </iframe>
         </div>
-        
-        
-
-        
-
+      </div>
     </div>
-    
 
     <script src="card.js"></script>
-      
-</body>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  </body>
 </html>

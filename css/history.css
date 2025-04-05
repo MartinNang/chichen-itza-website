@@ -167,12 +167,13 @@ body {
   padding: 0;
 }
 
-.btn-close svg {
-  margin-top: -115px;
-}
-
 .btn-close {
   top: 0px;
   right: -60px;
   padding: 0px;
+}
+
+.greeting {
+  width: 45%;
+  padding-left: 50px;
 }

@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet" />
-
-    <link rel="stylesheet" type="text/css" href="chichen.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="chichen.css">
 
     <!-- Scripts-->
     <script
@@ -22,142 +18,199 @@
   </head>
   <body class="quiz-page">
     <div class="header">
-      <a href="homepage.html"
-        ><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"
-      /></a>
-
-      <!-- Nav bar -->
-      <div class="navbar">
-        <nav>
-          <a href="history.html">History</a>
-          <a href="map.html">Map</a>
-          <span></span>
-          <a href="gallery.html">Gallery</a>
-          <a href="about.html">About</a>
-        </nav>
-      </div>
-
-      <!-- Language button -->
-      <div class="languageOption">
-        <div class="dropdown">
-          <div id="lngOption" class="dropbtn">
-            <img
-              src="Images/eng.png"
-              class="lang-icon"
-              alt="English Language Button Image" /><span>ENG</span>
+      <nav class="navbar navbar-dark navbar-expand-lg ">
+        <a class="navbar-brand " href="index.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a>
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 w-100 justify-content-around align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="history.html">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="map.html">Map</a>
+              </li>
+              <li id="placeholder-item">
+                <a class="navbar-brand " href="index.html">
+                <!-- <a class="navbar-brand " href="homepage.html"><img src="Images/Chichen_Itza_logo.png" alt="logo Icon" class="logo"></a> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+            </ul> 
           </div>
-          <div class="dropdown-content">
-            <a href="thequizES.html"
-              ><img
+        </div>
+        <!-- Language button -->
+        <div class="languageOption">
+          <div class="dropdown">
+            <div id="lngOption" class="dropbtn">
+              <img
+                  src="Images/eng.png"
+                  class="lang-icon"
+                  alt="Spanish Language Button Image" /><span>ENG</span>
+              
+            </div>
+            <div class="dropdown-content">
+              <a href="indexES.html">
+                <img
                 src="Images/esp.png"
                 class="lang-icon"
-                alt="Spanish Language Button Image" /><span>ESP</span></a
-            >
+                alt="Spanish Language Button Image" /><span>ESP</span>
+                </a
+              >
+            </div>
           </div>
         </div>
       </div>
+    </nav>   
     </div>
 
     <!-- Content -->
 
-    <div class="quiz-container">
-      <h2 id="question-title">
+    <div class="quiz-container container">
+      <h2 id="question-title row">
         Question 1/<span class="small-number">5</span>
       </h2>
-      <div id="question-container">
-        <div class="question-box" id="q1">
-          <div class="question">
+      <div id="question-container row">
+        <div class="question-box container" id="q1">
+          <div class="question row">
             1. What did the Maya use as a pilgrimage site?
           </div>
-          <div class="options">
-            <button onclick="checkAnswer('q1', 'A', this)">
-              A) Main pyramid
-            </button>
-            <button onclick="checkAnswer('q1', 'B', this)">
-              B) Sacred Cenote
-            </button>
-            <button onclick="checkAnswer('q1', 'C', this)">
-              C) Puuc Temple
-            </button>
+          <div class="options row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3 ">
+              <button onclick="checkAnswer('q1', 'A', this)">
+                A) Main pyramid
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3 ">
+              <button onclick="checkAnswer('q1', 'B', this)">
+                B) Sacred Cenote
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+              <button onclick="checkAnswer('q1', 'C', this)">
+                C) Puuc Temple
+              </button>
+            </div>
+           <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q1', 'D', this)">
               D) Ball court
             </button>
+           </div>
+            
           </div>
         </div>
 
-        <div class="question-box hidden" id="q2">
-          <div class="question">
+        <div class="question-box container hidden" id="q2">
+          <div class="question row">
             2. What materials were traditional Maya houses made of?
           </div>
-          <div class="options">
-            <button onclick="checkAnswer('q2', 'A', this)">A) Limestone</button>
-            <button onclick="checkAnswer('q2', 'B', this)">B) Adobe</button>
-            <button onclick="checkAnswer('q2', 'C', this)">
-              C) Wood and straw
-            </button>
-            <button onclick="checkAnswer('q2', 'D', this)">
-              D) Pre-Hispanic concrete
-            </button>
+          <div class="options row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+              <button onclick="checkAnswer('q2', 'A', this)">A) Limestone</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+              <button onclick="checkAnswer('q2', 'B', this)">B) Adobe</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+              <button onclick="checkAnswer('q2', 'C', this)">
+                C) Wood and straw
+              </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+              <button onclick="checkAnswer('q2', 'D', this)">
+                D) Pre-Hispanic concrete
+              </button>
+            </div>
           </div>
         </div>
 
-        <div class="question-box hidden" id="q3">
-          <div class="question">
+        <div class="question-box container hidden" id="q3">
+          <div class="question row">
             3. What game did they play in Chichen Itza?
           </div>
-          <div class="options">
+          <div class="options row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q3', 'A', this)">
               A) Pok-ta-Pok
             </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q3', 'B', this)">B) Tlachtli</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q3', 'C', this)">C) Ulama</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q3', 'D', this)">D) Maya ball</button>
+            </div>
           </div>
         </div>
 
-        <div class="question-box hidden" id="q4">
-          <div class="question">
+        <div class="question-box container hidden" id="q4">
+          <div class="question row">
             4. What caused the abandonment of Chichen Itza?
           </div>
-          <div class="options">
+          <div class="options row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q4', 'A', this)">A) War</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q4', 'B', this)">B) Disease</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q4', 'C', this)">
               C) Prolonged drought
             </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q4', 'D', this)">
               D) Foreign invasion
             </button>
+            </div>
           </div>
         </div>
 
-        <div class="question-box hidden" id="q5">
-          <div class="question">
+        <div class="question-box container hidden" id="q5">
+          <div class="question row">
             5. Who first recorded the name "Chichen Itza"?
           </div>
-          <div class="options">
+          <div class="options row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q5', 'A', this)">
               A) Hernán Cortés
             </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q5', 'B', this)">
               B) Diego de Landa
             </button>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q5', 'C', this)">
               C) Francisco Montejo
             </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <button onclick="checkAnswer('q5', 'D', this)">
               D) John Lloyd Stephens
             </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="winner">
-      <div class="content-wrapper">
-        <div class="Congratulations">
+    <div class="winner container">
+      <div class="content-wrapper row px-0">
+        <div class="Congratulations col-12 pb-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 order-2">
           <h1>Congratulations!</h1>
-          <h2>You scored 5/5</h2>
+          <h2 class="pt-5">You scored 5/5</h2>
           <p>
             Great job! You finished the test and answered all questions
             correctly. Download your certificate of participation below to
@@ -172,26 +225,26 @@
           <a href="history.html">Back to History Page</a>
         </div>
 
-        <div class="Congratulations-image">
-          <img src="placeholder.jpeg" alt="" class="winner-image" />
+        <div class="Congratulations-image col-12 pb-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 order-1 order-lg-3">
+          <img src="/Images/History_Quiz_Certification.png" alt="" class="winner-image" />
         </div>
       </div>
     </div>
     <!-- <canvas id="canvas" width="300" height="100"></canvas> -->
 
-    <div class="loser">
-      <div class="content-wrapper">
-        <div class="Congratulations">
+    <div class="loser container">
+      <div class="content-wrapper row px-0">
+        <div class="Congratulations col-12 pb-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 order-2">
           <h1>You’re getting there!</h1>
-          <h2 id="">You scored <span id="result-text">?/5</span></h2>
-          <p>
+          <h2 id="" class="pt-5">You scored <span id="result-text">?/5</span></h2>
+          <p >
             You still have a way to go on your journey to becoming an expert on
             Chichén Itzá. Check out our History page to learn more!
           </p>
           <a href="history.html">Back to History Page</a>
         </div>
 
-        <div class="Congratulations-image">
+        <div class="Congratulations-image col-12 pb-3 col-xs-12 col-sm-12 col-md-12 col-lg-6 order-1 order-lg-3">
           <img src="placeholder.jpeg" alt="" class="winner-image" />
         </div>
       </div>
@@ -200,5 +253,7 @@
     <script src="quiz.js"></script>
 
     <script src="card.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+
   </body>
 </html>

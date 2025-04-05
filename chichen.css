@@ -4,6 +4,10 @@ body {
   font-family: "Poppins", sans-serif !important;
 }
 
+h1, h2 {
+  font-weight: 600;
+}
+
 .history-page {
   background: rgb(14, 112, 238);
   margin: 0;
@@ -36,9 +40,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 55px;
+  /* padding: 55px; */
   backdrop-filter: blur(5px);
   z-index: 999;
+  height: 88px;
 }
 
 .logo {
@@ -161,7 +166,7 @@ body {
 
 /* Informations Section */
 .informations {
-  width: 45%;
+  /* width: 45%; */
   font-size: 29px;
   text-align: right;
   padding-top: 30px;
@@ -244,7 +249,7 @@ body {
 
 .greeting-history {
   /* margin-top: 350px; */
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 .history-text-container article > p {
@@ -254,12 +259,12 @@ body {
 /* Quiz Page */
 
 .greeting-quiz {
-  width: 45%;
+  /* width: 45%; */
   color: white;
   font-size: 15px;
   text-align: left;
   max-width: 700px;
-  margin-top: -180px;
+  /* margin-top: -180px; */
 }
 
 .greeting-quiz h1 {
@@ -301,10 +306,11 @@ body {
 }
 
 .quiz-image-container {
-  margin-top: 150px;
-  margin-left: 100px;
-  width: 435px;
-  height: 425px;
+  /* margin-top: 150px; */
+  /* margin-left: 100px; */
+  /* width: 435px; */
+  /* height: 425px; */
+  height: 100%;
   border: 10px solid #ffcf68;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 24px;
@@ -313,6 +319,7 @@ body {
 .quiz-image-container img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* Map Page */
@@ -348,9 +355,7 @@ body {
 }
 
 #map {
-  /* position: absolute;
-  left: 30px;
-  top: 0; */
+  padding-left: 10rem;
 }
 
 /* Gallery Page - Fixed */
@@ -364,7 +369,7 @@ body {
   max-width: 90%;
   margin: 250px auto 0; /* Pushes carousel below navbar */
   overflow: hidden;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #carousel div {
@@ -618,7 +623,7 @@ body {
 
 .question {
   font-size: 18px;
-  padding: 120px;
+  padding: 80px;
   font-weight: bold;
   margin-bottom: 50px;
   border-radius: 30px;
@@ -629,11 +634,11 @@ body {
 }
 
 .options {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 120px;
-  margin-bottom: 20px;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* gap: 30px; */
+  /* margin-top: 120px; */
+  /* margin-bottom: 20px; */
 }
 
 .options button {
@@ -700,7 +705,7 @@ body {
 }
 
 .Congratulations {
-  width: 60%;
+  /* width: 60%; */
   color: white;
   font-size: 30px;
   text-align: left;
@@ -728,7 +733,7 @@ body {
 
 .Congratulations button {
   font-family: "DynaPuff", cursive;
-  padding: 15px;
+  padding: 30px;
   font-size: 20px;
   font-weight: bold;
   border: 5px solid #000000;
@@ -769,7 +774,7 @@ body {
 }
 
 .Congratulations-image {
-  width: 45%;
+  /* width: 100%; */
   font-size: 16px;
   text-align: right;
   padding-top: 30px;
@@ -789,12 +794,12 @@ body {
 
 .winner {
   display: none;
-  margin-top: 250px;
+  /* margin-top: 250px; */
 }
 
 .loser {
   display: none;
-  margin-top: 250px;
+  /* margin-top: 250px; */
 }
 
 /* 3D model page */
@@ -821,6 +826,7 @@ body {
   font-family: "DynaPuff", cursive;
   font-size: 50px;
   margin-top: 50px;
+  font-weight: 600;
 }
 
 .map-site-container-3D p {
@@ -843,10 +849,10 @@ body {
 
 /* Instructions section */
 .instructions {
-  margin-top: -40px;
+  /* margin-top: -40px; */
   color: white;
   max-width: 500px;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .instructions h2 {
@@ -867,7 +873,7 @@ body {
 
 /* Styling for image */
 .sketchfab-embed-wrapper iframe {
-  width: 800px; /* Adjust the width */
+  width: 100%; /* Adjust the width */
   border: 15px solid #ffcf68;
   height: 550px; /* Adjust the height */
   border-radius: 20px; /* Optional: Rounded corners */
@@ -960,7 +966,7 @@ body {
 
   /* Informations Section */
   .informations {
-    width: 45%;
+    /* width: 45%; */
     font-size: 16px;
     text-align: right;
     padding-top: 25px;
@@ -1069,81 +1075,80 @@ body {
 
 #castillo-button {
   position: relative;
-  top: 70px;
-  left: 60px;
-
+  top: 105px;
+  left: 365px;
 }
 
 #castillo-button .popup-button {
   position: relative;
-  top: -100px;
-  left: 30%;
+top: -100px;
+  left: -100px;
 }
 
 #jaguars-button {
   position: relative;
-  top: -250px;
-  left: -180px;
+  top: 33.3px;
+  left: -67.0px;
 }
 
 #jaguars-button .popup-button {
-  position: absolute;
-  top: 30px;
-  left: 60px;
+  position: relative;
+  top: -120px;
+  left: -155px;
 }
 
 #el-caracol-button {
   position: relative;
-  left: -175px;
-  top: -90px;
+  left: -170px;
+  top: 330px;
 }
 
 #el-caracol-button .popup-button {
-  position: absolute;
-  top: -15px;
-  left: 420px;
+  position: relative;
+  top: -175px;
+  left: 30px;
 }
 
 #group-columns-button {
-  position: relative;
-  top: -500px;
-  right: -240px;
+   position: relative;
+top: 215px;
+  right: 185px;
 }
 
 #cenote-button {
   position: relative;
-  top: -590px;
-  left: 270px;
+  top: -20px;
+  left: 120px;
 }
 
 #cenote-button .popup-button {
-  position: absolute;
-  top: -10px;
-  left: 300px;
+  position: relative;
+  top: -150px;
+  left: -80px;
 }
 
 #columns-button {
   position: relative;
   top: -90px;
-  left: 320px;
+  left: 20px;
 }
 
 #venus-button {
   position: relative;
-  top: -1010px;
-  left: 200px;
+  top: 58px;
+  left: -300px;
 }
 
 #venus-button .popup-button {
   position: relative;
   top: -100px;
-  left: 480px;
+  left: 115px;
 }
 
 #warriors-button {
   position: relative;
   top: -270px;
-  left: 550px;
+  left: 250px;
 }
 
 .fade-in {
@@ -1560,7 +1565,62 @@ nav {
 }
 
 .mobile-map {
-  visibility: hidden;
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  #map {
+    padding-left: 5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.btn-close svg {
+  margin-top: -115px;
+}
+
+.map-bg {
+  background-image: url("Images/empty_map.png");
+  background-size: 950px;
+  position: absolute;
+  /* width: 43%; */
+  /* left: 28%; */
+  min-width: 950px;
+  background-repeat: no-repeat;
+  /* position: absolute;
+  left: 50%; */
+  max-width: 1075px;
+}
+
+.popup-button {
+  min-width: 250px;
+
+}
+
+#mobile-map-img {
+  width: 100%;
+}
+
+.accordion {
+  --bs-accordion-bg: transparent !important;
+  border: none;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  color: white !important;
+
+}
+
+.accordion-item {
+  background-color: transparent !important;
+}
+
+.location-container {
+  height: 100px;
 }
 
 @media (max-width: 992px) {
@@ -1591,6 +1651,7 @@ nav {
 
   .content-wrapper {
     margin-top: 50px;
+    padding: 120px 80px 0;
   }
 
   .logo {
@@ -1614,11 +1675,30 @@ nav {
   }
 
   .mobile-map {
-    visibility: visible;
+    display: block;
   }
 
   .location-container {
     margin-top: 5rem;
+    height: auto;
+  }
+
+  .accordion {
+    margin-top: 10px;
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+
+  .map-bg {
+    display: none !important;
+
   }
 
   .prevLeftSecond {
@@ -1636,53 +1716,17 @@ nav {
   .nextRightSecond {
     visibility: hidden;
   }
-}
 
+  #map {
+    padding-left: 0rem;
+  }
 
-@media (max-width: 768px) {
-  
-}
+  .sketchfab-embed-wrapper {
+    width: 100%;
+  }
 
-h2 {
-  font-size: 2rem;
-}
-
-.btn-close svg {
-  margin-top: -115px;
-}
-
-.map-bg {
-  background-image: url("Images/empty_map.png");
-  background-size: 950px;
-  position: absolute;
-  width: 43%;
-  left: 28%;
-  min-width: 950px;
-  background-repeat: no-repeat;
-  /* position: absolute;
-  left: 50%; */
-}
-
-.popup-button {
-  min-width: 250px;
-
-}
-
-#mobile-map-img {
-  width: 100%;
-}
-
-.accordion {
-  --bs-accordion-bg: transparent !important;
-  border: none;
-}
-
-.accordion-button {
-  background-color: transparent !important;
-  color: white !important;
-
-}
-
-.accordion-item {
-  background-color: transparent !important;
+  .instructions {
+    width: 80%;
+    max-width: 100%;
+  }
 }
