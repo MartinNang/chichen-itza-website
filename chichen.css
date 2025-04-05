@@ -2,6 +2,7 @@ body {
   background: rgb(174, 213, 174) url("Images/Background_home.png") no-repeat
     center/cover fixed;
   font-family: "Poppins", sans-serif !important;
+  font-size: 100%;
 }
 
 h1,
@@ -227,8 +228,8 @@ button {
 }
 
 .gallery-image img {
-  /* width: 140%;
-  height: auto;
+  width: 140%;
+  /*height: auto;
   padding-left: 50px; */
 }
 
@@ -617,7 +618,7 @@ button {
 
 /* The Quiz Page */
 .quiz-page .content-wrapper {
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .quiz-container {
@@ -901,18 +902,13 @@ button {
   margin-top: -20px; /* Add space above the model */
   background-color: white; /* Background color when model is not loaded */
 }
-/* 
+
 @media (max-width: 1366px) {
-  .header {
-    width: 90%;
-    padding: 60px;
+  .content-wrapper {
+    padding-top: 5vh;
   }
-
-  .logo {
-    width: 150px;
-  }
-
-  /* Navbar */
+}
+/* Navbar
 .navbar {
   padding: 20px;
   border-radius: 30px;
@@ -1686,7 +1682,7 @@ nav {
   }
 
   .navbar-nav {
-    margin-top: 150px;
+    margin-top: 9rem;
   }
 
   .nav-item {
@@ -1790,7 +1786,11 @@ nav {
   }
 
   .history-page .greeting {
-    width: 100%;
+    min-width: 150px;
+  }
+
+  .logo {
+    width: 15rem;
   }
 }
 
