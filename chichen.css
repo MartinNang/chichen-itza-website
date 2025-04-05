@@ -1659,7 +1659,7 @@ h2 {
   }
 
   #placeholder-item {
-    margin-top: -100px;
+    display: none;
   }
 
   .languageOption {
