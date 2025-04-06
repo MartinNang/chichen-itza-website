@@ -105,139 +105,44 @@
           </p>
         </div>
         <div id="map" class="row mt-3">
-          <div class="map-bg container d-flex h-100 px-auto">
-            <div id="castillo-button" class="location-container col-md-2">
-              <a href="El_castillo.html">
+          <div class="map-bg container d-flex px-auto">
+            <div id="locations">
+              <div id="castillo-button" class="location-container col-md-2">
+                <a href="El_castillo.html">
+                  <img
+                    src="Images/el_castillo.png"
+                    width="325"
+                    alt="El Castillo" />
+                  <div class="popup-button">"El Castillo" in 3D</div>
+                </a>
+              </div>
+              <div id="jaguars-button" class="location-container col-md-2">
                 <img
-                  src="Images/el_castillo.png"
-                  width="325"
-                  alt="El Castillo" />
-                <div class="popup-button">"El Castillo" in 3D</div>
-              </a>
-            </div>
-            <div id="jaguars-button" class="location-container col-md-2">
-              <img
-                src="Images/jaguars.png"
-                width="400"
-                alt="Temple of Jaguars" />
-              <button class="popup-button" onclick="showPopup(this, false)">
-                "Temple of Jaguars"
-              </button>
-              <div class="entrance">
-                <p>Entrance</p>
-                <svg
-                  width="140"
-                  height="62"
-                  viewBox="0 0 140 62"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2.18335 1.53467C2.18335 1.53467 23 46.0694 59 55.5346C95 64.9998 139.183 55.5347 139.183 55.5347"
-                    stroke="white"
-                    stroke-width="4" />
-                </svg>
-              </div>
-              <div class="info-popup map-popup hidden">
-                <p class="popup-paragraph">
-                  Roar like a mighty jaguar as you explore this temple. The
-                  Mayans believed jaguars had special powers. Can you find the
-                  jaguar carvings hiding in the stones?
-                </p>
-                <button
-                  onclick="closePopup(this)"
-                  class="popup-close btn-close"
-                  aria-label="close">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                    class="bi bi-x"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div id="el-caracol-button" class="location-container col-md-2">
-              <img src="Images/el_caracol.png" width="275" alt="El Caracol" />
-
-              <button class="popup-button" onclick="showPopup(this, false)">
-                "El Caracol"
-              </button>
-              <div class="info-popup map-popup hidden">
-                <p class="popup-paragraph">
-                  Twist and turn like a spiral shell inside this mysterious
-                  tower! The Maya used this as their special sky-watching place.
-                  Its windows line up perfectly with the stars and planets. Can
-                  you figure out why they named it after a snail?
-                </p>
-                <button
-                  onclick="closePopup(this)"
-                  class="popup-close btn-close"
-                  aria-label="close">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                    class="bi bi-x"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div id="cenote-button" class="location-container col-md-2">
-              <img
-                src="Images/sacred_cenote.png"
-                width="150"
-                alt="The Sacred Cenote" />
-              <button class="popup-button" onclick="showPopup(this, false)">
-                "Sacred Cenote"
-              </button>
-              <div class="info-popup map-popup hidden">
-                <p class="popup-paragraph">
-                  Peer into the magical waters of this giant natural well! The
-                  Maya believed the rain god Chaac lived here. They dropped
-                  precious treasures into the water as gifts. Can you imagine
-                  what treasures might still be hiding in its depths?
-                </p>
-                <button
-                  onclick="closePopup(this)"
-                  class="popup-close btn-close"
-                  aria-label="close">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                    class="bi bi-x"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div id="group-columns-button" class="location-container col-md-2">
-              <img
-                src="Images/las_mil_columnas.png"
-                width="500"
-                alt="Las Mil Columnas" />
-
-              <div id="columns-button">
+                  src="Images/jaguars.png"
+                  width="400"
+                  alt="Temple of Jaguars" />
                 <button class="popup-button" onclick="showPopup(this, false)">
-                  “Las Mil Columnas”
+                  "Temple of Jaguars"
                 </button>
+                <div class="entrance">
+                  <p>Entrance</p>
+                  <svg
+                    width="140"
+                    height="62"
+                    viewBox="0 0 140 62"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.18335 1.53467C2.18335 1.53467 23 46.0694 59 55.5346C95 64.9998 139.183 55.5347 139.183 55.5347"
+                      stroke="white"
+                      stroke-width="4" />
+                  </svg>
+                </div>
                 <div class="info-popup map-popup hidden">
                   <p class="popup-paragraph">
-                    Count as high as you can among this forest of stone columns!
-                    Maya leaders held important meetings under these towering
-                    pillars. Each column tells a story with its special
-                    carvings. How many columns do you think there really are?
+                    Roar like a mighty jaguar as you explore this temple. The
+                    Mayans believed jaguars had special powers. Can you find the
+                    jaguar carvings hiding in the stones?
                   </p>
                   <button
                     onclick="closePopup(this)"
@@ -256,19 +161,19 @@
                   </button>
                 </div>
               </div>
-              <div id="warriors-button">
+              <div id="el-caracol-button" class="location-container col-md-2">
+                <img src="Images/el_caracol.png" width="275" alt="El Caracol" />
+
                 <button class="popup-button" onclick="showPopup(this, false)">
-                  "Temple of Warriors"
+                  "El Caracol"
                 </button>
                 <div class="info-popup map-popup hidden">
                   <p class="popup-paragraph">
-                    March like a brave Maya warrior through this amazing temple!
-                    Hundreds of stone soldiers guard this special place. Look
-                    closely at the colorful carvings showing ancient battles and
-                    heroes. Can you spot the feathered serpent hiding among the
-                    warriors?
+                    Twist and turn like a spiral shell inside this mysterious
+                    tower! The Maya used this as their special sky-watching
+                    place. Its windows line up perfectly with the stars and
+                    planets. Can you figure out why they named it after a snail?
                   </p>
-
                   <button
                     onclick="closePopup(this)"
                     class="popup-close btn-close"
@@ -286,45 +191,145 @@
                   </button>
                 </div>
               </div>
-            </div>
-
-            <div id="venus-button" class="location-container col-md-2">
-              <img
-                src="Images/entrance_exit.png"
-                width="65"
-                alt="Platform of Venus" />
-              <button class="popup-button" onclick="showPopup(this, false)">
-                "Platform of Venus"
-              </button>
-              <div class="info-popup map-popup hidden">
-                <p class="popup-paragraph">
-                  Zoom into the stars with this special platform! The Maya were
-                  amazing sky-watchers who tracked planet Venus. They built this
-                  platform to watch its journey across the night sky. Can you
-                  spot the star patterns carved into the stones?
-                </p>
-                <button
-                  onclick="closePopup(this)"
-                  class="popup-close btn-close"
-                  aria-label="close">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    fill="currentColor"
-                    class="bi bi-x"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                  </svg>
+              <div id="cenote-button" class="location-container col-md-2">
+                <img
+                  src="Images/sacred_cenote.png"
+                  width="150"
+                  alt="The Sacred Cenote" />
+                <button class="popup-button" onclick="showPopup(this, false)">
+                  "Sacred Cenote"
                 </button>
+                <div class="info-popup map-popup hidden">
+                  <p class="popup-paragraph">
+                    Peer into the magical waters of this giant natural well! The
+                    Maya believed the rain god Chaac lived here. They dropped
+                    precious treasures into the water as gifts. Can you imagine
+                    what treasures might still be hiding in its depths?
+                  </p>
+                  <button
+                    onclick="closePopup(this)"
+                    class="popup-close btn-close"
+                    aria-label="close">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-x"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div
+                id="group-columns-button"
+                class="location-container col-md-2">
+                <img
+                  src="Images/las_mil_columnas.png"
+                  width="500"
+                  alt="Las Mil Columnas" />
+
+                <div id="columns-button">
+                  <button class="popup-button" onclick="showPopup(this, false)">
+                    “Las Mil Columnas”
+                  </button>
+                  <div class="info-popup map-popup hidden">
+                    <p class="popup-paragraph">
+                      Count as high as you can among this forest of stone
+                      columns! Maya leaders held important meetings under these
+                      towering pillars. Each column tells a story with its
+                      special carvings. How many columns do you think there
+                      really are?
+                    </p>
+                    <button
+                      onclick="closePopup(this)"
+                      class="popup-close btn-close"
+                      aria-label="close">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div id="warriors-button">
+                  <button class="popup-button" onclick="showPopup(this, false)">
+                    "Temple of Warriors"
+                  </button>
+                  <div class="info-popup map-popup hidden">
+                    <p class="popup-paragraph">
+                      March like a brave Maya warrior through this amazing
+                      temple! Hundreds of stone soldiers guard this special
+                      place. Look closely at the colorful carvings showing
+                      ancient battles and heroes. Can you spot the feathered
+                      serpent hiding among the warriors?
+                    </p>
+
+                    <button
+                      onclick="closePopup(this)"
+                      class="popup-close btn-close"
+                      aria-label="close">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        class="bi bi-x"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
 
-              <!-- <img
-                  id="map-image"
-                  src="Images/empty_map.png"
-                  class="w-50 mx-auto"
-                  alt="Map of Chichén Itzá" /> -->
+              <div id="venus-button" class="location-container col-md-2">
+                <img
+                  src="Images/entrance_exit.png"
+                  width="65"
+                  alt="Platform of Venus" />
+                <button class="popup-button" onclick="showPopup(this, false)">
+                  "Platform of Venus"
+                </button>
+                <div class="info-popup map-popup hidden">
+                  <p class="popup-paragraph">
+                    Zoom into the stars with this special platform! The Maya
+                    were amazing sky-watchers who tracked planet Venus. They
+                    built this platform to watch its journey across the night
+                    sky. Can you spot the star patterns carved into the stones?
+                  </p>
+                  <button
+                    onclick="closePopup(this)"
+                    class="popup-close btn-close"
+                    aria-label="close">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-x"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- <img
+                    id="map-image"
+                    src="Images/empty_map.png"
+                    class="w-50 mx-auto"
+                    alt="Map of Chichén Itzá" /> -->
+              </div>
             </div>
           </div>
 
@@ -544,6 +549,7 @@
     </div>
 
     <script src="card.js"></script>
+    <script src="scripts/map.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

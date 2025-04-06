@@ -373,7 +373,7 @@ button {
 }
 
 #map {
-  padding-left: 10rem;
+  /* padding-left: 10rem; */
 }
 
 /* Gallery Page - Fixed */
@@ -810,10 +810,6 @@ button {
   border-radius: 40px;
 }
 
-.hidden {
-  display: none;
-}
-
 .winner {
   display: none;
   /* margin-top: 250px; */
@@ -1090,8 +1086,8 @@ button {
 
 #castillo-button {
   position: relative;
-  top: 150px;
-  left: 590px;
+  top: 140px;
+  left: 575px;
 }
 
 #castillo-button .popup-button {
@@ -1102,8 +1098,8 @@ button {
 
 #jaguars-button {
   position: relative;
-  top: 90px;
-  left: 30px;
+  top: 85px;
+  left: 235px;
 }
 
 #jaguars-button .popup-button {
@@ -1114,8 +1110,8 @@ button {
 
 #el-caracol-button {
   position: relative;
-  left: -185px;
-  top: 525px;
+  left: 255px;
+  top: 510px;
 }
 
 #el-caracol-button .popup-button {
@@ -1126,14 +1122,14 @@ button {
 
 #group-columns-button {
   position: relative;
-  top: 300px;
-  right: 135px;
+  top: 290px;
+  left: 700px;
 }
 
 #cenote-button {
   position: relative;
   top: 50px;
-  left: 275px;
+  left: 950px;
 }
 
 #cenote-button .popup-button {
@@ -1157,7 +1153,7 @@ button {
 #venus-button {
   position: relative;
   top: 175px;
-  left: -265px;
+  left: 890px;
 }
 
 #venus-button .popup-button {
@@ -1243,7 +1239,7 @@ button {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 
 .popup-paragraph {
@@ -1614,24 +1610,13 @@ nav {
 } */
 }
 
-@media (max-width: 1400px) {
-  #map {
-    padding-left: 5rem;
-  }
-}
-
 .map-bg {
   background-image: url("Images/empty_map.png");
-  background-size: 1350px;
-  position: absolute;
-  /* width: 43%; */
-  /* left: 28%; */
-  min-width: 950px;
+  background-size: 100%;
+  /* height: 100vh !important; */
+  width: 100%;
+  padding-top: 56.25%;
   background-repeat: no-repeat;
-  /* position: absolute; */
-  /* left: 50%; */
-  max-width: 1350px;
-  margin-left: -13rem;
 }
 
 .popup-button {
@@ -1660,7 +1645,42 @@ nav {
 }
 
 .location-container {
-  height: 100px;
+  height: 0px;
+}
+
+@media (max-width: 1400px) {
+  .map-bg {
+    display: none;
+  }
+
+  .mobile-map {
+    display: block;
+  }
+
+  .location-container {
+    margin-top: 5rem;
+    height: auto;
+  }
+
+  .accordion {
+    margin-top: 10px;
+  }
+
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .map-bg {
+    display: none !important;
+  }
+
+  .location-container {
+    height: 100px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1727,35 +1747,6 @@ nav {
     margin-left: -5rem;
   }
 
-  .map-bg {
-    display: none;
-  }
-
-  .mobile-map {
-    display: block;
-  }
-
-  .location-container {
-    margin-top: 5rem;
-    height: auto;
-  }
-
-  .accordion {
-    margin-top: 10px;
-  }
-
-  .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  }
-
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  }
-
-  .map-bg {
-    display: none !important;
-  }
-
   .prevLeftSecond {
     visibility: hidden;
   }
@@ -1773,7 +1764,7 @@ nav {
   }
 
   #map {
-    padding-left: 0rem;
+    /* padding-left: 0rem; */
   }
 
   .sketchfab-embed-wrapper {
@@ -1809,4 +1800,9 @@ nav {
   margin-left: 120px;
   width: 175px;
   height: 100px;
+}
+
+#warriors-button .info-popup {
+  position: relative;
+  left: -50px;
 }
