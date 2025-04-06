@@ -14,7 +14,7 @@ scrollContainer.addEventListener("wheel", (event) => {
   console.log("asset3 top", asset3.style.top);
   console.log("asset 3 pos", asset3Pos);
 
-  if (event.deltaX > 0) {
+  if (event.deltaY > 0) {
     if (asset1Pos <= 50) {
       asset1Pos++;
     }
@@ -25,7 +25,7 @@ scrollContainer.addEventListener("wheel", (event) => {
   }
   asset1.style.bottom = Math.floor(asset1Pos / 2) + "px";
 
-  if (event.deltaX > 0) {
+  if (event.deltaY > 0) {
     if (asset2Pos >= -210) {
       asset2Pos--;
     }
@@ -36,7 +36,7 @@ scrollContainer.addEventListener("wheel", (event) => {
   }
   asset2.style.bottom = Math.floor(asset2Pos / 2 + asset2Pos / 2) + "px";
 
-  if (event.deltaX > 0) {
+  if (event.deltaY > 0) {
     if (asset3Pos <= -50) {
       asset3Pos++;
     }
