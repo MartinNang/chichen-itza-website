@@ -1,5 +1,5 @@
 body {
-  background: rgb(174, 213, 174) url("Images/Background_home.png") no-repeat
+  background: rgb(82 128 51) url("Images/Background_home.png") no-repeat
     center/cover fixed;
   font-family: "Poppins", sans-serif !important;
   font-size: 100%;
@@ -34,23 +34,23 @@ button {
 }
 
 .quiz-page {
-  background: rgb(174, 213, 174) url("Images/quiz_start.png") no-repeat
+  background: rgb(224 98 179) url("Images/quiz_start.png") no-repeat
     center/cover fixed;
 }
 
 .map-page {
-  background: rgb(174, 213, 174) url("Images/map_bg.png") no-repeat center/cover
+  background: rgb(82 128 51) url("Images/map_bg.png") no-repeat center/cover
     fixed;
 }
 
 .about-page {
-  background: rgb(174, 213, 174) url("Images/about.bg.png") no-repeat
-    center/cover fixed;
+  background: rgb(0 112 240) url("Images/about.bg.png") no-repeat center/cover
+    fixed;
 }
 
 .gallery-page {
-  background: rgb(174, 213, 174) url("Images/gallery_bg.png") no-repeat
-    center/cover fixed;
+  background: rgb(82 128 51) url("Images/gallery_bg.png") no-repeat center/cover
+    fixed;
 }
 
 /* Header */
