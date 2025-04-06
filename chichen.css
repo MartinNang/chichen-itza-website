@@ -1577,6 +1577,16 @@ nav {
   /* right: 50px; */
 }
 
+@media (max-width: 1366px) {
+  .languageOption {
+    margin-left: 1%;
+  }
+
+  .dropbtn span {
+    margin-left: 0px;
+  }
+}
+
 .bg-assets {
   position: absolute;
   top: 0%;
