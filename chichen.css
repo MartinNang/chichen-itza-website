@@ -1648,6 +1648,11 @@ nav {
   height: 0px;
 }
 
+.languageOption {
+  background-color: white;
+  border-radius: 20px;
+}
+
 @media (max-width: 1400px) {
   .map-bg {
     display: none;
@@ -1741,7 +1746,7 @@ nav {
 
   .languageOption {
     top: 25px;
-    background-color: #3e8e41;
+    /* background-color: #3e8e41; */
     border-radius: 20px;
     right: auto;
     margin-left: -5rem;
