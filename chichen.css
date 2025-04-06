@@ -1794,6 +1794,12 @@ nav {
   }
 }
 
+@media (max-width: 600px) {
+  .logo {
+    width: 12rem;
+  }
+}
+
 .entrance {
   position: relative;
   top: -65px;
