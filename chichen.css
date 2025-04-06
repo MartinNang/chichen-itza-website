@@ -1814,6 +1814,10 @@ nav {
   .header {
     height: 90px;
   }
+
+  .quiz-container {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 600px) {
