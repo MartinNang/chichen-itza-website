@@ -1798,6 +1798,10 @@ nav {
   .logo {
     width: 12rem;
   }
+
+  .content-wrapper {
+    margin-top: 0px;
+  }
 }
 
 .entrance {
