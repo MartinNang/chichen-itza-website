@@ -62,7 +62,7 @@ button {
   /* padding: 55px; */
   backdrop-filter: blur(5px);
   z-index: 999;
-  height: 88px;
+  height: 98px;
 }
 
 .logo {
@@ -1658,7 +1658,7 @@ nav {
   }
 
   .location-container {
-    margin-top: 5rem;
+    margin-top: 10rem;
     height: auto;
   }
 
@@ -1679,7 +1679,7 @@ nav {
   }
 
   .location-container {
-    height: 100px;
+    /* height: 100px; */
   }
 }
 
@@ -1782,6 +1782,15 @@ nav {
 
   .logo {
     width: 15rem;
+  }
+
+  .location-container {
+    margin-top: 5rem;
+    height: auto;
+  }
+
+  .header {
+    height: 90px;
   }
 }
 
