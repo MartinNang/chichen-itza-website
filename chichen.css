@@ -1802,6 +1802,10 @@ nav {
     min-width: 150px;
   }
 
+  .history-page .info-popup {
+    z-index: 10 !important;
+  }
+
   .logo {
     width: 15rem;
   }
