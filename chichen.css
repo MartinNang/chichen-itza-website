@@ -1268,7 +1268,7 @@ button {
 }
 
 .popup-credits a {
-  font-size: 1.1 rem;
+  font-size: 1.1rem;
 }
 
 .popup-close {
@@ -1800,10 +1800,6 @@ nav {
 
   .history-page .greeting {
     min-width: 150px;
-  }
-
-  .history-page .info-popup {
-    z-index: 10 !important;
   }
 
   .logo {
