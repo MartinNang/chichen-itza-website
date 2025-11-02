@@ -385,7 +385,7 @@ button {
   justify-content: center;
   align-items: center;
   max-width: 90%;
-  margin: 250px auto 0; /* Pushes carousel below navbar */
+  margin: 200px auto 0; /* Pushes carousel below navbar */
   overflow: hidden;
   z-index: 1;
 }
